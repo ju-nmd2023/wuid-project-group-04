@@ -1,0 +1,16 @@
+/* SHOPPING CART PAGE */
+
+.shoppingcart-h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5vw;
+  display: flex;
+  justify-content: center;
+}
+
+.shoppingcart-cup {
+  width: 25%;
+  height: auto;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+}
