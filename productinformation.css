@@ -1,0 +1,11 @@
+.productinfo-header {
+  font-size: 200%;
+  margin-left: 50%;
+}
+
+.productinfo-cups {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10%;
+  margin: auto;
+}
