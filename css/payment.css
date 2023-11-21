@@ -18,14 +18,22 @@
 }
 
 .shoppingcart-cup {
-  width: 25vw;
+  width: 20vw;
   max-width: 100%;
+  margin-left: 110px;
+  margin-top: 12px;
 }
 
 .shoppingcart-alltext {
     display: flex;
     flex-direction: column;
     margin-left: 1%;
+}
+
+.shoppingcart-amount-container {
+  display: flex;
+  gap: 10px;
+
 }
 
 .shoppingcart-pernilla-text {
