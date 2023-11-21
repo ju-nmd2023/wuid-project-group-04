@@ -1,0 +1,140 @@
+.login-button {
+    font-weight: 500;
+    font-size: 20%;
+    text-decoration: none;
+    padding: 9px 25px;
+    background-color: rgb(164, 150, 141);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 0;
+    margin-top: -20%;
+    }
+    
+    
+    .header-content {
+    margin: 0;
+    padding: 0;
+    }
+    
+    
+    .login-button :hover {
+    background-color: rgb(157, 157, 157);
+    }
+    
+    
+    .main-header {
+    padding: 10px 10%;
+    background-color: rgb(164, 150, 141);
+        height: 10vh;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    }
+    
+    
+    .container {
+    width: 80%;
+    margin: 0 auto;
+    }
+    
+    
+    .icon-pictures {
+    height: 30px;
+    }
+    
+    
+    .icon-searchbar {
+    height: 100px;
+    align-items: center;
+    }
+    
+    
+    .h1-header {
+    margin: 0;
+    }
+    
+    
+    .homepage-pictures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 100px;
+    margin-top: 40px;
+    margin-right: 100px;
+    column-gap: 5%;
+    }
+    
+    
+    .main-pictures {
+    display: grid;
+    height: 500px;
+    width: 100%;
+    }
+    
+    
+    .campaign-picture {
+        width: 100%;
+        padding-top: 10%;
+    }
+
+    .list-header {
+        display: flex;
+        gap: 5%;
+    font-size: 3vh;
+    
+    }
+
+    .header-two {
+        background-color: rgb(75, 54, 29) ;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .link-header {
+        color: white;
+    }
+
+/* The next 6 classes where adapted from https://www.w3schools.com/howto/howto_css_image_text.asp?fbclid=IwAR0dGFRfX4da7FFMYaD_jnl8w5N_KdE3E66LIraRnuLyNUK_MQ1f-9rc_JE */
+
+    .container-coffee {
+        position: relative;
+        text-align: center;
+        color: black;
+    }
+
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+
+
+    .container-bowls {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    .centered-bowls {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .container-plates {
+        position: relative;
+        text-align: center;
+        color: black;
+    }
+
+    .centered-plates {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+    
