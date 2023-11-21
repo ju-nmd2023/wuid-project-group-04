@@ -104,9 +104,10 @@
 
     .centered {
         position: absolute;
-        top: 50%;
+        top: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
+        font-size: 5vh;
         
     }
 
@@ -114,14 +115,15 @@
     .container-bowls {
         position: relative;
         text-align: center;
-        color: white;
+        color: black;
     }
 
     .centered-bowls {
         position: absolute;
-        top: 50%;
+        top: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
+        font-size: 5vh;
     }
 
     .container-plates {
@@ -132,9 +134,59 @@
 
     .centered-plates {
         position: absolute;
-        top: 50%;
+        top: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
+        font-size: 5vh;
+
+    }
+
+    .container-campaign {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    .centered-campaign {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18vh;
+    }
+
+    .centered-text {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 5vh;
 
     }
     
+    .text-coffee {
+        position: absolute;
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+        font-size: 3vh;
+    }
+
+    .text-plates {
+        position: absolute;
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+        font-size: 3vh;
+    }
+
+    .text-bowls {
+        position: absolute;
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+        font-size: 3vh;
+    }
