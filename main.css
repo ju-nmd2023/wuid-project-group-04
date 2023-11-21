@@ -1,0 +1,62 @@
+.login-button {
+    font-weight: 500;
+    font-size: 20%;
+    text-decoration: none;
+    padding: 9px 25px;
+    background-color: rgb(164, 150, 141);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+
+.header-content {
+    margin: 0;
+    padding: 0;
+}
+
+.login-button :hover {
+    background-color: rgb(157, 157, 157);  
+}
+
+.main-header {
+    padding: 15px 10%;
+    background-color: rgb(164, 150, 141); 
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.icon-pictures {
+    height: 30px;
+    
+}
+
+.icon-searchbar {
+    height: 100px;
+    align-items: center;
+    
+}
+
+.h1-header {
+    margin: 0;
+}
+
+.homepage-pictures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 100px;
+    margin-top: 40px;
+    column-gap: 5%;
+}
+
+.main-pictures {
+    display: grid;
+    height: 500px;
+}
+
+.campaign-picture {
+    
+}
