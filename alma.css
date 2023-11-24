@@ -1,6 +1,15 @@
+.productimage-container {
+  width: auto;
+  
+}
+
+.productinfo-image {
+border-radius: px;
+}
+
 .productinfo-header {
   font-size: 200%;
-  margin-left: 50%;
+  text-align: center;
 }
 
 .productinfo-cups {
@@ -11,11 +20,20 @@
 }
 
 .first-row-product {
-
+  margin-bottom: 0%;
+  margin-top: 0%;
+  font-family: "Raleway", sans-serif;
+  
 }
 
-
-
 .second-row-product {
-  
+  margin-bottom: 0%;
+  margin-top: 0%;
+  font-family: "Lusitana", serif;
+}
+
+.productimage-container {
+}
+
+.productimage-caption {
 }
