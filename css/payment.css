@@ -112,9 +112,11 @@ footer {
   }
 }
 
+
 .dropdown-shoppingcart-container {
   display: flex;
   gap: 15px;
+  grid-area: shoppingcart-cup;
   /* display: inline-block;
   overflow: hidden; */
 }
