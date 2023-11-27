@@ -31,7 +31,6 @@ footer {
   grid-template-areas: 
   "shoppingcart-cup shoppingcart-alltext discount-total-container";
   width: 100%;
-  grid-row: auto
 }
 
 .shoppingcart-cup-container {
@@ -113,35 +112,173 @@ footer {
   }
 }
 
-/* DISCOUNT ANT TOTAL SIDE OF PAGE */
+.dropdown-shoppingcart-container {
+  display: flex;
+  gap: 15px;
+  /* display: inline-block;
+  overflow: hidden; */
+}
+
+.description-button {
+  display: flex;
+  width: 151px;
+  height: 36px;
+  font-size: 15px;
+align-items: center;
+justify-content: space-between;
+border-radius: 5px;
+background-color: #006633;
+color: white;
+border: none;
+cursor: pointer;
+padding-left: 5%;
+}
+
+.description-dropdown-shoppingcart {
+  background-color: #006633;
+  color: white;
+  border-radius: 5px;
+  font-family: "raleway", sans-serif;
+  font-size: 13px;
+  padding: 2%;
+  padding-left: 5%;
+}
+
+/* .description-dropdown-shoppingcart {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  background-color: #006633;
+  color: white;
+} */
+
+.careinstructions-button {
+  display: flex;
+  width: 204px;
+  height: 36px;
+  font-size: 15px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  border: none;
+  background-color: #006633;
+  color: white;
+  cursor: pointer;
+  padding-left: 5%;
+}
+
+.careinstructions-dropdown-shoppingcart {
+  background-color: #006633;
+  color: white;
+  border-radius: 5px;
+  font-family: "raleway", sans-serif;
+  font-size: 13px;
+  padding: 2%;
+  padding-left: 5%;
+}
+
+/* DISCOUNT AND TOTAL SIDE OF PAGE */
 
 .discount-total-container {
   grid-area: discount-total-container;
   width: 100%;
-  margin-top: 5vh;
-  /* margin-right: 110px; */
+  grid-column: end;
+  margin-top: 6vh;
 }
 
 .discount-box {
-  width: 165px;
-  padding: 9px;
+  width: 219px;
+height: 42px;
+  padding-left: 10px;
   border-radius: 5px;
   border: none;
-  font-size: 100%;
+  font-size: 20px;
   background-color: #d9d9d9;
   outline: none;
 }
 
 .add-discount-button {
-  padding: 9px;
-  padding-left: 13px;
-  padding-right: 13px;
+  height: 42px;
+  /* padding-left: 13px;
+  padding-right: 13px; */
   border-radius: 5px;
   border: none;
-  font-size: 100%;
+  font-size: 20px;
   background-color: #006633;
   color: white;
   margin-left: 15px;
+  margin-right: 110px;
+  width: 73px;
+}
+
+.discount-font {
+  font-family: "raleway", sans-serif;
+}
+
+.ordervalue-price-container {
+  display: flex;
+  margin-top: 7%;
+}
+
+.ordervalue {
+  margin: 0;
+}
+
+.ordervalue-price {
+  font-family: "lusitana", serif;
+  margin: 0;
+  margin-left: auto;
+  margin-right: 110px;
+}
+
+.delivery-free-container {
+  display: flex;
+ margin-top: 3%;
+}
+
+.delivery-discount {
+  margin: 0;
+}
+
+.freeshipping-discount {
+  margin: 0;
+  margin-left: auto;
+  margin-right: 110px;
+}
+
+.line-discount {
+  margin-right: 110px;
+margin-top: 3%;
+}
+
+.total-price-container {
+  display: flex;
+  margin-top: 3%;
+}
+
+.total-discount {
+  margin: 0;
+}
+
+.totalprice-discount {
+  font-family: "lusitana", serif;
+  margin: 0;
+  margin-left: auto;
+  margin-right: 110px;
+}
+
+.tocheckout-button {
+  margin-top: 10%;
+  background-color: #006633;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+padding-top: 15px;
+padding-bottom: 15px;
+font-size: 24px;
+width: 320px;
+margin-right: 110px;
 }
 
 

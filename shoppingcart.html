@@ -20,14 +20,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Lusitana&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+
 
   </head>
   <body>
     <header></header>
     <main>
         <h1 class="shoppingcart-h1">SHOPPING CART</h1>
-
-<!-- Fix grid-template-area -->
 
         <section class="shoppingcart-container">
           <div class="shoppingcart-cup-container">
@@ -54,10 +54,50 @@
               </div>
             </section>
             
+            <section class="dropdown-shoppingcart-container">
+              <div>
+                <button class="description-button">DESCRIPTION <i class='fa fa-angle-down'></i></button>
+                <div class="description-dropdown-shoppingcart">
+                  <p>Article number: 123456789</p>
+                  <p>Color: White, beige, gold-coat</p>
+                  <p>Material: Porcelain</p>
+                  <p>Handle: Yes</p>
+                  <p>Capacity: 240ml</p>
+                </div>
+              </div>
+              <div>
+
+                <button class="careinstructions-button">CARE INSTRUCTIONS <i class="fa fa-angle-down"></i></button>
+                <div class="careinstructions-dropdown-shoppingcart">
+                  <p>Maintenance: Dishwasher-safe</p>
+                  <p>Sustainability: Made with sustainable materials and responsible production</p>
+                </div>
+              </div>
+            </section>
+
+
           </div>
             <section class="discount-total-container">
               <input class="discount-box" type="text" placeholder="DISCOUNT CODE">
               <button class="add-discount-button">ADD</button>
+
+             <div class="ordervalue-price-container">
+               <h4 class="ordervalue discount-font">Order value</h4>
+               <p class="ordervalue-price">99 SEK</p>
+              </div>
+
+              <div class="delivery-free-container">
+                <h4 class="delivery-discount discount-font">Delivery</h4>
+                <p class="freeshipping-discount discount-font">Free shipping</p>
+              </div>
+
+              <hr class="line-discount">
+
+              <div class="total-price-container">
+                <h4 class="total-discount discount-font">Total</h4>
+                <p class="totalprice-discount">99 SEK</p> 
+              </div>
+<button class="tocheckout-button">TO CHECKOUT</button>
             </section>
           </section>
           </main>
