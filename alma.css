@@ -1,16 +1,57 @@
-.productimage-container {
-  width: auto;
-  
+/* PRODUCT INFORMATION PAGE */
+/* body {
+  margin: auto;
+} */
+
+/* margin auto align images horizontally */
+
+/*row containing the alternate image column, main product image, and product info*/
+.productimage-row {
+  display: flex;
+  flex-direction: row;
 }
 
+/*contains the product i nformation, title and price */
+.flex-info {
+  display: flex;
+  flex-direction: row;
+  height: 11rem;
+}
+
+/*column containing the alternate product images "sub images"*/
+.flex-subimages {
+  display: flex;
+  flex-direction: column;
+  /* height: 100px; */
+  margin: 5px;
+  margin-top: 0px;
+}
+
+/* contains the main product image */
+.productimage-container {
+  width: 100%;
+  margin: 5px;
+  /* height: 200px; */
+}
+
+/* images inside the column beside the main image */
+.sub-image {
+  height: 5rem;
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+
+/* adds roundness to images */
 .productinfo-image {
-border-radius: px;
+  border-radius: 2px;
 }
 
 .productinfo-header {
-  font-size: 200%;
+  font-size: 30px;
   text-align: center;
 }
+
+/* making a grid of the images, three columns and a 10% gap between the images */
 
 .productinfo-cups {
   display: grid;
@@ -19,21 +60,54 @@ border-radius: px;
   margin: auto;
 }
 
+/* Text under each image, the margin makes the padding get less spacious */
+
 .first-row-product {
-  margin-bottom: 0%;
+  grid-area: text;
+  margin-right: 0%;
   margin-top: 0%;
   font-family: "Raleway", sans-serif;
-  
+  font-weight: 600; /* 600 was at bold according to google fonts */
+  font-size: 17pt;
 }
 
 .second-row-product {
+  grid-area: text;
   margin-bottom: 0%;
   margin-top: 0%;
   font-family: "Lusitana", serif;
+  font-weight: 400;
+  font-size: 17pt;
 }
 
-.productimage-container {
+/* PRODUCT VIEW PAGE */
+
+.productview-container {
+  width: auto;
+  margin: auto;
+  margin-top: 10%;
 }
 
-.productimage-caption {
+.productview-image {
+  margin: auto;
+  flex-direction: column; /* Stack elements vertically */
+
+  border-radius: 2px;
+  align-items: center;
+  max-width: 100%;
+}
+
+.first-row-pernilla {
+  /* margin-left: 80%; */
+  font-family: "Raleway", sans-serif;
+  font-weight: 600; /* 600 was at bold according to google fonts */
+  font-size: 17pt;
+}
+
+.second-row-pernilla {
+  margin-bottom: 0%;
+  margin-top: 0%;
+  font-family: "Lusitana", serif;
+  font-weight: 400;
+  font-size: 17pt;
 }
