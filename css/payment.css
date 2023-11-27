@@ -4,6 +4,8 @@ header {
   width: 100%;
   height: 100px;
   background-color: #a4968e;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 footer {
@@ -310,4 +312,77 @@ margin-right: 110px;
  font-size: 2.5vw;
  height: 100%;
  margin: 0;
+}
+
+
+/* CHECKOUT PAGE */
+
+.main-checkout {
+  /* background-image: url(../img/backgrounddinner.jpeg); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.checkout-h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3vw;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+
+}
+
+.checkout-choices-container {
+  display: grid;
+  grid-template-columns: 1fr
+  /* display: flex;
+  flex-direction: column; */
+  
+}
+
+/* Fix so that the text remain in center but left to the buttons at all times */
+
+.checkout-text {
+  /* grid-column: 3; */
+  font-family: "raleway", sans-serif;
+  /* justify-self: center; */
+  /* align-self: center; */
+  margin-bottom: 2%;
+}
+
+.already-member-h4 {
+  margin-bottom: 2%;
+  align-self: flex-start;
+}
+
+.otherwise-h4 {
+  margin-bottom: 2%;
+  align-self: flex-start;
+}
+
+.checkoutbuttons {
+  width: 304px;
+  height: 64px;
+  font-size: 32px;
+  border: none;
+border-radius: 5px;
+background-color: rgba(164, 150, 142, 0.7);
+justify-self: center;
+}
+
+.login-button-checkout {
+  margin-bottom: 5%;
+}
+
+.register-button {
+  margin-bottom: 5%;
+}
+
+.guest-button {
+  font-size: 25px;
+  margin-bottom: 50%;
 }
