@@ -147,13 +147,10 @@ footer {
 
 /* EMPTY SHOPPING CART */
 
-.emptycart-body {
-width: 100%;
-height: 100vh;
-}
-
 .emptycart-page {
-  /* height: 50vh; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .emptycart-h1 {
@@ -162,6 +159,7 @@ height: 100vh;
   font-weight: lighter;
   display: flex;
   justify-content: center;
+  margin-bottom: 0;
 }
 
 .emptycart-text {
@@ -171,7 +169,6 @@ height: 100vh;
  font-family: "raleway", sans-serif;
  font-weight: lighter;
  font-size: 2.5vw;
- /* Check alternatives for margin */
- margin-top: 18vh;
- margin-bottom: 25vh;
+ height: 100%;
+ margin: 0;
 }
