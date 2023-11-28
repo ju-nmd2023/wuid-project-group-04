@@ -389,3 +389,69 @@ background-color: rgba(164, 150, 142, 0.7);
   margin-bottom: 16vh;
 }
 
+
+/* INFORMATION PAGE */
+
+.information-body {
+  background-image: url(../img/backgrounddinner.jpeg);
+  background-size: contain;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.information-main {
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  padding-top: 3%;
+}
+
+.information-h1 {
+  font-family: "raleway", sans-serif;
+  font-size: 3vw;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+}
+
+.information-inputs {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 15px;
+  margin: 0;
+ justify-items: center;
+}
+
+/* Put in hover effect for input fields */
+
+.information-inputs input {
+  width: 367px;
+  height: 38px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  font-size: 100%;
+  font-family: "raleway", sans-serif;
+padding-left: 10px;
+}
+
+.info-delivery-h2, .info-payment-h2 {
+  font-family: "raleway", sans-serif;
+  font-size: 2.5vw;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+}
+
+.date-cvc-container {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 5vw;
+}
+
+#information-date {
+  width: 215px;
+}
+
+#information-cvc {
+  width: 132px;
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vett & etikett</title>
+
     <link rel="stylesheet" href="css/payment.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,28 +22,42 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<body class="body-checkout">
+<body class="information-body">
     <header></header>
-    <main class="main-checkout-container">
-<h1 class="checkout-h1">CHECKOUT</h1>
 
-<section class="checkout-choices-container">
-<div class="memberh4-loginbtn-container">
-    <h4 class="checkout-text">Already a member?</h4>
-    <button class="login-button-checkout checkout-text checkoutbuttons">LOG IN</button>
-</div>
+    <main class="information-main">
+        <h1 class="information-h1">YOUR INFORMATION</h1>
 
-    <div class="otherwise-register-guest-container">
-        <h4 class="checkout-text">Otherwise...</h4>
-        <button class="register-button checkout-text checkoutbuttons">REGISTER</button>
-        
-        <a href="#">
-            <button class="guest-button checkout-text checkoutbuttons">CONTINUE AS GUEST</button>
-        </a>
+<section class="information-inputs">
+    <input type="email" placeholder="E-MAIL*" required>
+    <input type="text" placeholder="NAME*" required>
+    <input type="text" placeholder="ADRESS*" required>
+    <input type="text" placeholder="POSTAL CODE*" required>
+    <input type="text" placeholder="LOCALITY*" required>
+    <input type="text" placeholder="CITY*" required>
+    <input type="text" placeholder="COUNTRY*" required>
+    <input type="tel" placeholder="TELEPHONE NUMBER">
+</section>
+
+<h2 class="info-delivery-h2">DELIVERY</h2>
+
+<section>
+</section>
+
+<h2 class="info-payment-h2">PAYMENT</h2>
+
+<section class="information-inputs">
+    <input type="text" placeholder="NAME*" required>
+    <input type="text" placeholder="CARD NUMBER*" required>
+    <div class="date-cvc-container">
+        <input id="information-date" type="text" placeholder="MONTH*/YEAR*" required>
+        <input id="information-cvc" type="text" placeholder="CVC*" required>
     </div>
 </section>
 
-</main>
+    </main>
+
     <footer></footer>
+    
 </body>
 </html>
