@@ -31,11 +31,8 @@
 .filter-icon {
   width: 2rem;
   float: right;
- opacity: 0.8;
- 
+  opacity: 0.8;
 }
-
-
 
 /* making a grid of the images, three columns and a 10% gap between the images */
 
