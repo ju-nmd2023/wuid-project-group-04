@@ -1,17 +1,107 @@
 /* PRODUCT INFORMATION PAGE */
-/* body {
-  margin: auto;
-} */
 
-/* margin auto align images horizontally */
+/* adds roundness to images */
+.productinfo-image {
+  border-radius: 2px;
+  width: 13rem;
+  height: auto;
+}
+
+.productinfo-header {
+  font-size: 30px;
+  text-align: center;
+}
+
+/* making a grid of the images, three columns and a 10% gap between the images */
+
+.productinfo-cups {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5%;
+  margin: auto;
+}
+.productimage-container {
+  margin: auto;
+}
+
+/* Text under each image, the margin makes the padding get less spacious */
+
+.first-row-product {
+  margin: auto;
+  grid-area: text;
+  margin-right: 0%;
+  margin-top: 0%;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600; /* 600 was at bold according to google fonts */
+  font-size: 15pt;
+}
+
+.second-row-product {
+  margin: auto;
+  grid-area: text;
+  margin-bottom: 0%;
+  margin-top: 0%;
+  font-family: "Lusitana", serif;
+  font-weight: 400;
+  font-size: 15pt;
+}
+
+/* PRODUCT VIEW PAGE */
+
+.productimage-outer {
+  margin: auto;
+}
 
 /*row containing the alternate image column, main product image, and product info*/
 .productimage-row {
   display: flex;
   flex-direction: row;
+  width: 50%;
+  margin: auto;
+  padding-right: 0px;
 }
 
-/*contains the product i nformation, title and price */
+.productview-image {
+  flex-direction: column; /* Stack elements vertically */
+  margin: auto;
+  border-radius: 2px;
+  align-items: center;
+}
+
+/* TEXT INFORMATION PRODUCT PAGE */
+.grid-info {
+  width: 50%;
+}
+
+.first-row-pernilla {
+  font-family: "Raleway", sans-serif;
+  font-size: 17pt;
+  white-space: normal;
+  margin-left: 10%; /* Moves text right of the page */
+  margin-right: 0;
+}
+
+.second-row-pernilla {
+  margin-bottom: 0%;
+  margin-top: 0%;
+  font-family: "Lusitana", serif;
+  font-weight: 400;
+  font-size: 17pt;
+  margin-left: 10%;
+  margin-right: 0;
+}
+
+.pernilla-cup-paragraph {
+  font-family: "Lora", serif;
+  margin-left: 10%;
+  margin-right: 0;
+  font-size: 17pt;
+}
+
+.productimage-container {
+  border-radius: 2px;
+}
+
 .flex-info {
   display: flex;
   flex-direction: row;
@@ -28,10 +118,9 @@
 }
 
 /* contains the main product image */
-.productimage-container {
+.productimage-main {
   width: 100%;
   margin: 5px;
-  /* height: 200px; */
 }
 
 /* images inside the column beside the main image */
@@ -39,75 +128,4 @@
   height: 5rem;
   margin-bottom: 5px;
   margin-top: 0px;
-}
-
-/* adds roundness to images */
-.productinfo-image {
-  border-radius: 2px;
-}
-
-.productinfo-header {
-  font-size: 30px;
-  text-align: center;
-}
-
-/* making a grid of the images, three columns and a 10% gap between the images */
-
-.productinfo-cups {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10%;
-  margin: auto;
-}
-
-/* Text under each image, the margin makes the padding get less spacious */
-
-.first-row-product {
-  grid-area: text;
-  margin-right: 0%;
-  margin-top: 0%;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600; /* 600 was at bold according to google fonts */
-  font-size: 17pt;
-}
-
-.second-row-product {
-  grid-area: text;
-  margin-bottom: 0%;
-  margin-top: 0%;
-  font-family: "Lusitana", serif;
-  font-weight: 400;
-  font-size: 17pt;
-}
-
-/* PRODUCT VIEW PAGE */
-
-.productview-container {
-  width: auto;
-  margin: auto;
-  margin-top: 10%;
-}
-
-.productview-image {
-  margin: auto;
-  flex-direction: column; /* Stack elements vertically */
-
-  border-radius: 2px;
-  align-items: center;
-  max-width: 100%;
-}
-
-.first-row-pernilla {
-  /* margin-left: 80%; */
-  font-family: "Raleway", sans-serif;
-  font-weight: 600; /* 600 was at bold according to google fonts */
-  font-size: 17pt;
-}
-
-.second-row-pernilla {
-  margin-bottom: 0%;
-  margin-top: 0%;
-  font-family: "Lusitana", serif;
-  font-weight: 400;
-  font-size: 17pt;
 }
