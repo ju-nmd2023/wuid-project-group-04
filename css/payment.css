@@ -445,7 +445,7 @@ padding-left: 10px;
 .date-cvc-container {
   display: flex;
   gap: 6px;
-  margin-bottom: 5vw;
+  margin-bottom: 2vw;
 }
 
 #information-date {
@@ -454,4 +454,24 @@ padding-left: 10px;
 
 #information-cvc {
   width: 132px;
+}
+
+.info-paybtn-placement {
+  display: flex;
+  justify-content: center;
+}
+
+.info-pay-button {
+  width: 304px;
+  height: 64px;
+  font-size: 32px;
+  border: none;
+  border-radius: 5px;
+  background-color: #a0958f;
+  margin-bottom: 5vh;
+}
+
+.info-pay-button:hover {
+  background-color: #5b5552;
+  color: white;
 }
