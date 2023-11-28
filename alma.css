@@ -7,10 +7,35 @@
   height: auto;
 }
 
+.grid-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .productinfo-header {
+  font-family: "Raleway", sans-serif;
   font-size: 30px;
+  font-weight: 600;
   text-align: center;
 }
+
+/* PRODUCT INFORMATION PAGE AND ITS FILTER TEXT + ICON */
+
+.filter-text {
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  margin-left: auto;
+}
+
+.filter-icon {
+  width: 2rem;
+  float: right;
+ opacity: 0.8;
+ 
+}
+
+
 
 /* making a grid of the images, three columns and a 10% gap between the images */
 
@@ -20,6 +45,7 @@
   gap: 5%;
   margin: auto;
 }
+
 .productimage-container {
   margin: auto;
 }
@@ -32,7 +58,6 @@
   margin-right: 0%;
   margin-top: 0%;
   font-family: "Raleway", sans-serif;
-  font-weight: 600; /* 600 was at bold according to google fonts */
   font-size: 15pt;
 }
 
@@ -75,8 +100,8 @@
 
 .first-row-pernilla {
   font-family: "Raleway", sans-serif;
-  font-size: 17pt;
-  white-space: normal;
+  font-size: 20pt;
+  font-weight: 400;
   margin-left: 10%; /* Moves text right of the page */
   margin-right: 0;
 }
@@ -95,7 +120,8 @@
   font-family: "Lora", serif;
   margin-left: 10%;
   margin-right: 0;
-  font-size: 17pt;
+  font-size: 13pt;
+  font-weight: 400;
 }
 
 .productimage-container {
@@ -112,7 +138,7 @@
 .flex-subimages {
   display: flex;
   flex-direction: column;
-  /* height: 100px; */
+
   margin: 5px;
   margin-top: 0px;
 }
@@ -128,4 +154,25 @@
   height: 5rem;
   margin-bottom: 5px;
   margin-top: 0px;
+}
+
+/* RECOMMENDED */
+
+.recommended-items {
+  font-family: "Raleway", sans-serif;
+  font-size: 15pt;
+  font-weight: 400; /* regular sizing */
+  margin-top: 5%;
+  text-align: center;
+}
+
+.recommended-container {
+  margin: auto;
+}
+
+.recommended-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+  border-radius: 2px;
 }
