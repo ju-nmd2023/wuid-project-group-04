@@ -317,14 +317,20 @@ margin-right: 110px;
 
 /* CHECKOUT PAGE */
 
-/* Fix opacity for background image and look at different scales for it */
+/* When doing scaling for phone, look at color of background image and scaling like cover/contain etc. */
 
-.main-checkout {
-  background: url(img/backgrounddinner.jpeg);
+.body-checkout {
+  background: url(../img/backgrounddinner.jpeg);
   background-size: contain;
   margin: 0;
   height: 100vh;
   width: 100vw;
+}
+
+.main-checkout-container {
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  padding-top: 3%;
 }
 
 .checkout-h1 {
@@ -333,7 +339,8 @@ margin-right: 110px;
   font-weight: lighter;
   display: flex;
   justify-content: center;
-  margin-bottom: 5%;
+  margin-bottom: 5vh;
+  margin-top: 0;
 }
 
 .checkout-choices-container {
@@ -361,12 +368,17 @@ border-radius: 5px;
 background-color: rgba(164, 150, 142, 0.7);
 }
 
+.checkoutbuttons:hover {
+  background-color: rgba(103, 96, 92, 0.6);
+  color: white;
+}
+
 .login-button-checkout, .register-button {
   margin-bottom: 5%;
 }
 
 .guest-button {
   font-size: 25px;
-  margin-bottom: 60%;
+  margin-bottom: 16vh;
 }
 
