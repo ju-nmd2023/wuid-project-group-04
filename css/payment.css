@@ -16,8 +16,6 @@ footer {
 
 /* SHOPPING CART PAGE */
 
-/* Make grid system instead? */
-
 .shoppingcart-h1 {
   font-family: 'Raleway', sans-serif;
   font-size: 3vw;
@@ -460,6 +458,7 @@ padding-left: 10px;
 .info-paybtn-placement {
   display: flex;
   justify-content: center;
+  text-decoration: none;
 }
 
 .info-pay-button {
@@ -475,4 +474,39 @@ padding-left: 10px;
 .info-pay-button:hover {
   background-color: #5b5552;
   color: white;
+}
+
+
+/* PURCHASE PAGE */
+
+.purchase-h1 {
+  font-family: "raleway", sans-serif;
+  font-size: 3vw;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+}
+
+.purchase-h2 {
+  font-family: "raleway", sans-serif;
+  font-size: 2vw;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  color: rgba(00, 00, 00, 0.6);
+}
+
+.purchase-cup {
+  width: 20vw;
+  max-width: 100%;
+  margin-left: 110px;
+  margin-bottom: 200px;
+  /* grid-area: shoppingcart-cup; */
+  border-radius: 2px;
+}
+
+.purchase-alltext {
+  margin-left: 15px;
+  /* grid-area: shoppingcart-alltext; */
+  width: 100%;
 }
