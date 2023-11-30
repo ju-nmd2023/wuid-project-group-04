@@ -391,6 +391,8 @@ background-color: rgba(164, 150, 142, 0.7);
 
 /* INFORMATION PAGE */
 
+/* Check if another relative path is working */
+
 .information-body {
   background-image: url(../img/backgrounddinner.jpeg);
   background-size: contain cover;
@@ -485,6 +487,7 @@ padding-left: 10px;
   font-weight: lighter;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .purchase-h2 {
@@ -493,14 +496,19 @@ padding-left: 10px;
   font-weight: lighter;
   display: flex;
   justify-content: center;
+  text-align: center;
   color: rgba(00, 00, 00, 0.6);
 }
 
+.purchase-cup-container {
+  display: flex;
+}
+
 .purchase-cup {
-  width: 20vw;
-  max-width: 100%;
-  margin-left: 110px;
-  margin-bottom: 200px;
+  width: 12vw;
+  /* max-width: 100%; */
+  /* margin-left: 110px; */
+  /* margin-bottom: 200px; */
   /* grid-area: shoppingcart-cup; */
   border-radius: 2px;
 }
@@ -509,4 +517,50 @@ padding-left: 10px;
   margin-left: 15px;
   /* grid-area: shoppingcart-alltext; */
   width: 100%;
+}
+
+.purchase-pernilla-h2 {
+  font-family: 'raleway', sans-serif;
+margin-top: 6vh;
+margin-bottom: 2px;
+}
+
+.purchase-price {
+  margin-top: 0;
+  margin-bottom: 7vh;
+  font-family: "lusitana", serif;
+}
+
+.purchase-amount-container {
+  display: flex;
+  gap: 10px;
+}
+
+.purchase-amount {
+  font-family: 'raleway', sans-serif;
+}
+
+.purchase-amount-one {
+  font-family: "lusitana", serif;
+}
+
+.purchase-img-article-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.purchase-articlenr-container {
+  display: flex;
+  font-size: 15px;
+}
+
+.purchase-article-h4 {
+  font-family: "raleway", sans-serif;
+  font-weight: lighter;
+  margin-top: 2%;
+}
+
+.purchase-article-nr {
+  font-family: "lusitana", serif;
+  margin-top: 2%;
 }
