@@ -57,6 +57,12 @@ footer {
       font-family: 'Lusitana', serif;
   }
 
+  .shoppingcart-amount-one {
+border: 1.5px solid black;
+padding-left: 5px;
+padding-right: 5px;
+  }
+
   .shoppingcart-h2 {
     font-family: 'raleway', sans-serif;
   margin-top: 0;
@@ -435,6 +441,10 @@ background-color: rgba(164, 150, 142, 0.7);
 padding-left: 10px;
 }
 
+input:hover {
+  border: 1.5px solid darkgray;
+}
+
 .info-delivery-h2, .info-payment-h2 {
   font-family: "raleway", sans-serif;
   font-size: 2.5vw;
@@ -613,4 +623,11 @@ margin-bottom: 2px;
 
 .purchase-ordnr, .purchase-totalprice {
   font-family: "lusitana", serif;
+  font-size: 1.5vw;
 }
+
+.purchase-amount-one {
+  border: 1.5px solid black;
+  padding-left: 8px;
+  padding-right: 8px;
+    }
