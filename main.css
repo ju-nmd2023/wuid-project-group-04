@@ -13,10 +13,11 @@
     
     
     .main-header {
-    padding: 10px 10%;
     background-color: rgb(164, 150, 141);
-        height: 10vh;
-       margin: 0;
+        height: 103px;
+       margin-right: 0;
+       padding-left: 0;
+       padding-top: 0;
 
     }
     
@@ -31,13 +32,61 @@
     height: 30px;
     margin-left: 50px;
     transform: translateX(600px);
+    margin-top: -8rem;
    
     }
-    
+    .icon-bag {
+        height: 30px;
+        margin-left: 50px;
+        transform: translateX(600px);
+        margin-top: -8rem;
+    }
+
+    .icon-flag {
+        height: 30px;
+        margin-left: 50px;
+        transform: translateX(600px);
+        margin-top: -8rem;
+        margin-left: 20rem;
+}
+
+    .headericons {
+        margin-top:-2rem;
+    }
     
     .icon-searchbar {
     height: 100px;
-   margin-top: -40px;
+   
+   margin-top: -5rem;
+   margin-left:50rem;
+    }
+
+    .login-button {
+        width: 181px;
+        height: 54px;
+        background-color: rgba(217, 217, 217, 0.7);
+        border: none;
+        border-radius: 5px;
+        font-size: 27px;
+        font-weight: lighter; 
+        margin-top: -4rem;
+        margin-left: -5rem;
+    }
+
+    .login-butt {
+        display: flex;
+        justify-content: end;
+        margin-top: 0;
+    }
+
+    .icon-loga {
+        width: 400px;
+        display: flex;
+        border: none; 
+        margin-left: 30px; 
+        margin-right: 0;
+        margin: 0;
+        display: block;
     }
     
     
@@ -66,6 +115,8 @@
     .campaign-picture {
         width: 100%;
         padding-top: 10%;
+        margin: 0;
+        vertical-align: bottom;    
     }
 
     .list-header {
@@ -79,6 +130,7 @@
         background-color: rgb(75, 54, 29) ;
         margin: 0;
         padding: 1px;
+        font-family: 'Raleway', sans-serif;
     }
 
     .link-header {
@@ -91,6 +143,7 @@
         position: relative;
         text-align: center;
         color: black;
+        font-family: 'Raleway', sans-serif;
     }
 
     .centered {
@@ -99,6 +152,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 5vh;
+        font-family: 'Raleway', sans-serif;
         
     }
 
@@ -107,6 +161,7 @@
         position: relative;
         text-align: center;
         color: black;
+        font-family: 'Raleway', sans-serif;
     }
 
     .centered-bowls {
@@ -115,12 +170,14 @@
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 5vh;
+        font-family: 'Raleway', sans-serif;
     }
 
     .container-plates {
         position: relative;
         text-align: center;
         color: black;
+        font-family: 'Raleway', sans-serif;
     }
 
     .centered-plates {
@@ -129,6 +186,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 5vh;
+        font-family: 'Raleway', sans-serif;
 
     }
 
@@ -136,6 +194,8 @@
         position: relative;
         text-align: center;
         color: white;
+        margin: 0;
+        padding: 0;
     }
 
     .centered-campaign {
@@ -144,6 +204,21 @@
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 18vh;
+        letter-spacing: 15px;
+        font-family: 'Raleway', sans-serif;
+        margin-bottom: 0;
+        
+    }
+
+    .clickhere-button {
+        width: 281px;
+        height: 75px;
+        background-color: rgba(217, 217, 217, 0.7);
+        border: none;
+        border-radius: 5px;
+        font-size: 27px;
+        font-weight: lighter; 
+        margin-top: -40rem;
     }
 
     .centered-text {
@@ -151,7 +226,8 @@
         top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 5vh;
+        font-size: 4vh;
+        font-family: 'Raleway', sans-serif;
 
     }
     
@@ -162,6 +238,7 @@
         transform: translate(-50%, -50%);
         color: black;
         font-size: 3vh;
+        font-family: 'Raleway', sans-serif;
     }
 
     .text-plates {
@@ -183,7 +260,8 @@
     }
 
     .footer-headline {
-    margin-top: 10%;   
+    margin: 0; 
+     
     }
 
     .footer-aboutus {
@@ -200,17 +278,25 @@
         align-items: flex-start;
         max-width: 800px;
         margin: 0 auto;
-        gap: 35%;
+        gap: 30%;
+        padding-top: 10%;
+        font-family: 'Raleway', sans-serif;
     }
 
     .footer-textinfo {
         font-size: 17px;
+        min-width: 120px;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Raleway', sans-serif;
+        
     }
 
     .footer-member {
         margin-top: 10%;
         text-align: center;
         font-size: 35px;
+        font-family: 'Raleway', sans-serif;
     }
 
     .footer-membertext {
@@ -218,3 +304,50 @@
         font-size: 17px;
         margin-top: -1%;
     }
+
+    .footer-help {
+        max-width: 100px;
+    }
+
+    .footer-mailregister {
+       display: flex; 
+       justify-content: space-around;
+       align-items: center;
+       margin-top: 5%;
+       font-size: 17px;
+    }
+
+    .footer-line {
+        text-align: center;
+        margin-top: -2%;
+    }
+
+    .footer-policy {
+        text-align: center;
+        margin-top: 5%;
+        font-size: 17px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+   .footer-textinfo1 {
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+   }
+
+   .footer-background {
+    background-color:rgb(164, 150, 141);
+    
+    
+   }
+
+   div.footer-box {
+    border: 1px solid rgb(184, 172, 165);
+    background-color: rgb(184, 172, 165);
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 2rem;
+    
+   
+   }
+   
