@@ -500,6 +500,12 @@ padding-left: 10px;
   color: rgba(00, 00, 00, 0.6);
 }
 
+.purchase-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
 .purchase-cup-container {
   display: flex;
 }
@@ -511,10 +517,12 @@ padding-left: 10px;
   /* margin-bottom: 200px; */
   /* grid-area: shoppingcart-cup; */
   border-radius: 2px;
+  padding-right: 0;
+  margin-right: 0;
 }
 
 .purchase-alltext {
-  margin-left: 15px;
+  /* margin-left: -7vw; */
   /* grid-area: shoppingcart-alltext; */
   width: 100%;
 }
@@ -536,7 +544,7 @@ margin-bottom: 2px;
   gap: 10px;
 }
 
-.purchase-amount {
+.purchase-amount, .purchase-postagent, .purchase-icamaxi {
   font-family: 'raleway', sans-serif;
 }
 
@@ -547,11 +555,13 @@ margin-bottom: 2px;
 .purchase-img-article-container {
   display: flex;
   flex-direction: column;
+  min-width: 200px;
 }
 
 .purchase-articlenr-container {
   display: flex;
   font-size: 15px;
+  gap: 10px;
 }
 
 .purchase-article-h4 {
@@ -563,4 +573,44 @@ margin-bottom: 2px;
 .purchase-article-nr {
   font-family: "lusitana", serif;
   margin-top: 2%;
+}
+
+.purchase-ordering-h2 {
+  font-family: "raleway", sans-serif;
+  font-size: 2vw;
+  font-weight: lighter;
+  margin-bottom: 0;
+}
+
+.purchase-line {
+  margin-top: 2%;
+  margin-bottom: 0;
+}
+
+.purchase-h3 {
+  font-family: "raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1.5vw;
+}
+
+.purchase-totalamount, .purchase-order-number, .purchase-delivery {
+  display: flex;
+  gap: 10px;
+}
+
+.purchase-total-h3, .purchase-totalprice, .purchase-ordnr-h3, .purchase-ordnr {
+  margin-bottom: 1%;
+}
+
+.purchase-delivery-h3, .purchase-postagent {
+  margin-bottom: 0;
+}
+
+.purchase-icamaxi {
+  margin-top: 0;
+  margin-bottom: 15vh;
+}
+
+.purchase-ordnr, .purchase-totalprice {
+  font-family: "lusitana", serif;
 }
