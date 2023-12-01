@@ -119,7 +119,6 @@ padding-right: 5px;
   }
 }
 
-
 .dropdown-shoppingcart-container {
   display: flex;
   gap: 15px;
@@ -326,6 +325,26 @@ margin-right: 110px;
  margin: 0;
 }
 
+/* RESPONSIVE EMPTY SHOPPINGCART */
+
+@media screen and (max-width: 700px) {
+  .emptycart-h1 {
+    font-size: 5vw;
+  }
+  .emptycart-text {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .emptycart-h1 {
+    font-size: 8vw;
+  }
+  .emptycart-text {
+    font-size: 6vw;
+    text-align: center;
+  }
+}
 
 /* CHECKOUT PAGE */
 
@@ -347,8 +366,8 @@ margin-right: 110px;
 
 .checkout-h1 {
   font-family: 'Raleway', sans-serif;
-  font-size: 3vw;
-  font-weight: lighter;
+  font-size: 4vw;
+  font-weight: 400;
   display: flex;
   justify-content: center;
   margin-bottom: 5vh;
@@ -368,13 +387,15 @@ margin-right: 110px;
 
 .checkout-text {
   font-family: "raleway", sans-serif;
+  font-size: 1.5vw;
   margin-bottom: 2%;
 }
 
 .checkoutbuttons {
-  width: 304px;
-  height: 64px;
-  font-size: 32px;
+  width: 30vw;
+  height: 13vh;
+  font-size: 3vw;
+  font-weight: 400;
   border: none;
 border-radius: 5px;
 background-color: rgba(164, 150, 142, 0.7);
@@ -390,10 +411,80 @@ background-color: rgba(164, 150, 142, 0.7);
 }
 
 .guest-button {
-  font-size: 25px;
+  font-size: 2.5vw;
+  font-weight: 400;
   margin-bottom: 16vh;
 }
 
+/* RESPONSIVE CHECKOUT PAGE */
+
+@media screen and (max-width: 750px) {
+  .checkout-h1 {
+    font-size: 5vw;
+  }
+  .checkoutbuttons {
+    width: 35vw;
+    height: 12vh;
+font-size: 3.5vw;
+  }
+  .guest-button {
+    font-size: 2.5vw;
+  }
+  .checkout-text {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .checkout-h1 {
+    font-size: 6vw;
+  }
+  .checkoutbuttons {
+    width: 40vw;
+    height: 10vh;
+    font-size: 4vw;
+  }
+  .guest-button {
+    font-size: 3vw;
+  }
+  .checkout-text {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .checkout-h1 {
+    font-size: 7vw;
+  }
+  .checkoutbuttons {
+    width: 42vw;
+    height: 8vh;
+    font-size: 4.5vw;
+  }
+  .guest-button {
+    font-size: 3vw;
+  }
+  .checkout-text {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .checkout-h1 {
+    font-size: 8vw;
+  }
+  .checkoutbuttons {
+    width: 48vw;
+    height: 7vh;
+    font-size: 5vw;
+  }
+  .guest-button {
+    font-size: 4vw;
+  }
+  .checkout-text {
+    font-size: 3vw;
+  }
+}
 
 /* INFORMATION PAGE */
 
@@ -428,8 +519,6 @@ background-color: rgba(164, 150, 142, 0.7);
   margin: 0;
  justify-items: center;
 }
-
-/* Put in hover effect for input fields */
 
 .information-inputs input {
   width: 367px;
