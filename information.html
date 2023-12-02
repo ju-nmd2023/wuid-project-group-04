@@ -1,68 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vett & etikett</title>
 
     <link rel="stylesheet" href="css/payment.css" />
+    <script src="information.js" defer></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lusitana&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lusitana&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-</head>
-<body class="information-body">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="information-body">
     <header></header>
 
     <main class="information-main">
-        <h1 class="information-h1">YOUR INFORMATION</h1>
+      <h1 class="information-h1">YOUR INFORMATION</h1>
 
-<form class="information-inputs">
-    <input type="email" placeholder="E-MAIL*" required>
-    <input type="text" placeholder="NAME*" required>
-    <input type="text" placeholder="ADRESS*" required>
-    <input type="text" placeholder="POSTAL CODE*" required>
-    <input type="text" placeholder="LOCALITY*" required>
-    <input type="text" placeholder="CITY*" required>
-    <input type="text" placeholder="COUNTRY*" required>
-    <input type="tel" placeholder="TELEPHONE NUMBER">
-    
-    <h2 class="info-delivery-h2">DELIVERY</h2>
-    
-    <section>
-        
-    </section>
-    
-    <h2 class="info-payment-h2">PAYMENT</h2>
-    
-    <section class="information-inputs">
-        <input type="text" placeholder="NAME*" required>
-        <input type="text" placeholder="CARD NUMBER*" required>
-        <div class="date-cvc-container">
-            <input id="information-date" type="text" placeholder="MONTH*/YEAR*" required>
-            <input id="information-cvc" type="text" placeholder="CVC*" required>
-        </div>
-    </section>
-    
-    <a href="purchase.html" class="info-paybtn-placement">
-        <button class="info-pay-button">PAY</button>
-    </a>
-</form>
+      <form class="information-inputs">
+        <input type="email" placeholder="E-MAIL*" inputmode="email" required />
+        <input type="text" placeholder="NAME*" required />
+        <input type="text" placeholder="ADRESS*" required />
+        <input
+          type="text"
+          placeholder="POSTAL CODE*"
+          inputmode="numeric"
+          required
+        />
+        <input type="text" placeholder="LOCALITY*" required />
+        <input type="text" placeholder="CITY*" required />
+        <input type="text" placeholder="COUNTRY*" required />
+        <input type="tel" placeholder="TELEPHONE NUMBER" />
 
+        <h2 class="info-delivery-h2">DELIVERY</h2>
+
+        <section>
+          <div class="flex redborder">
+            <input type="radio" />
+            <div>
+              <h5>POSTAL AGENT</h5>
+              <p>Free shipping</p>
+              <p>2-3 working days</p>
+              <div class="dropdown delivery-location-container">
+                <button type="button" id="select-delivery-location">
+                  Select delivery location
+                </button>
+                <div class="dropdown-content">
+                  <div class="delivery-location-card">
+                    <p>Maxi ICA Stormarknad</p>
+                    <p>Jönköping,</p>
+                    <p>Herkulesvägen 7</p>
+                    <p>Free shipping</p>
+                  </div>
+                  <div class="delivery-location-card">
+                    <p>Coop Östra torget</p>
+                    <p>Jönköping,</p>
+                    <p>Rökerigränd 5</p>
+                    <p>Free shipping</p>
+                  </div>
+                </div>
+              </div>
+              <!-- <select id="select-delivery-location">
+                <option value="">
+                  Maxi ICA Stormarknad <br />Jönköping, <br />Herkulesvägen 7
+                  <br />Free shipping
+                </option>
+                <option value="">
+                  Coop Östra torget <br />Jönköping, <br />
+                </option>
+              </select> -->
+            </div>
+          </div>
+        </section>
+
+        <h2 class="info-payment-h2">PAYMENT</h2>
+
+        <section class="information-inputs">
+          <input type="text" placeholder="NAME*" required />
+          <input type="text" placeholder="CARD NUMBER*" required />
+          <div class="date-cvc-container">
+            <input
+              id="information-date"
+              type="text"
+              placeholder="MM/YY*"
+              inputmode="numeric"
+              required
+            />
+            <input
+              id="information-cvc"
+              type="text"
+              placeholder="CVC*"
+              required
+            />
+          </div>
+        </section>
+
+        <a href="purchase.html" class="info-paybtn-placement">
+          <button class="info-pay-button">PAY</button>
+        </a>
+      </form>
     </main>
 
     <footer></footer>
-    
-</body>
+  </body>
 </html>
