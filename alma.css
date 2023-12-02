@@ -1,3 +1,8 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
 /* PRODUCT INFORMATION PAGE */
 
 /* adds roundness to images */
@@ -7,31 +12,116 @@
   height: auto;
 }
 
-.grid-header {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
 .productinfo-header {
   font-family: "Raleway", sans-serif;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 200;
   text-align: center;
 }
 
 /* PRODUCT INFORMATION PAGE AND ITS FILTER TEXT + ICON */
+
+.grid-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: auto;
+  padding: auto;
+}
 
 .filter-text {
   font-size: 25px;
   font-family: "Raleway", sans-serif;
   font-weight: 100;
   margin-left: auto;
+  border: none;
+  outline: none;
+  background-color: #fff;
 }
 
 .filter-icon {
   width: 2rem;
   float: right;
   opacity: 0.8;
+}
+
+.filter-text:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Style the drop-down panel. Note: hidden by default */
+
+.inside-filter {
+  width: 100%;
+  height: 20rem;
+  margin: auto;
+  background-color: rgb(0, 102, 51);
+  position: absolute; /* The solution I found for getting the border box over the images WITHOUT it affecting the background. */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.inside-filter-text {
+  font-family: "Raleway", sans-serif;
+  margin-top: 10px;
+  color: #fff;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+
+/* price slider */
+
+.price-slider {
+  margin-top: 5%;
+  width: 40%;
+}
+
+.flex-currency {
+  display: flex;
+  gap: 20%;
+  margin: auto;
+  font-size: 15px;
+}
+
+.fifty-sek {
+  margin-left: 30%;
+}
+
+/* sort by */
+.sorting-flexbox {
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+
+.sorting-tag {
+  text-align: left;
+  margin: auto;
+  margin-left: 33%;
+  margin-top: 5%;
+}
+
+.most-popular {
+  text-align: left;
+  margin-top: 15%;
+  font-size: 20px;
+}
+
+/*hello */
+
+.circle-container {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.filter-hidden {
+  display: none;
 }
 
 /* making a grid of the images, three columns and a 10% gap between the images */
@@ -135,7 +225,6 @@
 .flex-subimages {
   display: flex;
   flex-direction: column;
-
   margin: 5px;
   margin-top: 0px;
 }
@@ -158,7 +247,7 @@
 .recommended-items {
   font-family: "Raleway", sans-serif;
   font-size: 15pt;
-  font-weight: 400; /* regular sizing */
+  font-weight: 400;
   margin-top: 5%;
   text-align: center;
 }
