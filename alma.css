@@ -67,10 +67,61 @@ body {
   margin-top: 10px;
   color: #fff;
   font-size: 20px;
+  font-weight: 800;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
 }
+
+/* colour options */
+
+
+/* flex on colour text two rows */
+
+.colour-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 5%;
+  
+}
+ 
+
+.circle {
+text-align: left;
+margin-top: 5%;
+margin-bottom: 10%;
+margin-left: 33%;
+font-size: 20px;
+font-weight: 500;
+}
+
+.checkbox-flex {
+  margin-right: 5%;
+  width: 20px;
+  height: 15px;
+}
+
+.red-circle {
+  color: rgb(223, 31, 31)
+}
+
+.blue-circle {
+  color: blue;
+}
+
+.black-circle {
+  color: black;
+}
+
+.beige-circle {
+  color: rgb(233, 188, 133);
+}
+
+.multicolour-circle {
+  color: magenta;
+}
+
+
 
 /* price slider */
 
@@ -84,6 +135,7 @@ body {
   gap: 20%;
   margin: auto;
   font-size: 15px;
+  font-weight: 500;
 }
 
 .fifty-sek {
@@ -102,22 +154,26 @@ body {
   margin: auto;
   margin-left: 33%;
   margin-top: 5%;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .most-popular {
-  text-align: left;
-  margin-top: 15%;
-  font-size: 20px;
+  margin: 10%;
+
 }
 
-/*hello */
+.lowest-price {
+  margin: 10%;
+}
 
-.circle-container {
-  font-family: "Raleway", sans-serif;
-  color: #fff;
-  font-size: 17px;
-  font-weight: 100;
-  text-align: center;
+.highest-price {
+  margin: 10%;
+}
+
+.checkbox-sort {
+  width: 20px;
+  height: 15px;
 }
 
 .filter-hidden {
