@@ -114,9 +114,10 @@
     
     .campaign-picture {
         width: 100%;
-        padding-top: 10%;
+        padding-top: 0%;
         margin: 0;
-        vertical-align: bottom;    
+        vertical-align: bottom; 
+        margin-top: 8rem;  
     }
 
     .list-header {
@@ -152,8 +153,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 5vh;
-        font-family: 'Raleway', sans-serif;
-        
+        font-family: 'Raleway', sans-serif;     
     }
 
 
@@ -187,7 +187,6 @@
         transform: translate(-50%, -50%);
         font-size: 5vh;
         font-family: 'Raleway', sans-serif;
-
     }
 
     .container-campaign {
@@ -218,7 +217,7 @@
         border-radius: 5px;
         font-size: 27px;
         font-weight: lighter; 
-        margin-top: -40rem;
+        margin-top: -35rem;
     }
 
     .centered-text {
@@ -238,7 +237,7 @@
         transform: translate(-50%, -50%);
         color: black;
         font-size: 3vh;
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Raleway', sans-serif;     
     }
 
     .text-plates {
