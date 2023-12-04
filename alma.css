@@ -14,9 +14,21 @@ body {
 
 .productinfo-header {
   font-family: "Raleway", sans-serif;
+  animation-name: myanimation;
+  animation-duration: 5s;
+  animation-timing-function: linear;
   font-size: 30px;
   font-weight: 200;
   text-align: center;
+}
+
+@keyframes myanimation {
+  0% {
+    text-shadow: 0px -5px rgb(0, 102, 51);
+  }
+  25% {
+    text-shadow: 0px 0px rgb(0, 102, 51);
+  }
 }
 
 /* PRODUCT INFORMATION PAGE AND ITS FILTER TEXT + ICON */
@@ -51,7 +63,7 @@ body {
 
 /* Style the drop-down panel. Note: hidden by default */
 
-.inside-filter {
+#inside-filter {
   width: 100%;
   height: 20rem;
   margin: auto;
@@ -60,11 +72,7 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-
-.inside-filter-text {
   font-family: "Raleway", sans-serif;
-  margin-top: 10px;
   color: #fff;
   font-size: 20px;
   font-weight: 800;
@@ -75,34 +83,37 @@ body {
 
 /* colour options */
 
-
 /* flex on colour text two rows */
 
 .colour-options {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 5%;
-  
 }
- 
+
+.colour-column {
+}
+
+.colour-container {
+  display: inline-block;
+  margin: 0 auto;
+}
 
 .circle {
-text-align: left;
-margin-top: 5%;
-margin-bottom: 10%;
-margin-left: 33%;
-font-size: 20px;
-font-weight: 500;
+  text-align: left;
+  margin-bottom: 40%;
+  font-size: 20px;
+  font-weight: 500;
+  white-space: nowrap;
 }
 
 .checkbox-flex {
-  margin-right: 5%;
   width: 20px;
   height: 15px;
 }
 
 .red-circle {
-  color: rgb(223, 31, 31)
+  color: rgb(223, 31, 31);
 }
 
 .blue-circle {
@@ -120,8 +131,6 @@ font-weight: 500;
 .multicolour-circle {
   color: magenta;
 }
-
-
 
 /* price slider */
 
@@ -143,41 +152,38 @@ font-weight: 500;
 }
 
 /* sort by */
+#sort-by-container {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.sort-by-item {
+  margin-top: 15%;
+  text-align: left;
+}
+
 .sorting-flexbox {
   display: flex;
   margin: auto;
-  align-items: center;
+  text-align: left;
 }
 
-.sorting-tag {
-  text-align: left;
+.filter-type-title {
+  text-align: center;
   margin: auto;
-  margin-left: 33%;
   margin-top: 5%;
   font-size: 20px;
   font-weight: 500;
 }
 
-.most-popular {
-  margin: 10%;
-
-}
-
-.lowest-price {
-  margin: 10%;
-}
-
-.highest-price {
-  margin: 10%;
-}
-
 .checkbox-sort {
   width: 20px;
   height: 15px;
+  margin: 0;
 }
 
 .filter-hidden {
-  display: none;
+  display: none !important;
 }
 
 /* making a grid of the images, three columns and a 10% gap between the images */
@@ -317,4 +323,90 @@ font-weight: 500;
   grid-template-columns: 1fr 1fr 1fr;
   margin: auto;
   border-radius: 2px;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 700px) {
+  .productinfo-cups {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* changing the header font-size and alignment */
+  .productinfo-header {
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  /* filter header removing icon and smaller font-size */
+
+  .inside-filter {
+    height: 100%;
+  }
+
+  /* changing the grid of filter text in 2 rows */
+
+  .inside-filter-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  #filter-text {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .filter-icon {
+    display: none;
+  }
+
+  /* price slider changing format */
+
+  .price-slider {
+    width: 80%;
+    margin: auto;
+  }
+  .flex-currency {
+    font-size: 13px;
+    margin-right: 25%;
+  }
+
+  /* Changing the color tag and everything under it */
+
+  .colour-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5%;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .circle {
+    text-align: left;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 0;
+  }
+
+  .checkbox-flex {
+    align-items: center;
+  }
+
+  /* changing product information text, font-size */
+
+  .first-row-product {
+    margin: auto;
+    font-size: 15px;
+  }
+
+  .second-row-product {
+    margin: auto;
+    font-size: 12px;
+  }
 }
