@@ -88,7 +88,7 @@ body {
 .colour-options {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 .colour-column {
@@ -101,7 +101,7 @@ body {
 
 .circle {
   text-align: left;
-  margin-bottom: 40%;
+  margin-bottom: 25%;
   font-size: 20px;
   font-weight: 500;
   white-space: nowrap;
@@ -353,7 +353,7 @@ body {
 
 /* MEDIA QUERY */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 500px) {
   .productinfo-cups {
     display: grid;
     grid-template-columns: 1fr 1fr;
