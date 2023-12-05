@@ -326,7 +326,7 @@ body {
 
 .emptycart-h1 {
   font-family: "Raleway", sans-serif;
-  font-size: 3vw;
+  font-size: 5rem;
   font-weight: lighter;
   display: flex;
   justify-content: center;
@@ -339,28 +339,74 @@ body {
   align-items: center;
   font-family: "raleway", sans-serif;
   font-weight: lighter;
-  font-size: 2.5vw;
+  font-size: 3rem;
   height: 100%;
-  margin: 0;
+  padding: 10px;
 }
 
 /* RESPONSIVE EMPTY SHOPPINGCART */
 
-@media screen and (max-width: 700px) {
-  .emptycart-h1 {
-    font-size: 5vw;
-  }
+@media screen and (max-width: 1200px) {
   .emptycart-text {
-    font-size: 4vw;
+    font-size: 2.5rem;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 960px) {
   .emptycart-h1 {
-    font-size: 8vw;
+    font-size: 4rem;
   }
   .emptycart-text {
-    font-size: 6vw;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .emptycart-h1 {
+    font-size: 3.5rem;
+  }
+  .emptycart-text {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .emptycart-h1 {
+    font-size: 3.5rem;
+  }
+  .emptycart-text {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .emptycart-h1 {
+    font-size: 2.5rem;
+  }
+  .emptycart-text {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .emptycart-h1 {
+    font-size: 2.2rem;
+  }
+  .emptycart-text {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .emptycart-h1 {
+    font-size: 2rem;
+  }
+  .emptycart-text {
+    font-size: 1.5rem;
     text-align: center;
   }
 }
@@ -537,7 +583,7 @@ body {
   justify-items: center;
 }
 
-.information-inputs input {
+.input {
   width: 367px;
   height: 38px;
   border-radius: 5px;
@@ -607,6 +653,44 @@ input:hover {
 .info-pay-button:hover {
   background-color: #5b5552;
   color: white;
+}
+
+.radio-info {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.postagent-h5 {
+  font-family: "raleway", sans-serif;
+  font-size: 1rem;
+  margin: 2%;
+  width: 200px;
+}
+
+.postagent-p {
+  font-family: "raleway", sans-serif;
+  font-size: 1rem;
+  margin: 2%;
+  margin-bottom: 4%;
+}
+
+.postagent-container {
+  background-color: rgba(164, 150, 142, 0.7);
+  padding: 15px;
+  border-radius: 5px;
+  width: 15rem;
+}
+
+.postagent-options {
+  width: 175px;
+  background-color: #979191;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+.homedelivery-container {
+  width: 15rem;
 }
 
 /* PURCHASE PAGE */

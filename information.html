@@ -41,30 +41,77 @@
       <h1 class="information-h1">YOUR INFORMATION</h1>
 
       <form class="information-inputs">
-        <input type="email" placeholder="E-MAIL*" inputmode="email" required />
-        <input type="text" placeholder="NAME*" required />
-        <input type="text" placeholder="ADRESS*" required />
         <input
+          class="input"
+          type="email"
+          placeholder="E-MAIL*"
+          inputmode="email"
+          required
+        />
+        <input class="input" type="text" placeholder="NAME*" required />
+        <input class="input" type="text" placeholder="ADRESS*" required />
+        <input
+          class="input"
           type="text"
           placeholder="POSTAL CODE*"
           inputmode="numeric"
           required
         />
-        <input type="text" placeholder="LOCALITY*" required />
-        <input type="text" placeholder="CITY*" required />
-        <input type="text" placeholder="COUNTRY*" required />
-        <input type="tel" placeholder="TELEPHONE NUMBER" />
+        <input class="input" type="text" placeholder="LOCALITY*" required />
+        <input class="input" type="text" placeholder="CITY*" required />
+        <input class="input" type="text" placeholder="COUNTRY*" required />
+        <input class="input" type="tel" placeholder="TELEPHONE NUMBER" />
 
         <h2 class="info-delivery-h2">DELIVERY</h2>
 
-        <section>
-          <div class="flex redborder">
-            <input type="radio" />
+        <section class="postagent-container">
+          <div class="flex">
+            <input
+              type="radio"
+              name="deliverygroup"
+              value="Post agent"
+              class="radio-info"
+            />
+
             <div>
-              <h5>POSTAL AGENT</h5>
-              <p>Free shipping</p>
-              <p>2-3 working days</p>
-              <div class="dropdown delivery-location-container">
+              <h5 class="postagent-h5">POSTAL AGENT</h5>
+              <p class="postagent-p">Free shipping</p>
+              <p class="postagent-p">2-3 working days</p>
+              <select class="postagent-options">
+                <option disabled selected>Select delivery location</option>
+                <option>
+                  <p>
+                    Maxi ICA Stormarknad, Herkulesvägen 7, Jönköping, Free
+                    shipping
+                  </p>
+                </option>
+                <option>
+                  <p>
+                    Coop Östra torget, Rökerigränd 5, Jönköping, Free shipping
+                  </p>
+                </option>
+              </select>
+            </div>
+          </div>
+        </section>
+
+        <section class="postagent-container homedelivery-container">
+          <div class="flex">
+            <input
+              type="radio"
+              name="deliverygroup"
+              value="Home delivery"
+              class="radio-info"
+              required
+            />
+            <div>
+              <h5 class="postagent-h5">HOME DELIVERY</h5>
+              <p class="postagent-p">25 SEK</p>
+              <p class="postagent-p">2-3 working days</p>
+            </div>
+          </div>
+        </section>
+        <!-- <div class="dropdown delivery-location-container">
                 <button type="button" id="select-delivery-location">
                   Select delivery location
                 </button>
@@ -82,27 +129,16 @@
                     <p>Free shipping</p>
                   </div>
                 </div>
-              </div>
-              <!-- <select id="select-delivery-location">
-                <option value="">
-                  Maxi ICA Stormarknad <br />Jönköping, <br />Herkulesvägen 7
-                  <br />Free shipping
-                </option>
-                <option value="">
-                  Coop Östra torget <br />Jönköping, <br />
-                </option>
-              </select> -->
-            </div>
-          </div>
-        </section>
+              </div> -->
 
         <h2 class="info-payment-h2">PAYMENT</h2>
 
         <section class="information-inputs">
-          <input type="text" placeholder="NAME*" required />
-          <input type="text" placeholder="CARD NUMBER*" required />
+          <input class="input" type="text" placeholder="NAME*" required />
+          <input class="input" type="text" placeholder="CARD NUMBER*" />
           <div class="date-cvc-container">
             <input
+              class="input"
               id="information-date"
               type="text"
               placeholder="MM/YY*"
@@ -110,6 +146,7 @@
               required
             />
             <input
+              class="input"
               id="information-cvc"
               type="text"
               placeholder="CVC*"
