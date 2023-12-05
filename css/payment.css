@@ -68,7 +68,7 @@ body {
 .horizontal-stack {
   display: flex;
   gap: 10px;
-  margin-bottom: 5%;
+  margin-bottom: 65%;
 }
 
 .shoppingcart-cup {
@@ -367,14 +367,12 @@ body {
 
 /* CHECKOUT PAGE */
 
-/* When doing scaling for phone, look at color of background image and scaling like cover/contain etc. */
-
 .body-checkout {
   background-image: url(../img/backgrounddinner.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
-  height: 100vh;
+  height: 100%;
 }
 
 .main-checkout-container {
@@ -385,7 +383,7 @@ body {
 
 .checkout-h1 {
   font-family: "Raleway", sans-serif;
-  font-size: 4vw;
+  font-size: 5rem;
   font-weight: 400;
   display: flex;
   justify-content: center;
@@ -407,14 +405,14 @@ body {
 
 .checkout-text {
   font-family: "raleway", sans-serif;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   margin-bottom: 2%;
 }
 
 .checkoutbuttons {
-  width: 30vw;
-  height: 13vh;
-  font-size: 3vw;
+  width: 30rem;
+  height: 5rem;
+  font-size: 3.5rem;
   font-weight: 400;
   border: none;
   border-radius: 5px;
@@ -433,7 +431,7 @@ body {
 }
 
 .guest-button {
-  font-size: 2.5vw;
+  font-size: 2.5rem;
   font-weight: 400;
   margin-bottom: 16vh;
 }
@@ -441,70 +439,67 @@ body {
 /* RESPONSIVE CHECKOUT PAGE */
 
 @media screen and (max-width: 750px) {
-  .checkout-h1 {
-    font-size: 5vw;
-  }
   .checkoutbuttons {
-    width: 35vw;
-    height: 12vh;
-    font-size: 3.5vw;
+    width: 25rem;
+    height: 5rem;
+    font-size: 3rem;
   }
   .guest-button {
-    font-size: 2.5vw;
+    font-size: 2rem;
   }
   .checkout-text {
-    font-size: 2vw;
+    font-size: 1.5rem;
   }
 }
 
 @media screen and (max-width: 600px) {
   .checkout-h1 {
-    font-size: 6vw;
+    font-size: 4rem;
   }
   .checkoutbuttons {
-    width: 40vw;
-    height: 10vh;
-    font-size: 4vw;
+    width: 20rem;
+    height: 4rem;
+    font-size: 2.5rem;
   }
   .guest-button {
-    font-size: 3vw;
+    font-size: 1.5rem;
   }
   .checkout-text {
-    font-size: 2.5vw;
+    font-size: 1.2rem;
   }
 }
 
 @media screen and (max-width: 450px) {
   .checkout-h1 {
-    font-size: 7vw;
+    font-size: 3.5rem;
   }
   .checkoutbuttons {
-    width: 42vw;
-    height: 8vh;
-    font-size: 4.5vw;
+    width: 17rem;
+    height: 4rem;
+    font-size: 2rem;
   }
   .guest-button {
-    font-size: 3vw;
+    font-size: 1.5rem;
   }
   .checkout-text {
-    font-size: 3vw;
+    font-size: 1.1rem;
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
   .checkout-h1 {
-    font-size: 8vw;
+    font-size: 3rem;
   }
   .checkoutbuttons {
-    width: 48vw;
-    height: 7vh;
-    font-size: 5vw;
+    width: 15rem;
+    height: 3.5rem;
+    font-size: 2rem;
   }
   .guest-button {
-    font-size: 4vw;
+    font-size: 1.2rem;
   }
   .checkout-text {
-    font-size: 3vw;
+    font-size: 1rem;
   }
 }
 
@@ -515,7 +510,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
-  height: 150vh;
+  height: 100%;
 }
 
 /*  TODO: fix image */
@@ -641,25 +636,16 @@ input:hover {
   justify-items: center;
 }
 
-/* .purchase-cup-container {
-  display: flex;
-} */
-
 .purchase-cup {
   width: 12vw;
-  /* max-width: 100%; */
-  /* margin-left: 110px; */
-  /* margin-bottom: 200px; */
-  /* grid-area: shoppingcart-cup; */
   border-radius: 2px;
   padding-right: 0;
   margin-right: 0;
 }
 
 .purchase-alltext {
-  /* margin-left: -7vw; */
-  /* grid-area: shoppingcart-alltext; */
   width: 100%;
+  margin-top: 15%;
 }
 
 .purchase-pernilla-h2 {
@@ -753,15 +739,24 @@ input:hover {
   margin-bottom: 0;
 }
 
+.purchase-postagent {
+  font-size: 5vh;
+  display: flex;
+  align-items: end;
+}
+
 .purchase-icamaxi {
   margin-top: 0;
   margin-bottom: 15vh;
+  font-size: 5vh;
 }
 
 .purchase-ordnr,
 .purchase-totalprice {
   font-family: "lusitana", serif;
-  font-size: 1.5vw;
+  font-size: 5vh;
+  display: flex;
+  align-items: end;
 }
 
 .purchase-amount-one {
