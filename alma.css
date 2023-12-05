@@ -136,19 +136,42 @@ body {
 
 .price-slider {
   margin-top: 5%;
-  width: 40%;
+  width: 70%;
+}
+
+.price-options {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.price-slider-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Display children in a column */
+  align-items: center; /* Optional: Center items horizontally */
 }
 
 .flex-currency {
-  display: flex;
-  gap: 20%;
-  margin: auto;
+  /* display: flex;
+  gap: 80%;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: auto;
+  padding: 0;
   font-size: 15px;
   font-weight: 500;
 }
 
 .fifty-sek {
-  margin-left: 30%;
+  text-align: left;
+}
+
+.three-sek {
+  text-align: right;
 }
 
 /* sort by */
@@ -168,10 +191,13 @@ body {
   text-align: left;
 }
 
+/* THE THREE HEADERS IN THE FILTER BOX */
+
 .filter-type-title {
-  text-align: center;
+  /* text-align: center; */
   margin: auto;
   margin-top: 5%;
+  margin-bottom: 5%;
   font-size: 20px;
   font-weight: 500;
 }
@@ -184,7 +210,7 @@ body {
 
 .filter-hidden {
   display: none !important;
-}
+} /* The !important tag prioritizes conflicting styles which made me solve the issue of not being able to exit the  filter-page. */
 
 /* making a grid of the images, three columns and a 10% gap between the images */
 
@@ -342,13 +368,15 @@ body {
 
   /* filter header removing icon and smaller font-size */
 
-  .inside-filter {
-    height: 100%;
+  #inside-filter {
+    height: min-content;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
   }
 
   /* changing the grid of filter text in 2 rows */
 
-  .inside-filter-text {
+  #inside-filter {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -371,9 +399,21 @@ body {
     margin: auto;
   }
   .flex-currency {
-    font-size: 13px;
-    margin-right: 25%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    padding: 0;
+    font-size: 15px;
+    font-weight: 500;
   }
+  /* 
+  .fifty-sek {
+    text-align: left;
+  }
+
+  .three-sek {
+    text-align: right;
+  } */
 
   /* Changing the color tag and everything under it */
 
@@ -388,8 +428,8 @@ body {
   .circle {
     text-align: left;
     margin-top: 5%;
-    margin-bottom: 10%;
-    font-size: 15px;
+    margin-bottom: 25%;
+    font-size: 20px;
     font-weight: 600;
     margin-left: 0;
   }
