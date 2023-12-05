@@ -1,8 +1,18 @@
+// FUNCTIONING DROPDOWN //
+
 document
   .getElementById("descriptionButton")
   .addEventListener("click", function () {
     this.nextElementSibling.classList.toggle("dropdown-show-content");
   });
+
+document
+  .getElementById("careInstructionsButton")
+  .addEventListener("click", function () {
+    this.nextElementSibling.classList.toggle("dropdown-show-content");
+  });
+
+// VALIDATING DISCOUNT CODE //
 
 document
   .getElementById("addDiscountButton")
