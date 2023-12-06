@@ -1,14 +1,14 @@
 /* HELPER */
 .redborder {
-  border: 1px solid red !important;
+  border: 2px solid red !important;
 }
 
-.yellowborder {
-  border: 1px solid yellow;
+.greenborder {
+  border: 2px solid green;
 }
 
 .blueborder {
-  border: 1px solid blue;
+  border: 2px solid blue;
 }
 
 /* HEADER AND FOOTER PLACEHOLDER */
