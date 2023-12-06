@@ -18,8 +18,8 @@
 
 .information-h1 {
   font-family: "raleway", sans-serif;
-  font-size: 3vw;
-  font-weight: lighter;
+  font-size: 3rem;
+  font-weight: 400;
   display: flex;
   justify-content: center;
 }
@@ -33,8 +33,8 @@
 }
 
 .input {
-  width: 367px;
-  height: 38px;
+  width: 23rem;
+  height: 2.5rem;
   border-radius: 5px;
   border: 1px solid lightgray;
   font-size: 100%;
@@ -49,7 +49,7 @@ input:hover {
 .info-delivery-h2,
 .info-payment-h2 {
   font-family: "raleway", sans-serif;
-  font-size: 2.5vw;
+  font-size: 2.5rem;
   font-weight: lighter;
   display: flex;
   justify-content: center;
@@ -70,16 +70,16 @@ input:hover {
 
 .date-cvc-container {
   display: flex;
-  gap: 6px;
-  margin-bottom: 2vw;
+  gap: 3%;
+  margin-bottom: 2vh;
 }
 
 #information-date {
-  width: 215px;
+  width: 15rem;
 }
 
 #information-cvc {
-  width: 132px;
+  width: 7rem;
 }
 
 .info-paybtn-placement {
@@ -89,9 +89,9 @@ input:hover {
 }
 
 .info-pay-button {
-  width: 304px;
-  height: 64px;
-  font-size: 32px;
+  width: 18rem;
+  height: 4rem;
+  font-size: 2rem;
   border: none;
   border-radius: 5px;
   background-color: #a0958f;
@@ -114,7 +114,7 @@ input:hover {
   font-family: "raleway", sans-serif;
   font-size: 1rem;
   margin: 2%;
-  width: 200px;
+  width: 20rem;
 }
 
 .postagent-p {
@@ -126,13 +126,13 @@ input:hover {
 
 .postagent-container {
   background-color: rgba(164, 150, 142, 0.7);
-  padding: 15px;
+  padding: 1%;
   border-radius: 5px;
   width: 15rem;
 }
 
 .postagent-options {
-  width: 175px;
+  width: 12rem;
   background-color: #979191;
   border-radius: 5px;
   padding: 4px;
@@ -140,4 +140,43 @@ input:hover {
 
 .homedelivery-container {
   width: 15rem;
+}
+
+@media screen and (max-width: 620px) {
+  .information-h1 {
+    font-size: 2.5rem;
+  }
+  .input {
+    width: 20rem;
+  }
+  #information-date {
+    width: 12rem;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .information-h1 {
+    font-size: 2rem;
+  }
+  .input {
+    width: 18rem;
+  }
+  #information-date {
+    width: 12rem;
+  }
+  #information-cvc {
+    width: 5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .input {
+    width: 16rem;
+  }
+  #information-date {
+    width: 12rem;
+  }
+  #information-cvc {
+    width: 3rem;
+  }
 }
