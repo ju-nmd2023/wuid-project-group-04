@@ -323,13 +323,16 @@ body {
 /* BUTTONS DELIVERY AND CARE INSTRUCTIONS, PRODUCT VIEW PAGE */
 
 .horizontal-stack {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  width: min-content;
   text-align: center;
   margin-top: 5%;
+  margin-left: 10%;
 }
-.description-button {
-  display: flex;
-  width: 151px;
+.green-button {
+  width: min-content;
+  white-space: nowrap;
   height: 36px;
   font-size: 15px;
   align-items: center;
@@ -339,26 +342,17 @@ body {
   color: white;
   border: none;
   cursor: pointer;
-  padding-left: 5%;
-}
-
-.careinstructions-button {
-  display: flex;
-  width: 204px;
-  height: 36px;
-  font-size: 15px;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 5px;
-  border: none;
-  background-color: #006633;
-  color: white;
-  cursor: pointer;
-  padding-left: 5%;
+  padding: 0 1rem;
 }
 
 .dropdown {
   display: inline-block;
+  margin-right: 2%;
+}
+
+.dropdownButtons {
+  display: flex;
+  flex-direction: row;
 }
 
 .dropdown-content {
@@ -383,20 +377,31 @@ body {
 
 /* add to cart button */
 
+.add-to-cart-container {
+  display: inline-block;
+  text-align: center;
+  margin-left: 10%;
+}
+
 #add-to-cart-button {
   text-align: center;
-  margin-top: 10%;
+  margin-top: 20%;
   display: flex;
-  width: 151px;
-  height: 36px;
+  width: min-content;
+  white-space: nowrap;
+  height: 40px;
   font-size: 15px;
   align-items: center;
   justify-content: space-between;
+  width: min-content;
+  padding: 0 1rem;
+  white-space: nowrap;
   border-radius: 5px;
   background-color: #006633;
   color: white;
   border: none;
   cursor: pointer;
+  padding: 0 1.5rem;
 }
 
 /* RECOMMENDED */
@@ -558,16 +563,28 @@ body {
     flex-direction: column; /* Stack items vertically on smaller screens */
     align-items: center;
     text-align: center;
+    margin: 0;
+  }
+
+  .dropdownButtons,
+  .add-to-cart-container,
+  .first-row-pernilla,
+  .second-row-pernilla {
+    margin-left: 0;
   }
 
   .grid-info {
     max-width: 800px; /* Set a maximum width for the text content */
+    width: 100%;
     margin-top: 10px; /* Add spacing between the image and text */
+    margin: 0 auto;
+    align-items: center;
   }
 
   .pernilla-cup-paragraph {
     line-break: normal;
     font-size: 20px;
+    margin: 5%;
   }
 
   .recommended-images {
@@ -579,5 +596,14 @@ body {
     #mickan-hidden {
       display: none;
     }
+  }
+
+  /* button alignment */
+
+  .horizontal-stack {
+    width: min-content;
+    margin-left: 0%;
+    margin: auto;
+    align-items: center;
   }
 }
