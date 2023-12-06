@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="dropdown.js" defer></script>
     <link rel="stylesheet" href="alma.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,26 +18,28 @@
     <h1 class="productinfo-header">CUPS</h1>
 
     <div class="productimage-outer">
-      <figure class="productimage-row">
-        <div class="flex-subimages">
-          <img
-            src="images/pernilla1st.png"
-            class="sub-image"
-            alt="Another image Pernilla cup"
-          />
-          <img
-            src="images/pernilla2nd.png"
-            class="sub-image"
-            alt="Another image Pernilla cup"
-          />
-        </div>
-        <a>
+      <div class="productimage-row">
+        <div class="sub-images-align">
+          <div class="flex-subimages">
+            <img
+              src="images/pernilla1st.png"
+              class="sub-image"
+              alt="Another image Pernilla cup"
+            />
+            <img
+              src="images/pernilla2nd.png"
+              class="sub-image"
+              alt="Another image Pernilla cup"
+            />
+          </div>
+
           <img
             class="productview-image"
             src="images/Pernilla desktop.png"
             alt="Pernilla"
           />
-        </a>
+        </div>
+
         <div class="grid-info">
           <p class="first-row-pernilla">PERNILLA CUP</p>
           <p class="second-row-pernilla">99 SEK</p>
@@ -44,9 +47,45 @@
             A beautiful cup with a nice pattern, perfect for the coffee in the
             morning.
           </p>
+          <section class="horizontal-stack">
+            <div class="dropdown">
+              <button id="descriptionButton" class="description-button">
+                DESCRIPTION V <i class="fa fa-angle-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <p>Article number: 123456789</p>
+                <p>Color: White, beige, goldcoat</p>
+                <p>Material: Porcelain</p>
+                <p>Handle: Yes</p>
+                <p>Capacity: 240ml</p>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button
+                id="careInstructionsButton"
+                class="careinstructions-button"
+              >
+                CARE INSTRUCTIONS <i class="fa fa-angle-down"></i>
+              </button>
+              <div id="careDropdownContent" class="dropdown-content">
+                <p>Maintenance: Dishwasher-safe</p>
+                <p>
+                  Sustainability: Made with sustainable materials and
+                  responsible production
+                </p>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <button id="add-to-cart-button">
+                ADD TO CART<i class="add-to-cart-button"></i>
+              </button>
+            </div>
+          </section>
         </div>
-      </figure>
+      </div>
     </div>
+
     <p class="recommended-items">RECOMMENDED</p>
     <div class="recommended-images">
       <figure class="recommended-container">
@@ -74,12 +113,13 @@
       <figure class="productimage-container">
         <img
           class="productinfo-image"
+          id="mickan-hidden"
           src="images/mickanrecommend.png"
           alt="Mickan recommended"
         />
         <figcaption>
-          <p class="first-row-product">Mickan</p>
-          <p class="second-row-product">99.90 SEK</p>
+          <p class="first-row-product" id="mickan-hidden">Mickan</p>
+          <p class="second-row-product" id="mickan-hidden">99.90 SEK</p>
         </figcaption>
       </figure>
     </div>

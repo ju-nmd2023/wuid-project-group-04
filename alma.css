@@ -17,7 +17,7 @@ body {
   animation-name: myanimation;
   animation-duration: 5s;
   animation-timing-function: linear;
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 200;
   text-align: center;
 }
@@ -89,9 +89,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 10%;
-}
-
-.colour-column {
 }
 
 .colour-container {
@@ -223,6 +220,7 @@ body {
 
 .productimage-container {
   margin: auto;
+  border-radius: 2px;
 }
 
 /* Text under each image, the margin makes the padding get less spacious */
@@ -249,23 +247,46 @@ body {
 /* PRODUCT VIEW PAGE */
 
 .productimage-outer {
-  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /*row containing the alternate image column, main product image, and product info*/
 .productimage-row {
   display: flex;
   flex-direction: row;
-  width: 50%;
-  margin: auto;
-  padding-right: 0px;
+  width: max-content;
 }
 
 .productview-image {
-  flex-direction: column; /* Stack elements vertically */
-  margin: auto;
   border-radius: 2px;
+  justify-self: center;
+  width: 25vw;
+  height: auto;
+  object-fit: contain;
+}
+
+/*column containing the alternate product images "sub images"*/
+
+.sub-images-align {
+  display: flex;
+  flex-direction: row;
+}
+.flex-subimages {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  margin-right: 0.33rem;
+}
+
+/* images inside the column beside the main image */
+.sub-image {
+  height: 10rem;
+  margin-bottom: 5px;
+  margin-top: 0px;
+  border-radius: 2px;
+  margin-bottom: 0.33rem;
 }
 
 /* TEXT INFORMATION PRODUCT PAGE */
@@ -299,35 +320,83 @@ body {
   font-weight: 400;
 }
 
-.productimage-container {
-  border-radius: 2px;
-}
+/* BUTTONS DELIVERY AND CARE INSTRUCTIONS, PRODUCT VIEW PAGE */
 
-.flex-info {
+.horizontal-stack {
+  display: inline-block;
+  text-align: center;
+  margin-top: 5%;
+}
+.description-button {
   display: flex;
-  flex-direction: row;
-  height: 11rem;
+  width: 151px;
+  height: 36px;
+  font-size: 15px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  background-color: #006633;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding-left: 5%;
 }
 
-/*column containing the alternate product images "sub images"*/
-.flex-subimages {
+.careinstructions-button {
   display: flex;
-  flex-direction: column;
-  margin: 5px;
-  margin-top: 0px;
+  width: 204px;
+  height: 36px;
+  font-size: 15px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  border: none;
+  background-color: #006633;
+  color: white;
+  cursor: pointer;
+  padding-left: 5%;
 }
 
-/* contains the main product image */
-.productimage-main {
-  width: 100%;
-  margin: 5px;
+.dropdown {
+  display: inline-block;
 }
 
-/* images inside the column beside the main image */
-.sub-image {
-  height: 5rem;
-  margin-bottom: 5px;
-  margin-top: 0px;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #006633;
+  width: 151px;
+  color: white;
+  font-family: "raleway", sans-serif;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#careDropdownContent {
+  width: 204px;
+}
+
+.dropdown-show-content {
+  display: block;
+}
+
+/* add to cart button */
+
+#add-to-cart-button {
+  text-align: center;
+  margin-top: 10%;
+  display: flex;
+  width: 151px;
+  height: 36px;
+  font-size: 15px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  background-color: #006633;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 /* RECOMMENDED */
@@ -336,7 +405,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 15pt;
   font-weight: 400;
-  margin-top: 5%;
+  margin-top: 10%;
   text-align: center;
 }
 
@@ -448,5 +517,67 @@ body {
   .second-row-product {
     margin: auto;
     font-size: 12px;
+  }
+}
+
+/* MEDIA QUERY PRODUCT VIEW */
+
+@media only screen and (max-width: 500px) {
+  .productview-image {
+    border-radius: 2px;
+    object-fit: contain;
+    width: 100%;
+    max-width: 400px; /* Set a maximum width for the image */
+    height: auto;
+  }
+
+  .sub-images-align {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5%;
+    gap: 5px;
+  }
+
+  /* images inside the column beside the main image */
+  .sub-image {
+    margin: 0;
+    border-radius: 2px;
+    width: auto;
+    max-width: 400px;
+  }
+}
+
+/* TEXT ABOUT THE PERNILLA CUP */
+@media only screen and (max-width: 500px) {
+  .productinfo-header {
+    margin-top: 5%;
+  }
+  .productimage-row {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center;
+    text-align: center;
+  }
+
+  .grid-info {
+    max-width: 800px; /* Set a maximum width for the text content */
+    margin-top: 10px; /* Add spacing between the image and text */
+  }
+
+  .pernilla-cup-paragraph {
+    line-break: normal;
+    font-size: 20px;
+  }
+
+  .recommended-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    border-radius: 2px;
+
+    #mickan-hidden {
+      display: none;
+    }
   }
 }
