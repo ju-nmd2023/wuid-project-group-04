@@ -35,7 +35,7 @@ body {
 
 .shoppingcart-h1 {
   font-family: "Raleway", sans-serif;
-  font-size: 3vw;
+  font-size: 3rem;
   font-weight: lighter;
   display: flex;
   justify-content: center;
@@ -182,6 +182,8 @@ body {
   padding-left: 5%;
 }
 
+/* Following four classes were adapted from https://www.w3schools.com/css/css_dropdowns.asp */
+
 .dropdown {
   display: inline-block;
 }
@@ -326,7 +328,7 @@ body {
 
 .emptycart-h1 {
   font-family: "Raleway", sans-serif;
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: lighter;
   display: flex;
   justify-content: center;
@@ -429,7 +431,7 @@ body {
 
 .checkout-h1 {
   font-family: "Raleway", sans-serif;
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 400;
   display: flex;
   justify-content: center;
@@ -451,14 +453,14 @@ body {
 
 .checkout-text {
   font-family: "raleway", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 2%;
 }
 
 .checkoutbuttons {
-  width: 30rem;
+  width: 25rem;
   height: 5rem;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 400;
   border: none;
   border-radius: 5px;
@@ -477,7 +479,7 @@ body {
 }
 
 .guest-button {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 400;
   margin-bottom: 16vh;
 }
@@ -486,9 +488,9 @@ body {
 
 @media screen and (max-width: 750px) {
   .checkoutbuttons {
-    width: 25rem;
-    height: 5rem;
-    font-size: 3rem;
+    width: 22rem;
+    height: 4rem;
+    font-size: 2rem;
   }
   .guest-button {
     font-size: 2rem;
@@ -500,27 +502,10 @@ body {
 
 @media screen and (max-width: 600px) {
   .checkout-h1 {
-    font-size: 4rem;
-  }
-  .checkoutbuttons {
-    width: 20rem;
-    height: 4rem;
-    font-size: 2.5rem;
-  }
-  .guest-button {
-    font-size: 1.5rem;
-  }
-  .checkout-text {
-    font-size: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .checkout-h1 {
     font-size: 3.5rem;
   }
   .checkoutbuttons {
-    width: 17rem;
+    width: 18rem;
     height: 4rem;
     font-size: 2rem;
   }
@@ -528,11 +513,11 @@ body {
     font-size: 1.5rem;
   }
   .checkout-text {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .checkout-h1 {
     font-size: 3rem;
   }
@@ -546,6 +531,23 @@ body {
   }
   .checkout-text {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .checkout-h1 {
+    font-size: 2.5rem;
+  }
+  .checkoutbuttons {
+    width: 12rem;
+    height: 3.2rem;
+    font-size: 1.5rem;
+  }
+  .guest-button {
+    font-size: 1rem;
+  }
+  .checkout-text {
+    font-size: 0.8rem;
   }
 }
 
@@ -784,7 +786,7 @@ input:hover {
 
 .purchase-ordering-h2 {
   font-family: "raleway", sans-serif;
-  font-size: 2vw;
+  font-size: 1.5rem;
   font-weight: lighter;
   margin-bottom: 0;
 }
@@ -797,7 +799,7 @@ input:hover {
 .purchase-h3 {
   font-family: "raleway", sans-serif;
   font-weight: 600;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
 }
 
 .purchase-totalamount,
@@ -832,13 +834,13 @@ input:hover {
 .purchase-icamaxi {
   margin-top: 0;
   margin-bottom: 15vh;
-  font-size: 5vh;
+  font-size: 1.5rem;
 }
 
 .purchase-ordnr,
 .purchase-totalprice {
   font-family: "lusitana", serif;
-  font-size: 5vh;
+  font-size: 1.5rem;
   display: flex;
   align-items: end;
 }
