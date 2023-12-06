@@ -1,0 +1,137 @@
+/* CHECKOUT PAGE */
+
+.body-checkout {
+  background-image: url(../img/backgrounddinner.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  height: 100%;
+}
+
+.main-checkout-container {
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  padding-top: 3%;
+}
+
+.checkout-h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5vh;
+  margin-top: 0;
+}
+
+.checkout-choices-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.memberh4-loginbtn-container,
+.otherwise-register-guest-container {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.checkout-text {
+  font-family: "raleway", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 2%;
+}
+
+.checkoutbuttons {
+  width: 25rem;
+  height: 5rem;
+  font-size: 3rem;
+  font-weight: 400;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(164, 150, 142, 0.7);
+  transition: ease-in-out 0.5ms;
+}
+
+.checkoutbuttons:hover {
+  background-color: rgba(103, 96, 92, 0.6);
+  color: white;
+}
+
+.login-button-checkout,
+.register-button {
+  margin-bottom: 5%;
+}
+
+.guest-button {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 16vh;
+}
+
+/* RESPONSIVE CHECKOUT PAGE */
+
+@media screen and (max-width: 750px) {
+  .checkoutbuttons {
+    width: 22rem;
+    height: 4rem;
+    font-size: 2rem;
+  }
+  .guest-button {
+    font-size: 2rem;
+  }
+  .checkout-text {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .checkout-h1 {
+    font-size: 3.5rem;
+  }
+  .checkoutbuttons {
+    width: 18rem;
+    height: 4rem;
+    font-size: 2rem;
+  }
+  .guest-button {
+    font-size: 1.5rem;
+  }
+  .checkout-text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .checkout-h1 {
+    font-size: 3rem;
+  }
+  .checkoutbuttons {
+    width: 15rem;
+    height: 3.5rem;
+    font-size: 2rem;
+  }
+  .guest-button {
+    font-size: 1.2rem;
+  }
+  .checkout-text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .checkout-h1 {
+    font-size: 2.5rem;
+  }
+  .checkoutbuttons {
+    width: 12rem;
+    height: 3.2rem;
+    font-size: 1.5rem;
+  }
+  .guest-button {
+    font-size: 1rem;
+  }
+  .checkout-text {
+    font-size: 0.8rem;
+  }
+}

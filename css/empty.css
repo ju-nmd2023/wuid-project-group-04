@@ -1,0 +1,94 @@
+/* EMPTY SHOPPING CART */
+
+.emptycart-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.emptycart-h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.emptycart-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "raleway", sans-serif;
+  font-weight: lighter;
+  font-size: 3rem;
+  height: 100%;
+  padding: 10px;
+}
+
+/* RESPONSIVE EMPTY SHOPPINGCART */
+
+@media screen and (max-width: 1200px) {
+  .emptycart-text {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .emptycart-h1 {
+    font-size: 4rem;
+  }
+  .emptycart-text {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .emptycart-h1 {
+    font-size: 3.5rem;
+  }
+  .emptycart-text {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .emptycart-h1 {
+    font-size: 3.5rem;
+  }
+  .emptycart-text {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .emptycart-h1 {
+    font-size: 2.5rem;
+  }
+  .emptycart-text {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .emptycart-h1 {
+    font-size: 2.2rem;
+  }
+  .emptycart-text {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .emptycart-h1 {
+    font-size: 2rem;
+  }
+  .emptycart-text {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}

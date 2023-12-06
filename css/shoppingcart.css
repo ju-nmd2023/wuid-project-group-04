@@ -1,0 +1,284 @@
+/* SHOPPING CART PAGE */
+
+.shoppingcart-h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+}
+
+.shoppingcart-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "shoppingcart-cup shoppingcart-alltext discount-total-container";
+  width: 80%;
+  margin-top: 2%;
+}
+
+.shoppingcart-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shoppingcart-cup-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.horizontal-stack {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 65%;
+}
+
+.shoppingcart-cup {
+  width: 20vw;
+  max-width: 100%;
+  grid-area: shoppingcart-cup;
+  border-radius: 2px;
+}
+
+.shoppingcart-alltext {
+  margin-left: 15px;
+  grid-area: shoppingcart-alltext;
+  width: 100%;
+}
+
+.shoppingcart-price .shoppingcart-amount-one {
+  font-family: "Lusitana", serif;
+}
+
+.shoppingcart-amount-one {
+  border: 1.5px solid black;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.shoppingcart-h2 {
+  font-family: "raleway", sans-serif;
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+.shoppingcart-price {
+  margin-top: 0;
+  margin-bottom: 9vw;
+}
+
+.shoppingcart-pernilla-text {
+  font-family: "Lora", serif;
+  max-width: 300px;
+  min-width: 200px;
+  margin-bottom: 9vw;
+}
+
+.shoppingcart-amount-container {
+  display: flex;
+  gap: 10px;
+}
+
+.shoppingcart-amount {
+  font-family: "raleway", sans-serif;
+}
+
+.pernilla-trashcan {
+  display: flex;
+  column-gap: 10vw;
+}
+
+.trash-can-icon {
+  color: black;
+}
+
+.trash-can-icon:hover {
+  cursor: pointer;
+  animation: shake;
+  animation-duration: 0.5s;
+}
+
+/* TRASH CAN ANIMATION */
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25%,
+  75% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+}
+
+.description-button {
+  display: flex;
+  width: 151px;
+  height: 36px;
+  font-size: 15px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  background-color: #006633;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding-left: 5%;
+}
+
+.careinstructions-button {
+  display: flex;
+  width: 204px;
+  height: 36px;
+  font-size: 15px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  border: none;
+  background-color: #006633;
+  color: white;
+  cursor: pointer;
+  padding-left: 5%;
+}
+
+/* Following four classes were adapted from https://www.w3schools.com/css/css_dropdowns.asp */
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #006633;
+  width: 146px;
+  color: white;
+  font-family: "raleway", sans-serif;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-left: 5px;
+}
+
+#careDropdownContent {
+  width: 199px;
+}
+
+.dropdown-show-content {
+  display: block;
+}
+
+/* DISCOUNT AND TOTAL SIDE OF PAGE */
+
+.discount-total-container {
+  grid-area: discount-total-container;
+  width: 100%;
+  grid-column: end;
+  margin-top: 6vh;
+}
+
+.discount-box {
+  width: 219px;
+  height: 42px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  background-color: #d9d9d9;
+  outline: none;
+  vertical-align: middle;
+}
+
+.add-discount-button {
+  width: 73px;
+  height: 42px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  background-color: #006633;
+  color: white;
+  margin-left: 15px;
+  vertical-align: middle;
+  transition: ease-in-out 0.5ms;
+}
+
+.add-discount-button:hover {
+  font-size: 30px;
+}
+
+.discount-font {
+  font-family: "raleway", sans-serif;
+}
+
+.ordervalue-price-container {
+  display: flex;
+  margin-top: 7%;
+}
+
+.ordervalue {
+  margin: 0;
+}
+
+.ordervalue-price {
+  font-family: "lusitana", serif;
+  margin: 0;
+  margin-left: auto;
+}
+
+.delivery-free-container {
+  display: flex;
+  margin-top: 3%;
+}
+
+.delivery-discount {
+  margin: 0;
+}
+
+.freeshipping-discount {
+  margin: 0;
+  margin-left: auto;
+}
+
+.line-discount {
+  margin-top: 3%;
+}
+
+.total-price-container {
+  display: flex;
+  margin-top: 3%;
+}
+
+.total-discount {
+  margin: 0;
+}
+
+.totalprice-discount {
+  font-family: "lusitana", serif;
+  margin: 0;
+  margin-left: auto;
+}
+
+.tocheckout-button {
+  margin-top: 10%;
+  background-color: #006633;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  width: 320px;
+  height: 64px;
+  transition: ease-in-out 0.5ms;
+}
+
+.tocheckout-button:hover {
+  font-size: 35px;
+}
