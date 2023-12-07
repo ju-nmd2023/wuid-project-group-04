@@ -11,11 +11,15 @@
       href="https://fonts.googleapis.com/css2?family=Lora:wght@400;@500&family=Lusitana&family=Raleway:wght@300;400;500;600;700&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <title>Pernilla Cup</title>
   </head>
   <body>
-    <h1 class="productinfo-header">CUPS</h1>
+    <h1 id="smaller-header" class="productinfo-header">CUPS</h1>
 
     <div class="productimage-outer">
       <div class="productimage-row">
@@ -48,9 +52,9 @@
             morning.
           </p>
           <section class="horizontal-stack">
-            <div class="dropdownButtons">
+            <div class="descriptionButton" id="grid-buttons">
               <div class="dropdown">
-                <button id="descriptionButton" class="green-button">
+                <button id="descriptionButton" class="description-button">
                   DESCRIPTION<i class="fa fa-angle-down"></i>
                 </button>
                 <div class="dropdown-content">
@@ -62,7 +66,10 @@
                 </div>
               </div>
               <div class="dropdown">
-                <button id="careInstructionsButton" class="green-button">
+                <button
+                  id="careInstructionsButton"
+                  class="careinstructions-button"
+                >
                   INSTRUCTIONS<i class="fa fa-angle-down"></i>
                 </button>
                 <div id="careDropdownContent" class="dropdown-content">

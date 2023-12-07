@@ -63,7 +63,7 @@ body {
 
 /* Style the drop-down panel. Note: hidden by default */
 
-#inside-filter {
+.inside-filter {
   width: 100%;
   height: 20rem;
   margin: auto;
@@ -206,7 +206,7 @@ body {
 }
 
 .filter-hidden {
-  display: none !important;
+  display: none;
 } /* The !important tag prioritizes conflicting styles which made me solve the issue of not being able to exit the  filter-page. */
 
 /* making a grid of the images, three columns and a 10% gap between the images */
@@ -309,30 +309,21 @@ body {
   font-weight: 400;
   font-size: 17pt;
   margin-left: 10%;
-  margin-right: 0;
 }
 
 .pernilla-cup-paragraph {
   font-family: "Lora", serif;
   margin-left: 10%;
-  margin-right: 0;
+
   font-size: 13pt;
   font-weight: 400;
 }
 
 /* BUTTONS DELIVERY AND CARE INSTRUCTIONS, PRODUCT VIEW PAGE */
 
-.horizontal-stack {
+.description-button {
   display: flex;
-  flex-direction: column;
-  width: min-content;
-  text-align: center;
-  margin-top: 5%;
-  margin-left: 10%;
-}
-.green-button {
-  width: min-content;
-  white-space: nowrap;
+  width: 151px;
   height: 36px;
   font-size: 15px;
   align-items: center;
@@ -342,17 +333,34 @@ body {
   color: white;
   border: none;
   cursor: pointer;
-  padding: 0 1rem;
+  padding-left: 5%;
+  margin-right: 10px;
 }
+
+.careinstructions-button {
+  display: flex;
+  width: 204px;
+  height: 36px;
+  font-size: 15px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  border: none;
+  background-color: #006633;
+  color: white;
+  cursor: pointer;
+  padding-left: 5%;
+}
+
+#grid-buttons {
+  display: flex;
+  margin-left: 10%;
+}
+
+/* Following four classes were adapted from https://www.w3schools.com/css/css_dropdowns.asp */
 
 .dropdown {
   display: inline-block;
-  margin-right: 2%;
-}
-
-.dropdownButtons {
-  display: flex;
-  flex-direction: row;
 }
 
 .dropdown-content {
@@ -360,15 +368,16 @@ body {
   position: absolute;
   z-index: 1;
   background-color: #006633;
-  width: 151px;
+  width: 146px;
   color: white;
   font-family: "raleway", sans-serif;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  padding-left: 5px;
 }
 
 #careDropdownContent {
-  width: 204px;
+  width: 199px;
 }
 
 .dropdown-show-content {
@@ -386,14 +395,10 @@ body {
 #add-to-cart-button {
   text-align: center;
   margin-top: 20%;
-  display: flex;
-  width: min-content;
   white-space: nowrap;
   height: 40px;
   font-size: 15px;
-  align-items: center;
   justify-content: space-between;
-  width: min-content;
   padding: 0 1rem;
   white-space: nowrap;
   border-radius: 5px;
@@ -425,9 +430,65 @@ body {
   border-radius: 2px;
 }
 
-/* MEDIA QUERY */
+/* MEDIA QUERY 900 PX OR LESS*/
+
+@media only screen and (max-width: 900px) {
+  .productview-image {
+    width: 110%;
+    height: 110%;
+  }
+
+  #grid-buttons {
+    margin: auto;
+    margin-right: 5%;
+  }
+
+  .horizontal-stack {
+    width: min-content;
+    margin-left: 0%;
+    margin: auto;
+    align-items: center;
+  }
+}
+
+/* MEDIA QUERY 830 PX */
+
+@media only screen and (max-width: 830px) {
+  .first-row-pernilla,
+  .second-row-pernilla {
+    margin-left: 0;
+  }
+
+  .grid-info {
+    max-width: 800px; /* Set a maximum width for the text content */
+    width: 100%;
+    margin-top: 10px; /* Add spacing between the image and text */
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .pernilla-cup-paragraph {
+    line-break: normal;
+    font-size: 20px;
+    margin: 5%;
+  }
+
+  #grid-buttons {
+    margin: auto;
+    margin-right: 5%;
+  }
+
+  .horizontal-stack {
+    width: min-content;
+    margin-left: 0%;
+    margin: auto;
+  }
+}
+
+/* MEDIA QUERY 500 PX */
 
 @media only screen and (max-width: 500px) {
+  /* PRODUCT INFORMATION PAGE */
   .productinfo-cups {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -448,7 +509,7 @@ body {
     padding-bottom: 4rem;
   }
 
-  /* changing the grid of filter text in 2 rows */
+  /* changing the grid of filter text in 2 rows 12-product page */
 
   #inside-filter {
     display: flex;
@@ -480,14 +541,6 @@ body {
     font-size: 15px;
     font-weight: 500;
   }
-  /* 
-  .fifty-sek {
-    text-align: left;
-  }
-
-  .three-sek {
-    text-align: right;
-  } */
 
   /* Changing the color tag and everything under it */
 
@@ -523,87 +576,96 @@ body {
     margin: auto;
     font-size: 12px;
   }
-}
 
-/* MEDIA QUERY PRODUCT VIEW */
+  /* MEDIA QUERY PRODUCT VIEW */
 
-@media only screen and (max-width: 500px) {
-  .productview-image {
-    border-radius: 2px;
-    object-fit: contain;
-    width: 100%;
-    max-width: 400px; /* Set a maximum width for the image */
-    height: auto;
-  }
+  @media only screen and (max-width: 500px) {
+    .productview-image {
+      border-radius: 2px;
+      object-fit: contain;
+      width: 100%;
+      max-width: 400px; /* Set a maximum width for the image */
+      height: auto;
+    }
 
-  .sub-images-align {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 5%;
-    gap: 5px;
-  }
+    .sub-images-align {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 5%;
+      gap: 5px;
+    }
 
-  /* images inside the column beside the main image */
-  .sub-image {
-    margin: 0;
-    border-radius: 2px;
-    width: auto;
-    max-width: 400px;
-  }
-}
-
-/* TEXT ABOUT THE PERNILLA CUP */
-@media only screen and (max-width: 500px) {
-  .productinfo-header {
-    margin-top: 5%;
-  }
-  .productimage-row {
-    display: flex;
-    flex-direction: column; /* Stack items vertically on smaller screens */
-    align-items: center;
-    text-align: center;
-    margin: 0;
-  }
-
-  .dropdownButtons,
-  .add-to-cart-container,
-  .first-row-pernilla,
-  .second-row-pernilla {
-    margin-left: 0;
-  }
-
-  .grid-info {
-    max-width: 800px; /* Set a maximum width for the text content */
-    width: 100%;
-    margin-top: 10px; /* Add spacing between the image and text */
-    margin: 0 auto;
-    align-items: center;
-  }
-
-  .pernilla-cup-paragraph {
-    line-break: normal;
-    font-size: 20px;
-    margin: 5%;
-  }
-
-  .recommended-images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: auto;
-    border-radius: 2px;
-
-    #mickan-hidden {
-      display: none;
+    /* images inside the column beside the main image */
+    .sub-image {
+      margin: 0;
+      border-radius: 2px;
+      width: auto;
+      max-width: 400px;
     }
   }
 
-  /* button alignment */
+  /* TEXT ABOUT THE PERNILLA CUP */
+  @media only screen and (max-width: 500px) {
+    .productinfo-header {
+      margin-top: 5%;
+      font-size: 4rem;
+    }
+    .productimage-row {
+      display: flex;
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: center;
+      text-align: center;
+      margin: 0;
+    }
 
-  .horizontal-stack {
-    width: min-content;
-    margin-left: 0%;
-    margin: auto;
-    align-items: center;
+    .first-row-pernilla,
+    .second-row-pernilla {
+      margin-left: 0;
+    }
+
+    .grid-info {
+      max-width: 800px; /* Set a maximum width for the text content */
+      width: 100%;
+      margin-top: 10px; /* Add spacing between the image and text */
+      margin: 0 auto;
+      align-items: center;
+    }
+
+    .pernilla-cup-paragraph {
+      line-break: normal;
+      font-size: 20px;
+      margin: 5%;
+    }
+
+    .recommended-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: auto;
+      border-radius: 2px;
+
+      #mickan-hidden {
+        display: none;
+      }
+    }
+
+    /* button alignment */
+
+    #grid-buttons {
+      margin: auto;
+      margin-right: 5%;
+    }
+
+    .horizontal-stack {
+      width: min-content;
+      margin-left: 0%;
+      margin: auto;
+      align-items: center;
+    }
   }
+}
+
+/* MEDIA QUERY 300 PX */
+
+@media only screen and (max-width: 300px) {
 }
