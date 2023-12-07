@@ -1,7 +1,12 @@
 /* SHOPPING CART PAGE */
 
+.shoppingcart-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .shoppingcart-h1 {
-  font-family: "Raleway", sans-serif;
   font-size: 3rem;
   font-weight: lighter;
   display: flex;
@@ -16,28 +21,14 @@
   margin-top: 2%;
 }
 
-.shoppingcart-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .shoppingcart-cup-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.horizontal-stack {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 65%;
-}
-
 .shoppingcart-cup {
   width: 100%;
-  /* height: 100%; */
-  /* max-width: 100%; */
   grid-area: shoppingcart-cup;
   border-radius: 2px;
 }
@@ -47,63 +38,20 @@
   grid-area: shoppingcart-alltext;
   width: 100%;
   height: 100%;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
-}
-
-.shoppingcart-text-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 95%;
-}
-
-.shoppingcart-price .shoppingcart-amount-one {
-  font-family: "Lusitana", serif;
-}
-
-.shoppingcart-amount-one {
-  border: 1.5px solid black;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.shoppingcart-h2 {
-  font-family: "raleway", sans-serif;
-  margin-top: 0;
-  margin-bottom: 2px;
-  font-size: 2rem;
-}
-
-.shoppingcart-price {
-  margin-top: 0;
-  font-size: 1.5rem;
-  /* margin-bottom: 9vw; */
-}
-
-.shoppingcart-pernilla-text {
-  font-family: "Lora", serif;
-  max-width: 300px;
-  /* min-width: 1px; */
-  font-size: 1rem;
-  /* margin-bottom: 9vw; */
-}
-
-.shoppingcart-amount-container {
-  display: flex;
-  gap: 10px;
-  font-size: 1rem;
-}
-
-.shoppingcart-amount {
-  font-family: "raleway", sans-serif;
 }
 
 .pernilla-trashcan {
   display: flex;
   column-gap: 5rem;
 }
+
+.shoppingcart-h2 {
+  margin-top: 0;
+  margin-bottom: 2px;
+  font-size: 2rem;
+}
+
+/* STYLING FOR TRASH CAN */
 
 .trash-can-icon {
   color: black;
@@ -131,7 +79,44 @@
   }
 }
 
-.description-button {
+.shoppingcart-text-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 95%;
+}
+
+.shoppingcart-price {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.shoppingcart-pernilla-text {
+  max-width: 300px;
+  font-size: 1rem;
+}
+
+.shoppingcart-amount-container {
+  display: flex;
+  gap: 10px;
+  font-size: 1rem;
+}
+
+.shoppingcart-amount-one {
+  border: 1.5px solid black;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* STYLING FOR DROPDOWN */
+
+.horizontal-stack {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 65%;
+}
+
+.dropdownbutton {
   display: flex;
   width: 151px;
   height: 36px;
@@ -146,31 +131,12 @@
   padding-left: 5%;
 }
 
-.careinstructions-button {
-  display: flex;
-  width: 151px;
-  height: 36px;
-  font-size: 15px;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 5px;
-  border: none;
-  background-color: #006633;
-  color: white;
-  cursor: pointer;
-  padding-left: 5%;
-}
-
-/* Following three classes were adapted from https://www.w3schools.com/css/css_dropdowns.asp */
-
-.dropdown {
-  display: inline-block;
-}
+/* Following two classes were adapted from https://www.w3schools.com/css/css_dropdowns.asp */
 
 .dropdown-content {
   display: none;
   position: absolute;
-  z-index: 1;
+  /* z-index: 1; */
   background-color: #006633;
   width: 146px;
   color: white;
@@ -222,40 +188,16 @@
   font-size: 1.8rem;
 }
 
-.discount-font {
-  font-family: "raleway", sans-serif;
-}
-
 .ordervalue-price-container {
   display: flex;
   margin-top: 7%;
   justify-content: space-between;
-  /* gap: 180px; */
-}
-
-.ordervalue {
-  margin: 0;
-}
-
-.ordervalue-price {
-  font-family: "lusitana", serif;
-  margin: 0;
-  /* margin-left: auto; */
 }
 
 .delivery-free-container {
   display: flex;
   margin-top: 3%;
   justify-content: space-between;
-}
-
-.delivery-discount {
-  margin: 0;
-}
-
-.freeshipping-discount {
-  margin: 0;
-  /* margin-left: auto; */
 }
 
 .line-discount {
@@ -266,16 +208,6 @@
   display: flex;
   margin-top: 3%;
   justify-content: space-between;
-}
-
-.total-discount {
-  margin: 0;
-}
-
-.totalprice-discount {
-  font-family: "lusitana", serif;
-  margin: 0;
-  /* margin-left: auto; */
 }
 
 .tocheckout-button {
@@ -294,6 +226,8 @@
 .tocheckout-button:hover {
   font-size: 2.5rem;
 }
+
+/* RESPONSIVE SHOPPINGCART PAGE */
 
 @media screen and (max-width: 1200px) {
   .shoppingcart-container {
@@ -340,15 +274,14 @@
 }
 
 @media screen and (max-width: 700px) {
+  .shoppingcart-pernilla-text {
+    font-size: 0.9rem;
+  }
   .shoppingcart-h2 {
     font-size: 1.5rem;
   }
   .shoppingcart-price {
     font-size: 1.2rem;
-  }
-
-  .shoppingcart-pernilla-text {
-    font-size: 0.9rem;
   }
   .shoppingcart-amount-container {
     font-size: 0.8rem;
@@ -356,8 +289,24 @@
 }
 
 @media screen and (max-width: 500px) {
+  .shoppingcart-container {
+    width: 80%;
+    margin: 5px;
+  }
   .shoppingcart-h1 {
     font-size: 2.5rem;
+  }
+  .shoppingcart-cup {
+    width: 40%;
+    height: auto;
+  }
+
+  .shoppingcart-pernilla-text {
+    font-size: 0.8rem;
+    width: 80%;
+  }
+  .pernilla-trashcan {
+    gap: 2.5rem;
   }
   .shoppingcart-h2 {
     font-size: 1.2rem;
@@ -365,16 +314,13 @@
   .shoppingcart-price {
     font-size: 1rem;
   }
-
-  .shoppingcart-pernilla-text {
-    font-size: 0.8rem;
-    width: 80%;
-  }
   .shoppingcart-amount-container {
     font-size: 0.7rem;
   }
-  .pernilla-trashcan {
-    gap: 2.5rem;
+  .discount-text-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .discount-container {
     width: 13rem;
@@ -402,40 +348,25 @@
   .tocheckout-button:hover {
     font-size: 1.5rem;
   }
-  .shoppingcart-cup {
-    width: 40%;
-    height: auto;
-  }
-  .shoppingcart-container {
-    width: 80%;
-    margin: 5px;
-  }
-  .shoppingcart-h1 {
-    font-size: 2rem;
-  }
-  .discount-text-btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+
   .inputdisc-add {
     text-align: center;
   }
 }
 
 @media screen and (max-width: 390px) {
-  .description-button,
-  .careinstructions-button {
-    width: 138px;
-  }
-  .dropdown-content {
-    width: 133px;
-  }
   .shoppingcart-cup {
     width: auto;
     height: 12rem;
   }
   .pernilla-trashcan {
     gap: 2rem;
+  }
+  .description-button,
+  .careinstructions-button {
+    width: 138px;
+  }
+  .dropdown-content {
+    width: 133px;
   }
 }

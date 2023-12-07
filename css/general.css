@@ -16,3 +16,21 @@
 .flex {
   display: flex;
 }
+
+.marginzero {
+  margin: 0;
+}
+
+/* FONTS */
+
+.lusitanafont {
+  font-family: "lusitana", serif;
+}
+
+.ralewayfont {
+  font-family: "raleway", sans-serif;
+}
+
+.lorafont {
+  font-family: "lora", serif;
+}

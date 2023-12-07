@@ -25,5 +25,6 @@ function validateDiscountCode() {
     discountCodeInput.classList.remove("redborder");
   } else {
     discountCodeInput.classList.add("redborder");
+    alert("Invalid discount code");
   }
 }

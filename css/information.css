@@ -108,6 +108,7 @@ input:hover {
   width: 18px;
   height: 18px;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .postagent-h5 {
@@ -136,6 +137,7 @@ input:hover {
   background-color: #979191;
   border-radius: 5px;
   padding: 4px;
+  cursor: pointer;
 }
 
 .homedelivery-container {
