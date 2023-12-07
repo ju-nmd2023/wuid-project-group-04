@@ -1,5 +1,7 @@
 
-    
+    main {
+        width: 100%;
+    }
     
     .header-content {
     margin: 0;
@@ -15,6 +17,7 @@
     .main-header {
     background-color: rgb(164, 150, 141);
         height: 103px;
+        width: 100%;
        margin-right: 0;
        padding-left: 0;
        padding-top: 0;
@@ -100,7 +103,7 @@ align-items: center;
         width: 26rem;
         display: flex;
         border: none; 
-        margin-left: 1rem; 
+        /* margin-left: 1rem;  */
         margin-right: 0;
         margin: 0;
         display: block;
@@ -292,10 +295,16 @@ align-items: center;
 
     .footer-aboutus {
         margin-left: 0;
+        order: 1;
     }
 
     .footer-contactus {
         margin-right: 0;
+        order: 1;
+    }
+
+    .footer-bigtext {
+        order: 1;
     }
 
     .footer-container {
@@ -303,6 +312,7 @@ align-items: center;
         align-items: flex-start;
         gap: 20%;
         font-family: 'Raleway', sans-serif;
+        flex-direction: row;
     }
 
     .footer-textinfo {
@@ -369,6 +379,7 @@ align-items: center;
     margin-top: 2rem; 
     width: 45rem;
     height: 20rem;
+    order: 2;
 
    }
 
@@ -400,11 +411,228 @@ border-color: #000;
     width: 25rem;
    }
 
+   .footer-all {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+   }
+
    @media screen and (max-width: 1000px) {
-    .main-pictures {
+    .homepage-pictures {
         grid-template-columns: 1fr;
+       
     }
 }
+
+@media screen and (max-width: 1000px) {
+   .footer-box {
+    width: 35rem;
+    height: 20rem;
+   } 
+}
+
+@media screen and (max-width: 1000px) {
+  .alltext , .footer-leagal , .footer-textinfo {
+    font-size: 12px;
+  }  
+}
+
+@media screen and (max-width: 1000px) {
+    .footer-textinfo1 {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .footer-bigtext {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+   .footer-aboutus {
+    font-size: 20px;
+   } 
+}
+
+@media screen and (max-width: 1000px) {
+   .footer-contactus {
+    font-size: 20px;
+   } 
+}
+
+@media screen and (max-width: 1000px) {
+  .login-button {
+    width: 7rem;
+    height: 2rem;
+    font-size: 1rem;
+  }  
+}
+
+@media screen and (max-width: 1000px) {
+   .icons {
+     gap: 6%;
+   } 
+}
+
+@media screen and (max-width: 1000px) {
+    .icon-pictures , .icon-bag , .icon-flag {
+      height: 1.5rem;
+    } 
+ }
+
+ @media screen and (max-width: 1000px) {
+    .icon-loga {
+        width: 20rem;
+    }
+ }
+
+ @media screen and (max-width: 1200px) {
+    .centered-campaign {
+        font-size: 5rem;
+    }
+ }
+
+ @media screen and (max-width: 1200px) {
+    .centered-text {
+        font-size: 1rem;
+    }
+ }
+
+ @media screen and (max-width: 1200px) {
+    .clickhere-button {
+        width: 10rem;
+        font-size: 1.5rem;
+    }
+ }
+
+ @media screen and (max-width: 700px) {
+    .centered-campaign {
+        font-size: 3.5rem;
+    }
+ }
+
+ @media screen and (max-width: 700px) {
+    .clickhere-button {
+        width: 7rem;
+        font-size: 1rem;
+        height: 2.5rem;
+    }
+ }
+
+ @media screen and (max-width: 700px) {
+    .footer-box {
+     width: 25rem;
+     height: 15rem;
+    } 
+ }
+
+ @media screen and (max-width: 700px) {
+    .footer-member {
+        font-size: 2rem;
+    }
+ }
+
+ @media screen and (max-width: 700px) {
+    .footer-membertext , .footer-mailregister , .footer-policy {
+        font-size: 0.8rem;
+    }
+ }
+
+ @media screen and (max-width: 650px) {
+ .footer-aboutus , .footer-bigtext , .footer-contactus {
+    font-size: 1rem;
+ }
+ }
+
+ @media screen and (max-width: 650px) {
+    .icon-loga {
+        width: 15rem;
+    }
+ }
+
+ @media screen and (max-width: 650px) {
+    .login-button {
+      width: 5rem;
+      height: 1.5rem;
+      font-size: 0.8rem;
+    }  
+  }
+
+  @media screen and (max-width: 650px) {
+    .icon-pictures , .icon-bag , .icon-flag {
+      height: 1rem;
+    } 
+ }
+
+ @media screen and (max-width: 650px) {
+    .searchbar {
+      height: 1.4rem;
+      width: 7rem;
+    } 
+ }
+
+ @media screen and (max-width: 550px) {
+    .alltext , .footer-textinfo .header-two , .list-header , .headericons , .searchbar , .login-button {
+       display: none;
+    }
+    }
+
+    @media screen and (max-width: 550px) {
+         .footer-background {
+         display: grid;
+         grid-template-rows: 1fr 1fr;
+         grid-template-areas: "footerbox" "footertext" ;
+        
+        }
+        .footer-container {
+            grid-area: footerbox; 
+        }
+        .footer-aboutus , .footer-bigtext , .footer-contactus {
+            grid-area: footertext;
+        }
+    }  
+
+    @media screen and (max-width: 550px) {
+     .footer-all {
+            display: flex;
+            flex-direction: column;
+        } 
+    } 
+
+    @media screen and (max-width: 550px) {
+        .footer-box {
+         width: 20rem;
+         height: 12rem;
+        } 
+     }
+
+     @media screen and (max-width: 550px) {
+        .footer-membertext , .footer-mailregister , .footer-policy {
+            font-size: 0.6rem;
+        }
+     }
+
+     @media screen and (max-width: 550px) {
+        .footer-member {
+            font-size: 1.5rem;
+        }
+     }
+
+     @media screen and (max-width: 550px) {
+        .icon-loga {
+            width: 12rem;
+        }
+     }
+
+     @media screen and (max-width: 550px) {
+        .menu-img , .telephonebutton {
+            display: block;
+        }
+     }  
+
+     @media screen and (max-width: 550px) {
 
 .footer-all {
     display: flex;
@@ -412,3 +640,33 @@ border-color: #000;
     margin-left: 10%;
     margin-right: 10%;
 }
+
+.menu-img {
+    height: 2rem;
+    overflow: hidden;
+}
+
+.telephonebutton {
+    display: block
+    
+}
+
+.main-pictures {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.homepage-pictures {
+    margin: 0;
+}
+     }
+
+     @media screen and (min-width: 550px) {
+        .telephonebutton {
+        display: none;
+        }
+     }
+
+
