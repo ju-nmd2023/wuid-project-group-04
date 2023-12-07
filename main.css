@@ -99,13 +99,13 @@ align-items: center;
         margin-top: 0;
     }
 
-    #button-menu {
+    /* .button-menu {
         width: 100%;
         height: 20rem;
         margin: auto;
         background-color: rgb(0, 102, 51);
         position: absolute; /* The solution I found for getting the border box over the images WITHOUT it affecting the background. */
-        box-sizing: border-box;
+        /* box-sizing: border-box;
         padding: 0;
         margin: 0;
         font-family: "Raleway", sans-serif;
@@ -115,11 +115,11 @@ align-items: center;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         text-align: center;
-      }
+      } */ */
 
-      .header-button {
+      /* .header-button {
         display: none !important;
-      }
+      } */
       
 
     .icon-loga {
@@ -319,15 +319,21 @@ align-items: center;
     .footer-aboutus {
         margin-left: 0;
         order: 1;
+        font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
     }
 
     .footer-contactus {
         margin-right: 0;
         order: 1;
+        font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
     }
 
     .footer-bigtext {
         order: 1;
+        font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
     }
 
     .footer-container {
@@ -358,8 +364,8 @@ align-items: center;
         margin-top: -1%;
     }
 
-    .footer-help {
-    }
+    /* .footer-help {
+    } */
 
     .footer-mailregister {
        display: flex; 
@@ -441,221 +447,114 @@ border-color: #000;
     margin-right: 10%;
    }
 
-   @media screen and (max-width: 1000px) {
-    .homepage-pictures {
-        grid-template-columns: 1fr;
-       
-    }
-}
-
-@media screen and (max-width: 1000px) {
-   .footer-box {
-    width: 35rem;
-    height: 20rem;
-   } 
-}
-
-@media screen and (max-width: 1000px) {
-  .alltext , .footer-leagal , .footer-textinfo {
-    font-size: 12px;
-  }  
-}
-
-@media screen and (max-width: 1000px) {
-    .footer-textinfo1 {
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .footer-bigtext {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-   .footer-aboutus {
-    font-size: 20px;
-   } 
-}
-
-@media screen and (max-width: 1000px) {
-   .footer-contactus {
-    font-size: 20px;
-   } 
-}
-
-@media screen and (max-width: 1000px) {
-  .login-button {
-    width: 7rem;
-    height: 2rem;
-    font-size: 1rem;
-  }  
-}
-
-@media screen and (max-width: 1000px) {
-   .icons {
-     gap: 6%;
-   } 
-}
-
-@media screen and (max-width: 1000px) {
-    .icon-pictures , .icon-bag , .icon-flag {
-      height: 1.5rem;
-    } 
- }
+ 
 
  @media screen and (max-width: 1000px) {
     .icon-loga {
         width: 20rem;
     }
- }
-
- @media screen and (max-width: 1200px) {
-    .centered-campaign {
-        font-size: 5rem;
-    }
- }
-
- @media screen and (max-width: 1200px) {
-    .centered-text {
+    .icon-pictures , .icon-bag , .icon-flag {
+        height: 1.5rem;
+      } 
+      .icons {
+        gap: 6%;
+      } 
+      .login-button {
+        width: 7rem;
+        height: 2rem;
         font-size: 1rem;
+      } 
+      .footer-contactus {
+        font-size: 20px;
+       } 
+       .footer-aboutus {
+        font-size: 20px;
+       }
+       .footer-bigtext {
+        font-size: 20px;
+    } 
+    .footer-textinfo1 {
+        font-size: 12px;
+    }
+    .alltext , .footer-leagal , .footer-textinfo {
+        font-size: 12px;
+      } 
+      .footer-box {
+        width: 35rem;
+        height: 20rem;
+       } 
+       .homepage-pictures {
+        grid-template-columns: 1fr;   
     }
  }
+
+
 
  @media screen and (max-width: 1200px) {
     .clickhere-button {
         width: 10rem;
         font-size: 1.5rem;
     }
- }
-
- @media screen and (max-width: 700px) {
-    .centered-campaign {
-        font-size: 3.5rem;
-    }
- }
-
- @media screen and (max-width: 700px) {
-    .clickhere-button {
-        width: 7rem;
+    .centered-text {
         font-size: 1rem;
-        height: 2.5rem;
+    }
+    .centered-campaign {
+        font-size: 5rem;
     }
  }
 
- @media screen and (max-width: 700px) {
-    .footer-box {
-     width: 25rem;
-     height: 15rem;
-    } 
- }
+ 
 
- @media screen and (max-width: 700px) {
-    .footer-member {
-        font-size: 2rem;
-    }
- }
 
  @media screen and (max-width: 700px) {
     .footer-membertext , .footer-mailregister , .footer-policy {
         font-size: 0.8rem;
     }
- }
-
- @media screen and (max-width: 650px) {
- .footer-aboutus , .footer-bigtext , .footer-contactus {
-    font-size: 1rem;
- }
- }
-
- @media screen and (max-width: 650px) {
-    .icon-loga {
-        width: 15rem;
+    .footer-member {
+        font-size: 2rem;
+    }
+    .footer-box {
+        width: 25rem;
+        height: 15rem;
+       } 
+       .clickhere-button {
+        width: 7rem;
+        font-size: 1rem;
+        height: 2.5rem;
+    }
+    .centered-campaign {
+        font-size: 3.5rem;
     }
  }
 
- @media screen and (max-width: 650px) {
-    .login-button {
-      width: 5rem;
-      height: 1.5rem;
-      font-size: 0.8rem;
-    }  
-  }
 
-  @media screen and (max-width: 650px) {
-    .icon-pictures , .icon-bag , .icon-flag {
-      height: 1rem;
-    } 
- }
 
  @media screen and (max-width: 650px) {
     .searchbar {
       height: 1.4rem;
       width: 7rem;
     } 
+    .icon-pictures , .icon-bag , .icon-flag {
+        height: 1rem;
+      } 
+      .login-button {
+        width: 5rem;
+        height: 1.5rem;
+        font-size: 0.8rem;
+      } 
+      .icon-loga {
+        width: 15rem;
+    }
+    .footer-aboutus , .footer-bigtext , .footer-contactus {
+        font-size: 1rem;
+     }
+
  }
 
+
+  
+
  @media screen and (max-width: 550px) {
-    .alltext , .footer-textinfo .header-two , .list-header , .headericons , .searchbar , .login-button {
-       display: none;
-    }
-    }
-
-    @media screen and (max-width: 550px) {
-         .footer-background {
-         display: grid;
-         grid-template-rows: 1fr 1fr;
-         grid-template-areas: "footerbox" "footertext" ;
-        
-        }
-        .footer-container {
-            grid-area: footerbox; 
-        }
-        .footer-aboutus , .footer-bigtext , .footer-contactus {
-            grid-area: footertext;
-        }
-    }  
-
-    @media screen and (max-width: 550px) {
-     .footer-all {
-            display: flex;
-            flex-direction: column;
-        } 
-    } 
-
-    @media screen and (max-width: 550px) {
-        .footer-box {
-         width: 20rem;
-         height: 12rem;
-        } 
-     }
-
-     @media screen and (max-width: 550px) {
-        .footer-membertext , .footer-mailregister , .footer-policy {
-            font-size: 0.6rem;
-        }
-     }
-
-     @media screen and (max-width: 550px) {
-        .footer-member {
-            font-size: 1.5rem;
-        }
-     }
-
-     @media screen and (max-width: 550px) {
-        .icon-loga {
-            width: 12rem;
-        }
-     }
-
-     @media screen and (max-width: 550px) {
-        .menu-img , .telephonebutton {
-            display: block;
-        }
-     }  
-
-     @media screen and (max-width: 550px) {
 
 .footer-all {
     display: flex;
@@ -684,12 +583,103 @@ border-color: #000;
 .homepage-pictures {
     margin: 0;
 }
+
+.alltext , .footer-textinfo .header-two , .list-header , .headericons , .searchbar , .login-button {
+    display: none;
+ }
+
+ .footer-background {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "footerbox" "footertext" ;
+   
+   }
+   .footer-container {
+       grid-area: footerbox; 
+   }
+   .footer-aboutus , .footer-bigtext , .footer-contactus {
+       grid-area: footertext;
+   }
+
+   #telephonebutton {
+    display: none;
+    }
+
+    .menu-img , .telephonebutton {
+        display: block;
+    }
+
+    .icon-loga {
+        width: 12rem;
+    }
+
+    .footer-member {
+        font-size: 1.5rem;
+    }
+
+    .footer-membertext , .footer-mailregister , .footer-policy {
+        font-size: 0.6rem;
+    }
+
+    .footer-box {
+        width: 20rem;
+        height: 12rem;
+       } 
+
+       .footer-all {
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .campaign-picture {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+      }
+      .centered-campaign {
+        font-size: 3rem;
+        margin-top: -0.1rem;
+    }
+    .clickhere-button {
+        width: 5rem;
+        font-size: 0.7rem;
+        height: 1.7rem;
+        margin-top: 1rem;
+    }
+    .centered-text {
+        font-size: 0.9rem;
+    }
+
      }
 
-     @media screen and (min-width: 550px) {
-        .telephonebutton {
+
+
+
+     .dropdown {
+        display: inline-block;
+      }
+      
+      .dropdown-content {
         display: none;
-        }
-     }
+        position: absolute;
+        z-index: 1;
+        background-color: #006633;
+        width: 146px;
+        color: white;
+        font-family: "raleway", sans-serif;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding-left: 5px;
+      }
+      
+      #careDropdownContent {
+        width: 199px;
+      }
+      
+      .dropdown-show-content {
+        display: block;
+      }
+      
 
 
