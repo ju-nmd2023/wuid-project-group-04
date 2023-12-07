@@ -73,23 +73,27 @@
   font-family: "raleway", sans-serif;
   margin-top: 0;
   margin-bottom: 2px;
+  font-size: 2rem;
 }
 
 .shoppingcart-price {
   margin-top: 0;
+  font-size: 1.5rem;
   /* margin-bottom: 9vw; */
 }
 
 .shoppingcart-pernilla-text {
   font-family: "Lora", serif;
   max-width: 300px;
-  min-width: 200px;
+  /* min-width: 1px; */
+  font-size: 1rem;
   /* margin-bottom: 9vw; */
 }
 
 .shoppingcart-amount-container {
   display: flex;
   gap: 10px;
+  font-size: 1rem;
 }
 
 .shoppingcart-amount {
@@ -319,25 +323,42 @@
     margin-bottom: 0;
   }
   .discount-total-container {
-    width: 100%;
+    /* width: 100%; */
     margin-bottom: 15%;
   }
   .pernilla-trashcan {
     column-gap: 4rem;
   }
   .discount-container {
-    width: 48%;
+    width: 17rem;
   }
-  /* .discount-box {
+  .discount-box {
     width: 11rem;
     font-size: 1.2rem;
   }
   .add-discount-button {
-    width: 4rem;
-    margin-left: 18px;
+    margin-left: 15px;
     font-size: 1.2rem;
   }
   .tocheckout-button {
-    width: 17rem;
-  } */
+    width: 17.5rem;
+    font-size: 1.5rem;
+    margin-top: 2%;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .shoppingcart-h2 {
+    font-size: 1.5rem;
+  }
+  .shoppingcart-price {
+    font-size: 1.2rem;
+  }
+
+  .shoppingcart-pernilla-text {
+    font-size: 0.9rem;
+  }
+  .shoppingcart-amount-container {
+    font-size: 0.8rem;
+  }
 }
