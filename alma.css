@@ -434,11 +434,10 @@ body {
 
 @media only screen and (max-width: 900px) {
   .productview-image {
-    width: 110%;
-    height: 110%;
+    width: 40vw;
   }
 
-  #grid-buttons {
+  /* #grid-buttons {
     margin: auto;
     margin-right: 5%;
   }
@@ -448,16 +447,16 @@ body {
     margin-left: 0%;
     margin: auto;
     align-items: center;
-  }
+  } */
 }
 
 /* MEDIA QUERY 830 PX */
 
 @media only screen and (max-width: 830px) {
-  .first-row-pernilla,
+  /* .first-row-pernilla,
   .second-row-pernilla {
     margin-left: 0;
-  }
+  } */
 
   .grid-info {
     max-width: 800px; /* Set a maximum width for the text content */
@@ -470,12 +469,6 @@ body {
   .pernilla-cup-paragraph {
     line-break: normal;
     font-size: 20px;
-    margin: 5%;
-  }
-
-  #grid-buttons {
-    margin: auto;
-    margin-right: 5%;
   }
 
   .horizontal-stack {
