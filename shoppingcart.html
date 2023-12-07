@@ -40,8 +40,8 @@
     <main class="shoppingcart-main">
       <h1 class="shoppingcart-h1">SHOPPING CART</h1>
 
-      <section class="shoppingcart-container">
-        <section class="shoppingcart-cup-container">
+      <section class="shoppingcart-container redborder">
+        <section class="shoppingcart-cup-container blueborder">
           <div class="flex img-text-shoppingcart">
             <img
               class="shoppingcart-cup"
@@ -57,7 +57,7 @@
                 </a>
               </div>
 
-              <div class="shoppingcart-text-flex">
+              <div class="shoppingcart-text-flex greenborder">
                 <h3 class="shoppingcart-price">99 SEK</h3>
                 <p class="shoppingcart-pernilla-text">
                   A beautiful cup with a nice pattern, perfect for the coffee in
@@ -105,37 +105,39 @@
         </section>
 
         <!-- <div class="discount-container greenborder"> -->
-        <section class="discount-total-container">
-          <input
-            id="discountInput"
-            class="discount-box"
-            type="text"
-            placeholder="DISCOUNT CODE"
-          />
-          <button id="addDiscountButton" class="add-discount-button">
-            ADD
-          </button>
+        <section class="discount-total-container redborder">
+          <div class="discount-container blueborder">
+            <input
+              id="discountInput"
+              class="discount-box"
+              type="text"
+              placeholder="DISCOUNT CODE"
+            />
+            <button id="addDiscountButton" class="add-discount-button">
+              ADD
+            </button>
 
-          <div class="ordervalue-price-container">
-            <h4 class="ordervalue discount-font">Order value</h4>
-            <p class="ordervalue-price">99 SEK</p>
+            <div class="ordervalue-price-container">
+              <h4 class="ordervalue discount-font">Order value</h4>
+              <p class="ordervalue-price">99 SEK</p>
+            </div>
+
+            <div class="delivery-free-container">
+              <h4 class="delivery-discount discount-font">Delivery</h4>
+              <p class="freeshipping-discount discount-font">Free shipping</p>
+            </div>
+
+            <hr class="line-discount" />
+
+            <div class="total-price-container">
+              <h4 class="total-discount discount-font">Total</h4>
+              <p class="totalprice-discount">99 SEK</p>
+            </div>
+
+            <a href="checkout.html">
+              <button class="tocheckout-button">TO CHECKOUT</button>
+            </a>
           </div>
-
-          <div class="delivery-free-container">
-            <h4 class="delivery-discount discount-font">Delivery</h4>
-            <p class="freeshipping-discount discount-font">Free shipping</p>
-          </div>
-
-          <hr class="line-discount" />
-
-          <div class="total-price-container">
-            <h4 class="total-discount discount-font">Total</h4>
-            <p class="totalprice-discount">99 SEK</p>
-          </div>
-
-          <a href="checkout.html">
-            <button class="tocheckout-button">TO CHECKOUT</button>
-          </a>
         </section>
         <!-- </div> -->
       </section>

@@ -2,7 +2,7 @@
 
 .purchase-h1 {
   font-family: "raleway", sans-serif;
-  font-size: 3vw;
+  font-size: 3rem;
   font-weight: lighter;
   display: flex;
   justify-content: center;
@@ -11,7 +11,7 @@
 
 .purchase-h2 {
   font-family: "raleway", sans-serif;
-  font-size: 2vw;
+  font-size: 2rem;
   font-weight: lighter;
   display: flex;
   justify-content: center;
@@ -26,7 +26,8 @@
 }
 
 .purchase-cup {
-  width: 12vw;
+  width: 10rem;
+  height: 100%;
   border-radius: 2px;
   padding-right: 0;
   margin-right: 0;
@@ -34,7 +35,6 @@
 
 .purchase-alltext {
   width: 100%;
-  margin-top: 15%;
 }
 
 .purchase-pernilla-h2 {
@@ -66,19 +66,19 @@
 
 .purchase-img-article-container {
   display: flex;
-  min-width: 200px;
+  /* min-width: 150px; */
   gap: 15px;
 }
 
 .purchase-articlenr-container {
   display: flex;
-  font-size: 15px;
+  font-size: 1rem;
   gap: 10px;
 }
 
 .purchase-article-h4 {
   font-family: "raleway", sans-serif;
-  font-weight: lighter;
+  font-weight: 400;
   margin-top: 2%;
 }
 
@@ -90,7 +90,7 @@
 .purchase-ordering-h2 {
   font-family: "raleway", sans-serif;
   font-size: 1.5rem;
-  font-weight: lighter;
+  font-weight: 400;
   margin-bottom: 0;
 }
 
@@ -102,7 +102,7 @@
 .purchase-h3 {
   font-family: "raleway", sans-serif;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .purchase-totalamount,
@@ -129,7 +129,7 @@
 }
 
 .purchase-postagent {
-  font-size: 5vh;
+  font-size: 1.2rem;
   display: flex;
   align-items: end;
 }
@@ -137,13 +137,13 @@
 .purchase-icamaxi {
   margin-top: 0;
   margin-bottom: 15vh;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .purchase-ordnr,
 .purchase-totalprice {
   font-family: "lusitana", serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   display: flex;
   align-items: end;
 }
@@ -152,4 +152,31 @@
   border: 1.5px solid black;
   padding-left: 8px;
   padding-right: 8px;
+}
+
+@media screen and (max-width: 800px) {
+  .purchase-h1 {
+    font-size: 2.5rem;
+  }
+  .purchase-h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .purchase-h1 {
+    font-size: 2rem;
+  }
+  .purchase-h2 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .purchase-h1 {
+    font-size: 1.8rem;
+  }
+  .purchase-h2 {
+    font-size: 0.8rem;
+  }
 }

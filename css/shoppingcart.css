@@ -199,7 +199,7 @@
   padding-left: 10px;
   border-radius: 5px;
   border: none;
-  font-size: 20px;
+  font-size: 1.5rem;
   background-color: #d9d9d9;
   outline: none;
   vertical-align: middle;
@@ -229,6 +229,7 @@
 .ordervalue-price-container {
   display: flex;
   margin-top: 7%;
+  justify-content: space-between;
   /* gap: 180px; */
 }
 
@@ -239,12 +240,13 @@
 .ordervalue-price {
   font-family: "lusitana", serif;
   margin: 0;
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 
 .delivery-free-container {
   display: flex;
   margin-top: 3%;
+  justify-content: space-between;
 }
 
 .delivery-discount {
@@ -253,7 +255,7 @@
 
 .freeshipping-discount {
   margin: 0;
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 
 .line-discount {
@@ -263,6 +265,7 @@
 .total-price-container {
   display: flex;
   margin-top: 3%;
+  justify-content: space-between;
 }
 
 .total-discount {
@@ -272,7 +275,7 @@
 .totalprice-discount {
   font-family: "lusitana", serif;
   margin: 0;
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 
 .tocheckout-button {
@@ -310,19 +313,31 @@
   }
   .shoppingcart-pernilla-text {
     max-width: 175px;
-    min-width: 150px;
+    min-width: 100px;
   }
   .horizontal-stack {
     margin-bottom: 0;
   }
   .discount-total-container {
-    width: 48%;
+    width: 100%;
     margin-bottom: 15%;
   }
   .pernilla-trashcan {
     column-gap: 4rem;
   }
   .discount-container {
-    width: 100%;
+    width: 48%;
   }
+  /* .discount-box {
+    width: 11rem;
+    font-size: 1.2rem;
+  }
+  .add-discount-button {
+    width: 4rem;
+    margin-left: 18px;
+    font-size: 1.2rem;
+  }
+  .tocheckout-button {
+    width: 17rem;
+  } */
 }
