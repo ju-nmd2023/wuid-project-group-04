@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Lusitana&family=Raleway:wght@300;400;500;600;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="alma.css" />
+
+    <title>Cups</title>
+  </head>
+  <body>
+    <nav>
+      <div class="grid-header">
+        <div></div>
+        <h1 class="productinfo-header">CUPS</h1>
+        <button id="filter-text" class="filter-text">
+          Filter
+          <img
+            class="filter-icon"
+            src="images/Filter icon.svg"
+            alt="Filter icon"
+          />
+        </button>
+      </div>
+      <div class="filter-hidden">
+        <div>
+          <div id="price-tag" class="filter-type-title">Price</div>
+          <div class="price-options">
+            <!-- <div class="price-slider-container"> -->
+
+            <input class="price-slider" type="range" />
+            <!-- Adds a price slider -->
+            <div class="flex-currency">
+              <div class="fifty-sek">50 SEK</div>
+              <div class="three-sek">300 SEK</div>
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div id="colour-tag" class="filter-type-title">Colour</div>
+          <div class="colour-options">
+            <div class="colour-column">
+              <div class="colour-container">
+                <div class="white-circle circle">
+                  <input class="checkbox-flex" type="checkbox" />White
+                </div>
+                <div class="red-circle circle">
+                  <input class="checkbox-flex" type="checkbox" />Red
+                </div>
+                <div class="blue-circle circle">
+                  <input class="checkbox-flex" type="checkbox" />Blue
+                </div>
+              </div>
+            </div>
+            <div class="colour-column">
+              <div class="colour-container">
+                <div class="black-circle circle">
+                  <input class="checkbox-flex" type="checkbox" />Black
+                </div>
+                <div class="beige-circle circle">
+                  <input class="checkbox-flex" type="checkbox" />Beige
+                </div>
+                <div class="multicolour-circle circle">
+                  <input class="checkbox-flex" type="checkbox" />Multi
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div id="sort-by" class="filter-type-title">Sort by</div>
+          <!-- <div class="sorting-flexbox">  -->
+          <div id="sort-by-container">
+            <div class="sort-by-item">
+              <input class="checkbox-sort" type="checkbox" /> Most popular
+            </div>
+            <div class="sort-by-item">
+              <input class="checkbox-sort" type="checkbox" /> Lowest price
+            </div>
+            <div class="sort-by-item">
+              <input class="checkbox-sort" type="checkbox" /> Highest price
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="productinfo-cups">
+        <figure class="productimage-container">
+          <img
+            class="productinfo-image"
+            src="images/Leif desktop.png"
+            alt="Leif"
+          />
+          <figcaption>
+            <p class="first-row-product">Leif</p>
+            <p class="second-row-product">129 SEK</p>
+          </figcaption>
+        </figure>
+        <figure class="productimage-container">
+          <img
+            class="productinfo-image"
+            src="images/Carl-gustaf desktop.png"
+            alt="Carl-Gustaf"
+          />
+          <figcaption>
+            <p class="first-row-product">Carl-Gustav</p>
+            <p class="second-row-product">200 SEK</p>
+          </figcaption>
+        </figure>
+        <figure class="productimage-container">
+          <img
+            class="productinfo-image"
+            src="images/Per desktop.png"
+            alt="Per"
+          />
+          <figcaption>
+            <p class="first-row-product">Per</p>
+            <p class="second-row-product">105 SEK</p>
+          </figcaption>
+        </figure>
+        <figure class="productimage-container">
+          <img
+            class="productinfo-image"
+            src="images/Linda desktop.png"
+            alt="Linda"
+          />
+          <figcaption>
+            <p class="first-row-product">Linda</p>
+            <p class="second-row-product">129 SEK</p>
+          </figcaption>
+        </figure>
+        <figure class="productimage-container">
+          <img
+            class="productinfo-image"
+            src="images/Molly desktop.png"
+            alt="Molly"
+          />
+          <figcaption>
+            <p class="first-row-product">Molly</p>
+            <p class="second-row-product">135 SEK</p>
+          </figcaption>
+        </figure>
+        <figure class="productimage-container">
+          <a href="product-view.html">
+            <img
+              class="productinfo-image"
+              src="images/Pernilla desktop.png"
+              alt="Pernilla"
+            />
+          </a>
+          <figcaption>
+            <p class="first-row-product">Pernilla</p>
+            <p class="second-row-product">99 SEK</p>
+          </figcaption>
+        </figure>
+        <figure class="productimage-container">
+          <img
+            class="productinfo-image"
+            src="images/Anders desktop.png"
+            alt="Anders"
+          />
+          <figcaption>
+            <p class="first-row-product">Anders</p>
+            <p class="second-row-product">150 SEK</p>
+          </figcaption>
+        </figure>
+        <figure class="productimage-container">
+          <img
+            class="productinfo-image"
+            src="images/Glenn desktop.png"
+            alt="Glenn"
+          />
+          <figcaption>
+            <p class="first-row-product">Glenn</p>
+            <p class="second-row-product">139.90 SEK</p>
+          </figcaption>
+        </figure>
+        <figure class="productimage-container">
+          <img
+            class="productinfo-image"
+            src="images/Mickan desktop.jpeg"
+            alt="Mickan"
+          />
+          <figcaption>
+            <p class="first-row-product">Mickan</p>
+            <p class="second-row-product">99.90 SEK</p>
+          </figcaption>
+        </figure>
+        <figure class="productimage-container">
+          <img
+            class="productinfo-image"
+            src="images/Miriam desktop.png"
+            alt="Miriam"
+          />
+          <figcaption>
+            <p class="first-row-product">Miriam</p>
+            <p class="second-row-product">129 SEK</p>
+          </figcaption>
+        </figure>
+        <figure class="productimage-container">
+          <img
+            class="productinfo-image"
+            src="images/Börje desktop.png"
+            alt="Börje"
+          />
+          <figcaption>
+            <p class="first-row-product">Börje</p>
+            <p class="second-row-product">149.90 SEK</p>
+          </figcaption>
+        </figure>
+        <figure class="productimage-container">
+          <img
+            class="productinfo-image"
+            src="images/Ernst desktop.png"
+            alt="Ernst"
+          />
+          <figcaption>
+            <p class="first-row-product">Ernst</p>
+            <p class="second-row-product">125 SEK</p>
+          </figcaption>
+        </figure>
+      </div>
+    </nav>
+  </body>
+</html>

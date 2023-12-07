@@ -1,0 +1,664 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* PRODUCT INFORMATION PAGE */
+
+/* adds roundness to images */
+.productinfo-image {
+  border-radius: 2px;
+  width: 13rem;
+  height: auto;
+}
+
+.productinfo-header {
+  font-family: "Raleway", sans-serif;
+  animation-name: myanimation;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  font-size: 3rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+@keyframes myanimation {
+  0% {
+    text-shadow: 0px -5px rgb(0, 102, 51);
+  }
+  25% {
+    text-shadow: 0px 0px rgb(0, 102, 51);
+  }
+}
+
+/* PRODUCT INFORMATION PAGE AND ITS FILTER TEXT + ICON */
+
+.grid-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: auto;
+  padding: auto;
+}
+
+.filter-text {
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  margin-left: auto;
+  border: none;
+  outline: none;
+  background-color: #fff;
+}
+
+.filter-icon {
+  width: 2rem;
+  float: right;
+  opacity: 0.8;
+}
+
+.filter-text:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Style the drop-down panel. Note: hidden by default */
+
+.inside-filter {
+  width: 100%;
+  height: 20rem;
+  margin: auto;
+  background-color: rgb(0, 102, 51);
+  position: absolute; /* The solution I found for getting the border box over the images WITHOUT it affecting the background. */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+
+/* colour options */
+
+/* flex on colour text two rows */
+
+.colour-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10%;
+}
+
+.colour-container {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.circle {
+  text-align: left;
+  margin-bottom: 25%;
+  font-size: 20px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.checkbox-flex {
+  width: 20px;
+  height: 15px;
+}
+
+.red-circle {
+  color: rgb(223, 31, 31);
+}
+
+.blue-circle {
+  color: blue;
+}
+
+.black-circle {
+  color: black;
+}
+
+.beige-circle {
+  color: rgb(233, 188, 133);
+}
+
+.multicolour-circle {
+  color: magenta;
+}
+
+/* price slider */
+
+.price-slider {
+  margin-top: 5%;
+  width: 70%;
+}
+
+.price-options {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.price-slider-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Display children in a column */
+  align-items: center; /* Optional: Center items horizontally */
+}
+
+.flex-currency {
+  /* display: flex;
+  gap: 80%;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: auto;
+  padding: 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.fifty-sek {
+  text-align: left;
+}
+
+.three-sek {
+  text-align: right;
+}
+
+/* sort by */
+#sort-by-container {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.sort-by-item {
+  margin-top: 15%;
+  text-align: left;
+}
+
+.sorting-flexbox {
+  display: flex;
+  margin: auto;
+  text-align: left;
+}
+
+/* THE THREE HEADERS IN THE FILTER BOX */
+
+.filter-type-title {
+  /* text-align: center; */
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.checkbox-sort {
+  width: 20px;
+  height: 15px;
+  margin: 0;
+}
+
+.filter-hidden {
+  display: none;
+} /* The !important tag prioritizes conflicting styles which made me solve the issue of not being able to exit the  filter-page. */
+
+/* making a grid of the images, three columns and a 10% gap between the images */
+
+.productinfo-cups {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5%;
+  margin: auto;
+}
+
+.productimage-container {
+  margin: auto;
+  border-radius: 2px;
+}
+
+/* Text under each image, the margin makes the padding get less spacious */
+
+.first-row-product {
+  margin: auto;
+  grid-area: text;
+  margin-right: 0%;
+  margin-top: 0%;
+  font-family: "Raleway", sans-serif;
+  font-size: 15pt;
+}
+
+.second-row-product {
+  margin: auto;
+  grid-area: text;
+  margin-bottom: 0%;
+  margin-top: 0%;
+  font-family: "Lusitana", serif;
+  font-weight: 400;
+  font-size: 15pt;
+}
+
+/* PRODUCT VIEW PAGE */
+
+.productimage-outer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*row containing the alternate image column, main product image, and product info*/
+.productimage-row {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+}
+
+.productview-image {
+  border-radius: 2px;
+  justify-self: center;
+  width: 25vw;
+  height: auto;
+  object-fit: contain;
+}
+
+/*column containing the alternate product images "sub images"*/
+
+.sub-images-align {
+  display: flex;
+  flex-direction: row;
+}
+.flex-subimages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 0.33rem;
+}
+
+/* images inside the column beside the main image */
+.sub-image {
+  height: 10rem;
+  margin-bottom: 5px;
+  margin-top: 0px;
+  border-radius: 2px;
+  margin-bottom: 0.33rem;
+}
+
+/* TEXT INFORMATION PRODUCT PAGE */
+.grid-info {
+  width: 50%;
+}
+
+.first-row-pernilla {
+  font-family: "Raleway", sans-serif;
+  font-size: 20pt;
+  font-weight: 400;
+  margin-left: 10%; /* Moves text right of the page */
+  margin-right: 0;
+}
+
+.second-row-pernilla {
+  margin-bottom: 0%;
+  margin-top: 0%;
+  font-family: "Lusitana", serif;
+  font-weight: 400;
+  font-size: 17pt;
+  margin-left: 10%;
+}
+
+.pernilla-cup-paragraph {
+  font-family: "Lora", serif;
+  margin-left: 10%;
+
+  font-size: 13pt;
+  font-weight: 400;
+}
+
+/* BUTTONS DELIVERY AND CARE INSTRUCTIONS, PRODUCT VIEW PAGE */
+
+.description-button {
+  display: flex;
+  width: 151px;
+  height: 36px;
+  font-size: 15px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  background-color: #006633;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding-left: 5%;
+  margin-right: 10px;
+}
+
+.careinstructions-button {
+  display: flex;
+  width: 204px;
+  height: 36px;
+  font-size: 15px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  border: none;
+  background-color: #006633;
+  color: white;
+  cursor: pointer;
+  padding-left: 5%;
+}
+
+#grid-buttons {
+  display: flex;
+  margin-left: 10%;
+}
+
+/* Following four classes were adapted from https://www.w3schools.com/css/css_dropdowns.asp */
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #006633;
+  width: 146px;
+  color: white;
+  font-family: "raleway", sans-serif;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-left: 5px;
+}
+
+#careDropdownContent {
+  width: 199px;
+}
+
+.dropdown-show-content {
+  display: block;
+}
+
+/* add to cart button */
+
+.add-to-cart-container {
+  display: inline-block;
+  text-align: center;
+  margin-left: 10%;
+}
+
+#add-to-cart-button {
+  text-align: center;
+  margin-top: 20%;
+  white-space: nowrap;
+  height: 40px;
+  font-size: 15px;
+  justify-content: space-between;
+  padding: 0 1rem;
+  white-space: nowrap;
+  border-radius: 5px;
+  background-color: #006633;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0 1.5rem;
+}
+
+/* RECOMMENDED */
+
+.recommended-items {
+  font-family: "Raleway", sans-serif;
+  font-size: 15pt;
+  font-weight: 400;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.recommended-container {
+  margin: auto;
+}
+
+.recommended-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+  border-radius: 2px;
+}
+
+/* MEDIA QUERY 900 PX OR LESS*/
+
+@media only screen and (max-width: 900px) {
+  .productview-image {
+    width: 40vw;
+  }
+
+  /* #grid-buttons {
+    margin: auto;
+    margin-right: 5%;
+  }
+
+  .horizontal-stack {
+    width: min-content;
+    margin-left: 0%;
+    margin: auto;
+    align-items: center;
+  } */
+}
+
+/* MEDIA QUERY 830 PX */
+
+@media only screen and (max-width: 830px) {
+  /* .first-row-pernilla,
+  .second-row-pernilla {
+    margin-left: 0;
+  } */
+
+  .grid-info {
+    max-width: 800px; /* Set a maximum width for the text content */
+    width: 100%;
+    margin-top: 10px; /* Add spacing between the image and text */
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .pernilla-cup-paragraph {
+    line-break: normal;
+    font-size: 20px;
+  }
+
+  .horizontal-stack {
+    width: min-content;
+    margin-left: 0%;
+    margin: auto;
+  }
+}
+
+/* MEDIA QUERY 500 PX */
+
+@media only screen and (max-width: 500px) {
+  /* PRODUCT INFORMATION PAGE */
+  .productinfo-cups {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* changing the header font-size and alignment */
+  .productinfo-header {
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  /* filter header removing icon and smaller font-size */
+
+  #inside-filter {
+    height: min-content;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  /* changing the grid of filter text in 2 rows 12-product page */
+
+  #inside-filter {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  #filter-text {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .filter-icon {
+    display: none;
+  }
+
+  /* price slider changing format */
+
+  .price-slider {
+    width: 80%;
+    margin: auto;
+  }
+  .flex-currency {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    padding: 0;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  /* Changing the color tag and everything under it */
+
+  .colour-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5%;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .circle {
+    text-align: left;
+    margin-top: 5%;
+    margin-bottom: 25%;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 0;
+  }
+
+  .checkbox-flex {
+    align-items: center;
+  }
+
+  /* changing product information text, font-size */
+
+  .first-row-product {
+    margin: auto;
+    font-size: 15px;
+  }
+
+  .second-row-product {
+    margin: auto;
+    font-size: 12px;
+  }
+
+  /* MEDIA QUERY PRODUCT VIEW */
+
+  @media only screen and (max-width: 500px) {
+    .productview-image {
+      border-radius: 2px;
+      object-fit: contain;
+      width: 100%;
+      max-width: 400px; /* Set a maximum width for the image */
+      height: auto;
+    }
+
+    .sub-images-align {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 5%;
+      gap: 5px;
+    }
+
+    /* images inside the column beside the main image */
+    .sub-image {
+      margin: 0;
+      border-radius: 2px;
+      width: auto;
+      max-width: 400px;
+    }
+  }
+
+  /* TEXT ABOUT THE PERNILLA CUP */
+  @media only screen and (max-width: 500px) {
+    .productinfo-header {
+      margin-top: 5%;
+      font-size: 4rem;
+    }
+    .productimage-row {
+      display: flex;
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: center;
+      text-align: center;
+      margin: 0;
+    }
+
+    .first-row-pernilla,
+    .second-row-pernilla {
+      margin-left: 0;
+    }
+
+    .grid-info {
+      max-width: 800px; /* Set a maximum width for the text content */
+      width: 100%;
+      margin-top: 10px; /* Add spacing between the image and text */
+      margin: 0 auto;
+      align-items: center;
+    }
+
+    .pernilla-cup-paragraph {
+      line-break: normal;
+      font-size: 20px;
+      margin: 5%;
+    }
+
+    .recommended-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: auto;
+      border-radius: 2px;
+
+      #mickan-hidden {
+        display: none;
+      }
+    }
+
+    /* button alignment */
+
+    #grid-buttons {
+      margin: auto;
+      margin-right: 5%;
+    }
+
+    .horizontal-stack {
+      width: min-content;
+      margin-left: 0%;
+      margin: auto;
+      align-items: center;
+    }
+  }
+}
+
+/* MEDIA QUERY 300 PX */
+
+@media only screen and (max-width: 300px) {
+}
