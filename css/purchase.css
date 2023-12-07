@@ -41,17 +41,20 @@
   font-family: "raleway", sans-serif;
   margin-top: 6vh;
   margin-bottom: 2px;
+  font-size: 1.8rem;
 }
 
 .purchase-price {
   margin-top: 0;
   margin-bottom: 7vh;
   font-family: "lusitana", serif;
+  font-size: 1.3rem;
 }
 
 .purchase-amount-container {
   display: flex;
   gap: 10px;
+  font-size: 1rem;
 }
 
 .purchase-amount,
@@ -66,7 +69,6 @@
 
 .purchase-img-article-container {
   display: flex;
-  /* min-width: 150px; */
   gap: 15px;
 }
 
@@ -128,7 +130,9 @@
   margin-bottom: 0;
 }
 
-.purchase-postagent {
+.purchase-postagent,
+.purchase-ordnr,
+.purchase-totalprice {
   font-size: 1.2rem;
   display: flex;
   align-items: end;
@@ -143,9 +147,6 @@
 .purchase-ordnr,
 .purchase-totalprice {
   font-family: "lusitana", serif;
-  font-size: 1.2rem;
-  display: flex;
-  align-items: end;
 }
 
 .purchase-amount-one {
@@ -170,6 +171,21 @@
   .purchase-h2 {
     font-size: 1rem;
   }
+  .purchase-ordering-h2 {
+    font-size: 1.2rem;
+  }
+  .purchase-h3 {
+    font-size: 1rem;
+  }
+  .purchase-postagent,
+  .purchase-ordnr,
+  .purchase-totalprice,
+  .purchase-icamaxi {
+    font-size: 1rem;
+  }
+  .purchase-pernilla-h2 {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -178,5 +194,71 @@
   }
   .purchase-h2 {
     font-size: 0.8rem;
+  }
+  .purchase-pernilla-h2 {
+    font-size: 1.3rem;
+  }
+  .purchase-price {
+    font-size: 1rem;
+  }
+  .purchase-amount-container {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .purchase-h1 {
+    font-size: 1.5rem;
+  }
+  .purchase-h2 {
+    font-size: 0.8rem;
+  }
+  .purchase-ordering-h2 {
+    font-size: 1rem;
+  }
+  .purchase-h3 {
+    font-size: 0.8rem;
+  }
+  .purchase-postagent,
+  .purchase-ordnr,
+  .purchase-totalprice,
+  .purchase-icamaxi {
+    font-size: 0.8rem;
+  }
+  .purchase-pernilla-h2 {
+    font-size: 1.2rem;
+  }
+  .purchase-price {
+    font-size: 0.9rem;
+  }
+  .purchase-amount-container {
+    font-size: 0.8rem;
+  }
+  .purchase-cup {
+    width: 8rem;
+  }
+  .purchase-articlenr-container {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .purchase-h1 {
+    font-size: 1.2rem;
+  }
+  .purchase-h2 {
+    font-size: 0.7rem;
+  }
+  .purchase-pernilla-h2 {
+    font-size: 1rem;
+  }
+  .purchase-price {
+    font-size: 0.8rem;
+  }
+  .purchase-amount-container {
+    font-size: 0.7rem;
+  }
+  .purchase-cup {
+    width: 7rem;
   }
 }

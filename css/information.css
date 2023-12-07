@@ -142,6 +142,8 @@ input:hover {
   width: 15rem;
 }
 
+/* RESPONSIVE INFORMATION PAGE */
+
 @media screen and (max-width: 620px) {
   .information-h1 {
     font-size: 2.5rem;
@@ -156,6 +158,12 @@ input:hover {
 
 @media screen and (max-width: 510px) {
   .information-h1 {
+    font-size: 2rem;
+  }
+  .info-delivery-h2 {
+    font-size: 2rem;
+  }
+  .info-payment-h2 {
     font-size: 2rem;
   }
   .input {
