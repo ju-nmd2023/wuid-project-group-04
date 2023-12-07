@@ -8,8 +8,6 @@
   height: 100%;
 }
 
-/*  TODO: fix image */
-
 .information-main {
   background-color: rgba(255, 255, 255, 0.6);
   margin: 0;
@@ -55,17 +53,48 @@ input:hover {
   justify-content: center;
 }
 
-.delivery-location-card p {
-  margin: 1px;
+.postagent-container {
+  background-color: rgba(164, 150, 142, 0.7);
+  padding: 1%;
+  border-radius: 5px;
+  width: 15rem;
 }
 
-.delivery-location-card {
-  background-color: #d9d9d9;
+.radio-info {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
-.delivery-location-container {
+.selectedradio {
+  background-color: rgb(164, 150, 142);
+}
+
+.postagent-h5 {
+  font-family: "raleway", sans-serif;
+  font-size: 1rem;
+  margin: 2%;
+  width: 20rem;
+}
+
+.postagent-p {
+  font-family: "raleway", sans-serif;
+  font-size: 1rem;
+  margin: 2%;
+  margin-bottom: 4%;
+}
+
+.postagent-options {
+  width: 12rem;
   background-color: #979191;
-  padding: 10px;
+  border-radius: 5px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.homedelivery-container {
+  width: 15rem;
 }
 
 .date-cvc-container {
@@ -102,46 +131,6 @@ input:hover {
 .info-pay-button:hover {
   background-color: #5b5552;
   color: white;
-}
-
-.radio-info {
-  width: 18px;
-  height: 18px;
-  margin-right: 10px;
-  cursor: pointer;
-}
-
-.postagent-h5 {
-  font-family: "raleway", sans-serif;
-  font-size: 1rem;
-  margin: 2%;
-  width: 20rem;
-}
-
-.postagent-p {
-  font-family: "raleway", sans-serif;
-  font-size: 1rem;
-  margin: 2%;
-  margin-bottom: 4%;
-}
-
-.postagent-container {
-  background-color: rgba(164, 150, 142, 0.7);
-  padding: 1%;
-  border-radius: 5px;
-  width: 15rem;
-}
-
-.postagent-options {
-  width: 12rem;
-  background-color: #979191;
-  border-radius: 5px;
-  padding: 4px;
-  cursor: pointer;
-}
-
-.homedelivery-container {
-  width: 15rem;
 }
 
 /* RESPONSIVE INFORMATION PAGE */

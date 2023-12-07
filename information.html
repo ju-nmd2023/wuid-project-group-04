@@ -92,13 +92,14 @@
 
         <h2 class="info-delivery-h2">DELIVERY</h2>
 
-        <section class="postagent-container">
+        <section class="postagent-container" id="postAgentContainer">
           <div class="flex">
             <input
               type="radio"
               name="deliverygroup"
               value="Post agent"
               class="radio-info"
+              id="postAgentRadio"
             />
 
             <div>
@@ -123,13 +124,17 @@
           </div>
         </section>
 
-        <section class="postagent-container homedelivery-container">
+        <section
+          class="postagent-container homedelivery-container"
+          id="homeDeliveryContainer"
+        >
           <div class="flex">
             <input
               type="radio"
               name="deliverygroup"
               value="Home delivery"
               class="radio-info"
+              id="homeDeliveryRadio"
               required
             />
             <div>
@@ -139,25 +144,6 @@
             </div>
           </div>
         </section>
-        <!-- <div class="dropdown delivery-location-container">
-                <button type="button" id="select-delivery-location">
-                  Select delivery location
-                </button>
-                <div class="dropdown-content">
-                  <div class="delivery-location-card">
-                    <p>Maxi ICA Stormarknad</p>
-                    <p>Jönköping,</p>
-                    <p>Herkulesvägen 7</p>
-                    <p>Free shipping</p>
-                  </div>
-                  <div class="delivery-location-card">
-                    <p>Coop Östra torget</p>
-                    <p>Jönköping,</p>
-                    <p>Rökerigränd 5</p>
-                    <p>Free shipping</p>
-                  </div>
-                </div>
-              </div> -->
 
         <h2 class="info-payment-h2">PAYMENT</h2>
 

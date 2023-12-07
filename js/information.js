@@ -1,42 +1,17 @@
-// FOR DROPDOWN MENU ON INFORMATION PAGE //
+// FOR CHANGING COLOR OF DELIVERY OPTIONS WHEN SELECTED //
 
-document.getElementById("select-delivery-location");
-document.addEventListener("click", function () {
-  this.nextElementSibling.classList.toggle("dropdown-show-content");
+const postAgentRadio = document.getElementById("postAgentRadio");
+const postAgentContainer = document.getElementById("postAgentContainer");
+
+postAgentRadio.addEventListener("click", function () {
+  homeDeliveryContainer.classList.remove("selectedradio");
+  postAgentContainer.classList.toggle("selectedradio", this.checked);
 });
 
-// function redirectToPurchase() {
-//   window.location.href = "purchase.html";
-// }
+const homeDeliveryRadio = document.getElementById("homeDeliveryRadio");
+const homeDeliveryContainer = document.getElementById("homeDeliveryContainer");
 
-// function validateForm() {
-//   var email = document.forms["purchaseForm"]["email"].value;
-//   var name = document.forms["purchaseForm"]["name"].value;
-
-//   if (email === "" || name === "") {
-//     alert("All fields must be filled out");
-//     return false;
-//   }
-
-//   var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-//   if (!emailRegex.test(email)) {
-//     alert("Enter valid email");
-//     return false;
-//   }
-//   return true;
-// }
-
-// document
-//   .getElementById("paymentButton")
-//   .addEventListener("click", validatePurchaseForm);
-
-// function validatePurchaseForm() {
-//   const emailInput = document.getElementById("emailInputField");
-//   const email = emailInput.value;
-//   if (email === "@ .") {
-//     emailInput.classList.remove("redborder");
-//   } else {
-//     emailInput.classList.add("redborder");
-//     alert("Error, use @");
-//   }
-// }
+homeDeliveryRadio.addEventListener("click", function () {
+  postAgentContainer.classList.remove("selectedradio");
+  homeDeliveryContainer.classList.toggle("selectedradio", this.checked);
+});

@@ -1,7 +1,6 @@
 /* PURCHASE PAGE */
 
 .purchase-h1 {
-  font-family: "raleway", sans-serif;
   font-size: 3rem;
   font-weight: lighter;
   display: flex;
@@ -10,7 +9,6 @@
 }
 
 .purchase-h2 {
-  font-family: "raleway", sans-serif;
   font-size: 2rem;
   font-weight: lighter;
   display: flex;
@@ -23,6 +21,11 @@
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
+}
+
+.purchase-img-article-container {
+  display: flex;
+  gap: 15px;
 }
 
 .purchase-cup {
@@ -38,7 +41,6 @@
 }
 
 .purchase-pernilla-h2 {
-  font-family: "raleway", sans-serif;
   margin-top: 6vh;
   margin-bottom: 2px;
   font-size: 1.8rem;
@@ -47,7 +49,6 @@
 .purchase-price {
   margin-top: 0;
   margin-bottom: 7vh;
-  font-family: "lusitana", serif;
   font-size: 1.3rem;
 }
 
@@ -57,21 +58,6 @@
   font-size: 1rem;
 }
 
-.purchase-amount,
-.purchase-postagent,
-.purchase-icamaxi {
-  font-family: "raleway", sans-serif;
-}
-
-.purchase-amount-one {
-  font-family: "lusitana", serif;
-}
-
-.purchase-img-article-container {
-  display: flex;
-  gap: 15px;
-}
-
 .purchase-articlenr-container {
   display: flex;
   font-size: 1rem;
@@ -79,18 +65,15 @@
 }
 
 .purchase-article-h4 {
-  font-family: "raleway", sans-serif;
   font-weight: 400;
   margin-top: 2%;
 }
 
 .purchase-article-nr {
-  font-family: "lusitana", serif;
   margin-top: 2%;
 }
 
 .purchase-ordering-h2 {
-  font-family: "raleway", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 0;
@@ -142,11 +125,6 @@
   margin-top: 0;
   margin-bottom: 15vh;
   font-size: 1.2rem;
-}
-
-.purchase-ordnr,
-.purchase-totalprice {
-  font-family: "lusitana", serif;
 }
 
 .purchase-amount-one {
