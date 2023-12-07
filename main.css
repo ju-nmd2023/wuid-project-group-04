@@ -99,6 +99,29 @@ align-items: center;
         margin-top: 0;
     }
 
+    #button-menu {
+        width: 100%;
+        height: 20rem;
+        margin: auto;
+        background-color: rgb(0, 102, 51);
+        position: absolute; /* The solution I found for getting the border box over the images WITHOUT it affecting the background. */
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: "Raleway", sans-serif;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 800;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+      }
+
+      .header-button {
+        display: none !important;
+      }
+      
+
     .icon-loga {
         width: 26rem;
         display: flex;

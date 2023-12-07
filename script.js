@@ -1,16 +1,16 @@
 window.onload = function () {
-    const filterTextButtons = document.getElementById("filter-text");
-    const filterDiv = document.getElementById("inside-filter");
+    const filterTextButtons = document.getElementById("telephonebutton");
+    const filterDiv = document.getElementById("button-menu")[0];
     let isVisible = false;
  
     filterTextButtons.addEventListener("click", function() {
       if(isVisible) {
-          filterDiv.className="inside-filter filter-hidden";
+          filterDiv.className="button-menu header-button";
           isVisible=false;
        
       }
       else{
-          filterDiv.className="inside-filter"
+          filterDiv.className="button-menu"
           isVisible=true;
          
       }
