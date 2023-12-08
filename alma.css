@@ -672,3 +672,11 @@ nav {
     }
   }
 }
+
+/* product information page, resizing all images */
+@media only screen and (max-width: 520px) {
+  .productinfo-image {
+    width: 8rem;
+    height: auto;
+  }
+}
