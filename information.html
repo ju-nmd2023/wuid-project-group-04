@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/information.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="menu.css" />
 
     <script src="js/information.js" defer></script>
 
@@ -87,21 +88,52 @@
           type="email"
           placeholder="E-MAIL*"
           inputmode="email"
+          name="Email input"
           required
         />
-        <input class="input" type="text" placeholder="NAME*" required />
+        <input
+          class="input"
+          type="text"
+          placeholder="NAME*"
+          name="Name input"
+          required
+        />
         <input class="input" type="text" placeholder="ADRESS*" required />
         <input
           class="input"
           type="text"
           placeholder="POSTAL CODE*"
           inputmode="numeric"
+          name="Adress input"
           required
         />
-        <input class="input" type="text" placeholder="LOCALITY*" required />
-        <input class="input" type="text" placeholder="CITY*" required />
-        <input class="input" type="text" placeholder="COUNTRY*" required />
-        <input class="input" type="tel" placeholder="TELEPHONE NUMBER" />
+        <input
+          class="input"
+          type="text"
+          placeholder="LOCALITY*"
+          name="Locality input"
+          required
+        />
+        <input
+          class="input"
+          type="text"
+          placeholder="CITY*"
+          name="City input"
+          required
+        />
+        <input
+          class="input"
+          type="text"
+          placeholder="COUNTRY*"
+          name="Country input"
+          required
+        />
+        <input
+          class="input"
+          type="tel"
+          placeholder="TELEPHONE NUMBER"
+          name="Phone number input"
+        />
 
         <h2 class="info-delivery-h2">DELIVERY</h2>
 
@@ -161,8 +193,19 @@
         <h2 class="info-payment-h2">PAYMENT</h2>
 
         <section class="information-inputs">
-          <input class="input" type="text" placeholder="NAME*" required />
-          <input class="input" type="text" placeholder="CARD NUMBER*" />
+          <input
+            class="input"
+            type="text"
+            placeholder="NAME*"
+            name="Name on card input"
+            required
+          />
+          <input
+            class="input"
+            type="text"
+            placeholder="CARD NUMBER*"
+            name="Card number input"
+          />
           <div class="date-cvc-container">
             <input
               class="input"
@@ -170,6 +213,7 @@
               type="text"
               placeholder="MM/YY*"
               inputmode="numeric"
+              name="Date input"
               required
             />
             <input
@@ -177,6 +221,7 @@
               id="information-cvc"
               type="text"
               placeholder="CVC*"
+              name="CVC input"
               required
             />
           </div>
