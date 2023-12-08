@@ -45,14 +45,17 @@ align-items: center;
     
     .icon-pictures {
     height: 2rem; 
+    cursor: pointer;
     }
 
     .icon-bag {
         height: 2rem;
+        cursor: pointer;
     }
 
     .icon-flag {
         height: 2rem;
+        cursor: pointer;
 }
 
     .headericons {
