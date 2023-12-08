@@ -170,6 +170,10 @@
   vertical-align: middle;
 }
 
+.discount-box:hover {
+  border: 1px solid darkgray;
+}
+
 .add-discount-button {
   width: 4.5rem;
   height: 2.8rem;
@@ -181,6 +185,7 @@
   margin-left: 25px;
   vertical-align: middle;
   transition: ease-in-out 0.5ms;
+  cursor: pointer;
 }
 
 .add-discount-button:hover {
@@ -220,6 +225,7 @@
   width: 20rem;
   height: 4rem;
   transition: ease-in-out 0.5ms;
+  cursor: pointer;
 }
 
 .tocheckout-button:hover {
