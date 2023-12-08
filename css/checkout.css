@@ -54,6 +54,7 @@
   border-radius: 5px;
   background-color: rgba(164, 150, 142, 0.7);
   transition: ease-in-out 0.5ms;
+  cursor: pointer;
 }
 
 .checkoutbuttons:hover {

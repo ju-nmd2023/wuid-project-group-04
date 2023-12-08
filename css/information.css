@@ -127,6 +127,7 @@ input:hover {
   background-color: #a0958f;
   margin-bottom: 5vh;
   transition: ease-in-out 0.5ms;
+  cursor: pointer;
 }
 
 .info-pay-button:hover {

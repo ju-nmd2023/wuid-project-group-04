@@ -1,547 +1,6 @@
 .redborder {
   border: red 1px solid;
 }
-    main {
-        width: 100%;
-    }
-    
-    .header-content {
-    margin: 0;
-    padding: 0;
-    }
-    
-    
-    .login-button :hover {
-    background-color: rgb(157, 157, 157);
-    }
-    
-    
-    .main-header {
-    background-color: rgb(164, 150, 141);
-        height: 103px;
-        width: 100%;
-       margin-right: 0;
-       padding-left: 0;
-       padding-top: 0;
-       display: flex;
-align-items: center;
-    }
-    
-    
-    .container {
-    width: 80%;
-    margin: 0 auto;
-    }
-
-    .icons {
-     display: flex;
-     width: 100%;
-    justify-content: flex-end;
-    gap: 50px;
-    }
-
-
-    
-    
-    .icon-pictures {
-    height: 2rem; 
-    cursor: pointer;
-    }
-
-    .icon-bag {
-        height: 2rem;
-        cursor: pointer;
-    }
-
-    .icon-flag {
-        height: 2rem;
-        cursor: pointer;
-}
-
-    .headericons {
-      display: flex;
-      justify-content: space-between;
-      width: 15%;
-    }
-    
-
-
-    .searchbar {
-        border-radius: 5px;
-        height: 25px;
-    }
-
-    .login-button {
-        width: 10rem;
-        height: 3rem;
-        background-color: rgba(217, 217, 217, 0.7);
-        border: none;
-        border-radius: 5px;
-        font-size: 2rem;
-        font-weight: lighter; 
-        cursor: pointer;
-    }
-
-    .login-butt {
-        display: flex;
-        justify-content: end;
-        margin-top: 0;
-    }
-      
-
-    .icon-loga {
-        width: 26rem;
-        display: flex;
-        border: none; 
-        margin-right: 0;
-        margin: 0;
-        display: block;
-    }
-    
-    
-    .h1-header {
-    margin: 0;
-    }
-    
-    
-    .homepage-pictures {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 7rem;
-    margin-top: 7rem;
-    margin-right: 7rem;
-    column-gap: 5%;
-    }
-    
-    
-    .main-pictures {
-    display: grid;
-    height: 100%;
-    width: 100%;
-    }
-    
-    
-    .campaign-picture {
-        width: 100%;
-        padding-top: 0%;
-        margin: 0;
-        vertical-align: bottom; 
-        margin-top: 8rem;  
-    }
-
-    .list-header {
-        display: flex;
-        gap: 5%;
-    font-size: 1rem;
-    
-    }
-
-    .header-two {
-        background-color: rgb(75, 54, 29) ;
-        margin: 0;
-        padding: 1px;
-        font-family: 'Raleway', sans-serif;
-    }
-
-    .link-header {
-        color: white;
-    }
-
-/* The next 6 classes where adapted from https://www.w3schools.com/howto/howto_css_image_text.asp?fbclid=IwAR0dGFRfX4da7FFMYaD_jnl8w5N_KdE3E66LIraRnuLyNUK_MQ1f-9rc_JE */
-
-    .container-coffee {
-        position: relative;
-        text-align: center;
-        color: black;
-        font-family: 'Raleway', sans-serif;
-    }
-
-    .centered {
-        position: absolute;
-        top: 25%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 5vh;
-        font-family: 'Raleway', sans-serif;     
-    }
-
-
-    .container-bowls {
-        position: relative;
-        text-align: center;
-        color: black;
-        font-family: 'Raleway', sans-serif;
-    }
-
-    .centered-bowls {
-        position: absolute;
-        top: 25%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 5vh;
-        font-family: 'Raleway', sans-serif;
-    }
-
-    .container-plates {
-        position: relative;
-        text-align: center;
-        color: black;
-        font-family: 'Raleway', sans-serif;
-    }
-
-    .centered-plates {
-        position: absolute;
-        top: 25%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 5vh;
-        font-family: 'Raleway', sans-serif;
-    }
-
-    .container-campaign {
-        position: relative;
-        text-align: center;
-        color: white;
-        margin: 0;
-        padding: 0;
-    }
-
-    .centered-campaign {
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 18vh;
-        letter-spacing: 15px;
-        font-family: 'Raleway', sans-serif;
-        margin-bottom: 0;
-        
-    }
-
-    .clickhere-button {
-        width: 15rem;
-        height: 4rem;
-        background-color: rgba(217, 217, 217, 0.7);
-        border: none;
-        border-radius: 5px;
-        font-size: 2rem;
-        font-weight: lighter; 
-        position: absolute;
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .centered-text {
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 4vh;
-        font-family: 'Raleway', sans-serif;
-
-    }
-    
-    .text-coffee {
-        position: absolute;
-        top: 95%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: black;
-        font-size: 3vh;
-        font-family: 'Raleway', sans-serif;     
-    }
-
-    .text-plates {
-        position: absolute;
-        top: 95%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: black;
-        font-size: 3vh;
-    }
-
-    .text-bowls {
-        position: absolute;
-        top: 95%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: black;
-        font-size: 3vh;
-    }
-
-/* FOOTER */
-
-
-    .footer-headline {
-    display: flex;
-    justify-content: center;
-     
-    }
-
-    .footer-aboutus {
-        margin-left: 0;
-        order: 1;
-        font-family: 'Raleway', sans-serif;
-    font-weight: lighter;
-    }
-
-    .footer-contactus {
-        margin-right: 0;
-        order: 1;
-        font-family: 'Raleway', sans-serif;
-    font-weight: lighter;
-    }
-
-    .footer-bigtext {
-        order: 1;
-        font-family: 'Raleway', sans-serif;
-    font-weight: lighter;
-    }
-
-    .footer-container {
-        display: flex;
-        align-items: flex-start;
-        gap: 20%;
-        font-family: 'Raleway', sans-serif;
-        flex-direction: row;
-    }
-
-    .footer-textinfo {
-        font-size: 1rem;
-        display: flex;
-        font-family: 'Raleway', sans-serif;
-        
-    }
-
-    .footer-member {
-        margin-top: 10%;
-        text-align: center;
-        font-size: 3rem;
-        font-family: 'Raleway', sans-serif;
-    }
-
-    .footer-membertext {
-        text-align: center;
-        font-size: 1rem;
-        margin-top: -1%;
-    }
-
-    /* .footer-help {
-    } */
-
-    .footer-mailregister {
-       display: flex; 
-       justify-content: space-around;
-       align-items: center;
-       margin-top: 5%;
-       font-size: 1rem;
-       padding-left: 0;
-    }
-
-    .footer-line {
-        text-align: center;
-        margin-top: -2%;
-    border-color: #000;
-    width: 30rem;
-    }
-
-    .footer-policy {
-        text-align: center;
-        margin-top: 3%;
-        font-size: 1rem;
-        font-family: 'Raleway', sans-serif;
-    }
-
-   .footer-textinfo1 {
-    display: flex;
-    flex-direction: column;
-   }
-
-   .footer-background {
-    background-color:rgb(164, 150, 141);
-    width: 100%; 
-   }
-
-   footer {
-    width: 100%;
-   }
-
-   .footer-box {
-    background-color: rgb(184, 172, 165);
-    margin-top: 2rem; 
-    width: 45rem;
-    height: 20rem;
-    order: 2;
-
-   }
-
-   .footer-container {
-    display: flex;
-    justify-content: center;
-   }
-   
-   .contact-loga {
-    padding: 0;
-    display: flex;
-    gap: 2px;
-   }
-
-   .tiktok-loga {
-    height: 30px;
-   }
-
-   .facebook-loga {
-    height: 30px;
-   }
-
-   .instagram-loga {
-    height: 30px;
-   }
-
-   #stripe {
-border-color: #000;
-    width: 25rem;
-   }
-
-   .footer-all {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 10%;
-    margin-right: 10%;
-   }
-
-   #telephonebutton {
-    display: none;
-    padding-left: 2rem;
-    }
-
-    .menu-img {
-        width: 2rem;
-        height: 2rem;
-    }
-
- @media screen and (max-width: 1000px) {
-    .icon-loga {
-        width: 20rem;
-    }
-    .icon-pictures , .icon-bag , .icon-flag {
-        height: 1.5rem;
-      } 
-      .icons {
-        gap: 6%;
-      } 
-      .login-button {
-        width: 7rem;
-        height: 2rem;
-        font-size: 1rem;
-      } 
-      .footer-contactus {
-        font-size: 20px;
-       } 
-       .footer-aboutus {
-        font-size: 20px;
-       }
-       .footer-bigtext {
-        font-size: 20px;
-    } 
-    .footer-textinfo1 {
-        font-size: 12px;
-    }
-    .alltext , .footer-leagal , .footer-textinfo {
-        font-size: 12px;
-      } 
-      .footer-box {
-        width: 35rem;
-        height: 20rem;
-       } 
-       .homepage-pictures {
-        grid-template-columns: 1fr;   
-    }
- }
-
-
-
- @media screen and (max-width: 1200px) {
-    .clickhere-button {
-        width: 10rem;
-        font-size: 1.5rem;
-    }
-    .centered-text {
-        font-size: 1rem;
-    }
-    .centered-campaign {
-        font-size: 5rem;
-    }
- }
-
- 
-
-
- @media screen and (max-width: 700px) {
-    .footer-membertext , .footer-mailregister , .footer-policy {
-        font-size: 0.8rem;
-    }
-    .footer-member {
-        font-size: 2rem;
-    }
-    .footer-box {
-        width: 25rem;
-        height: 15rem;
-       } 
-       .clickhere-button {
-        width: 7rem;
-        font-size: 1rem;
-        height: 2.5rem;
-    }
-    .centered-campaign {
-        font-size: 3.5rem;
-    }
- }
-
-
-
- @media screen and (max-width: 650px) {
-    .searchbar {
-      height: 1.4rem;
-      width: 7rem;
-    } 
-    .icon-pictures , .icon-bag , .icon-flag {
-        height: 1rem;
-      } 
-      .login-button {
-        width: 5rem;
-        height: 1.5rem;
-        font-size: 0.8rem;
-      } 
-      .icon-loga {
-        width: 15rem;
-    }
-    .footer-aboutus , .footer-bigtext , .footer-contactus {
-        font-size: 1rem;
-     }
-
- }
-
-
-  
-
- @media screen and (max-width: 550px) {
-
-.footer-all {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-
-.main-pictures {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-}
 main {
   width: 100%;
 }
@@ -580,14 +39,17 @@ main {
 
 .icon-pictures {
   height: 2rem;
+  cursor: pointer;
 }
 
 .icon-bag {
   height: 2rem;
+  cursor: pointer;
 }
 
 .icon-flag {
   height: 2rem;
+  cursor: pointer;
 }
 
 .headericons {
@@ -644,6 +106,7 @@ main {
   display: grid;
   height: 100%;
   width: 100%;
+  cursor: pointer;
 }
 
 .campaign-picture {
@@ -845,6 +308,8 @@ main {
   margin-top: -1%;
 }
 
+/* .footer-help {
+    } */
 
 .footer-mailregister {
   display: flex;
@@ -859,7 +324,7 @@ main {
   text-align: center;
   margin-top: -2%;
   border-color: #000;
-  width: 15rem;
+  width: 30rem;
 }
 
 .footer-policy {
@@ -1046,7 +511,6 @@ footer {
     justify-content: space-between;
     margin-left: 10%;
     margin-right: 10%;
-    flex-direction: column;
   }
 
   .main-pictures {
@@ -1055,74 +519,587 @@ footer {
     margin: 0;
     padding: 0;
   }
+  main {
+    width: 100%;
+  }
 
-  .homepage-pictures {
+  .header-content {
     margin: 0;
+    padding: 0;
   }
 
-  .alltext,
-  .footer-textinfo .header-two,
-  .list-header,
-  .headericons,
-  .searchbar,
+  .login-button :hover {
+    background-color: rgb(157, 157, 157);
+  }
+
+  .main-header {
+    background-color: rgb(164, 150, 141);
+    height: 103px;
+    width: 100%;
+    margin-right: 0;
+    padding-left: 0;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .icons {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 50px;
+  }
+
+  .icon-pictures {
+    height: 2rem;
+  }
+
+  .icon-bag {
+    height: 2rem;
+  }
+
+  .icon-flag {
+    height: 2rem;
+  }
+
+  .headericons {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+  }
+
+  .searchbar {
+    border-radius: 5px;
+    height: 25px;
+  }
+
   .login-button {
-    display: none;
+    width: 10rem;
+    height: 3rem;
+    background-color: rgba(217, 217, 217, 0.7);
+    border: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-weight: lighter;
+    cursor: pointer;
   }
 
-  .footer-background {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "footerbox" "footertext";
-  }
-  .footer-container {
-    grid-area: footerbox;
-  }
-  .footer-aboutus,
-  .footer-bigtext,
-  .footer-contactus {
-    grid-area: footertext;
+  .login-butt {
+    display: flex;
+    justify-content: end;
+    margin-top: 0;
   }
 
   .icon-loga {
-    width: 12rem;
+    width: 26rem;
+    display: flex;
+    border: none;
+    margin-right: 0;
+    margin: 0;
+    display: block;
   }
 
-  .footer-member {
-    font-size: 1.5rem;
+  .h1-header {
+    margin: 0;
   }
 
-  .footer-membertext,
-  .footer-mailregister,
-  .footer-policy {
-    font-size: 0.6rem;
+  .homepage-pictures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 7rem;
+    margin-top: 7rem;
+    margin-right: 7rem;
+    column-gap: 5%;
   }
 
-  .footer-box {
-    width: 20rem;
-    height: 12rem;
+  .main-pictures {
+    display: grid;
+    height: 100%;
+    width: 100%;
   }
 
   .campaign-picture {
     width: 100%;
-    height: auto;
+    padding-top: 0%;
+    margin: 0;
+    vertical-align: bottom;
+    margin-top: 8rem;
+  }
+
+  .list-header {
+    display: flex;
+    gap: 5%;
+    font-size: 1rem;
+  }
+
+  .header-two {
+    background-color: rgb(75, 54, 29);
+    margin: 0;
+    padding: 1px;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .link-header {
+    color: white;
+  }
+
+  /* The next 6 classes where adapted from https://www.w3schools.com/howto/howto_css_image_text.asp?fbclid=IwAR0dGFRfX4da7FFMYaD_jnl8w5N_KdE3E66LIraRnuLyNUK_MQ1f-9rc_JE */
+
+  .container-coffee {
+    position: relative;
+    text-align: center;
+    color: black;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .centered {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5vh;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .container-bowls {
+    position: relative;
+    text-align: center;
+    color: black;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .centered-bowls {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5vh;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .container-plates {
+    position: relative;
+    text-align: center;
+    color: black;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .centered-plates {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5vh;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .container-campaign {
+    position: relative;
+    text-align: center;
+    color: white;
     margin: 0;
     padding: 0;
   }
+
   .centered-campaign {
-    font-size: 3rem;
-    margin-top: -0.1rem;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18vh;
+    letter-spacing: 15px;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 0;
   }
+
   .clickhere-button {
-    width: 5rem;
-    font-size: 0.7rem;
-    height: 1.7rem;
-    margin-top: 1rem;
+    width: 15rem;
+    height: 4rem;
+    background-color: rgba(217, 217, 217, 0.7);
+    border: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-weight: lighter;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
+
   .centered-text {
-    font-size: 0.9rem;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vh;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .text-coffee {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 3vh;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .text-plates {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 3vh;
+  }
+
+  .text-bowls {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 3vh;
+  }
+
+  /* FOOTER */
+
+  .footer-headline {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-aboutus {
+    margin-left: 0;
+    order: 1;
+    font-family: "Raleway", sans-serif;
+    font-weight: lighter;
+  }
+
+  .footer-contactus {
+    margin-right: 0;
+    order: 1;
+    font-family: "Raleway", sans-serif;
+    font-weight: lighter;
+  }
+
+  .footer-bigtext {
+    order: 1;
+    font-family: "Raleway", sans-serif;
+    font-weight: lighter;
+  }
+
+  .footer-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20%;
+    font-family: "Raleway", sans-serif;
+    flex-direction: row;
+  }
+
+  .footer-textinfo {
+    font-size: 1rem;
+    display: flex;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .footer-member {
+    margin-top: 10%;
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .footer-membertext {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: -1%;
+  }
+
+  .footer-mailregister {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+    font-size: 1rem;
+    padding-left: 0;
+  }
+
+  .footer-line {
+    text-align: center;
+    margin-top: -2%;
+    border-color: #000;
+    width: 15rem;
+  }
+
+  .footer-policy {
+    text-align: center;
+    margin-top: 3%;
+    font-size: 1rem;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .footer-textinfo1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-background {
+    background-color: rgb(164, 150, 141);
+    width: 100%;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  .footer-box {
+    background-color: rgb(184, 172, 165);
+    margin-top: 2rem;
+    width: 45rem;
+    height: 20rem;
+    order: 2;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-loga {
+    padding: 0;
+    display: flex;
+    gap: 2px;
+  }
+
+  .tiktok-loga {
+    height: 30px;
+  }
+
+  .facebook-loga {
+    height: 30px;
+  }
+
+  .instagram-loga {
+    height: 30px;
+  }
+
+  #stripe {
+    border-color: #000;
+    width: 25rem;
+  }
+
+  .footer-all {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   #telephonebutton {
-    display: block;
+    display: none;
+    padding-left: 2rem;
   }
-}}
+
+  .menu-img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .icon-loga {
+      width: 20rem;
+    }
+    .icon-pictures,
+    .icon-bag,
+    .icon-flag {
+      height: 1.5rem;
+    }
+    .icons {
+      gap: 6%;
+    }
+    .login-button {
+      width: 7rem;
+      height: 2rem;
+      font-size: 1rem;
+    }
+    .footer-contactus {
+      font-size: 20px;
+    }
+    .footer-aboutus {
+      font-size: 20px;
+    }
+    .footer-bigtext {
+      font-size: 20px;
+    }
+    .footer-textinfo1 {
+      font-size: 12px;
+    }
+    .alltext,
+    .footer-leagal,
+    .footer-textinfo {
+      font-size: 12px;
+    }
+    .footer-box {
+      width: 35rem;
+      height: 20rem;
+    }
+    .homepage-pictures {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .clickhere-button {
+      width: 10rem;
+      font-size: 1.5rem;
+    }
+    .centered-text {
+      font-size: 1rem;
+    }
+    .centered-campaign {
+      font-size: 5rem;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .footer-membertext,
+    .footer-mailregister,
+    .footer-policy {
+      font-size: 0.8rem;
+    }
+    .footer-member {
+      font-size: 2rem;
+    }
+    .footer-box {
+      width: 25rem;
+      height: 15rem;
+    }
+    .clickhere-button {
+      width: 7rem;
+      font-size: 1rem;
+      height: 2.5rem;
+    }
+    .centered-campaign {
+      font-size: 3.5rem;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .searchbar {
+      height: 1.4rem;
+      width: 7rem;
+    }
+    .icon-pictures,
+    .icon-bag,
+    .icon-flag {
+      height: 1rem;
+    }
+    .login-button {
+      width: 5rem;
+      height: 1.5rem;
+      font-size: 0.8rem;
+    }
+    .icon-loga {
+      width: 15rem;
+    }
+    .footer-aboutus,
+    .footer-bigtext,
+    .footer-contactus {
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .footer-all {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 10%;
+      margin-right: 10%;
+      flex-direction: column;
+    }
+
+    .main-pictures {
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+    }
+
+    .homepage-pictures {
+      margin: 0;
+    }
+
+    .alltext,
+    .footer-textinfo .header-two,
+    .list-header,
+    .headericons,
+    .searchbar,
+    .login-button {
+      display: none;
+    }
+
+    .footer-background {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "footerbox" "footertext";
+    }
+    .footer-container {
+      grid-area: footerbox;
+    }
+    .footer-aboutus,
+    .footer-bigtext,
+    .footer-contactus {
+      grid-area: footertext;
+    }
+
+    .icon-loga {
+      width: 12rem;
+    }
+
+    .footer-member {
+      font-size: 1.5rem;
+    }
+
+    .footer-membertext,
+    .footer-mailregister,
+    .footer-policy {
+      font-size: 0.6rem;
+    }
+
+    .footer-box {
+      width: 20rem;
+      height: 12rem;
+    }
+
+    .campaign-picture {
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+    }
+    .centered-campaign {
+      font-size: 3rem;
+      margin-top: -0.1rem;
+    }
+    .clickhere-button {
+      width: 5rem;
+      font-size: 0.7rem;
+      height: 1.7rem;
+      margin-top: 1rem;
+    }
+    .centered-text {
+      font-size: 0.9rem;
+    }
+
+    #telephonebutton {
+      display: block;
+    }
+  }
+}
