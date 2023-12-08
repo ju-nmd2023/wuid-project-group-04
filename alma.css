@@ -176,7 +176,7 @@ body {
 /* sort by */
 #sort-by-container {
   display: inline-block;
-  margin: 0 auto;
+  margin: 0 auto; /* 0 stands for left and right and auto for top and bottom */
 }
 
 .sort-by-item {
@@ -323,25 +323,10 @@ body {
 
 /* BUTTONS DELIVERY AND CARE INSTRUCTIONS, PRODUCT VIEW PAGE */
 
-.description-button {
+
+.dropdownbutton {
   display: flex;
   width: 151px;
-  height: 36px;
-  font-size: 15px;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 5px;
-  background-color: #006633;
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding-left: 5%;
-  margin-right: 10px;
-}
-
-.careinstructions-button {
-  display: flex;
-  width: 204px;
   height: 36px;
   font-size: 15px;
   align-items: center;
@@ -357,18 +342,16 @@ body {
 #grid-buttons {
   display: flex;
   margin-left: 10%;
+  gap: 10px;
 }
 
 /* Following four classes were adapted from https://www.w3schools.com/css/css_dropdowns.asp */
 
-.dropdown {
-  display: inline-block;
-}
+
 
 .dropdown-content {
   display: none;
   position: absolute;
-  z-index: 1;
   background-color: #006633;
   width: 146px;
   color: white;
@@ -446,8 +429,6 @@ body {
     font-size: 20px;
     font-weight: 500;
   } */
-
-  
 }
 
 /* MEDIA QUERY 830 PX */
@@ -471,7 +452,7 @@ body {
     font-size: 20px;
   }
 
-  .horizontal-stack {
+  .stacking {
     width: min-content;
     margin-left: 0%;
     margin: auto;
@@ -652,6 +633,7 @@ body {
   #grid-buttons {
     margin: auto;
     margin-right: 5%;
+    gap: 10px;
   }
 
   .horizontal-stack {
