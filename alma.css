@@ -323,7 +323,6 @@ body {
 
 /* BUTTONS DELIVERY AND CARE INSTRUCTIONS, PRODUCT VIEW PAGE */
 
-
 .dropdownbutton {
   display: flex;
   width: 151px;
@@ -346,8 +345,6 @@ body {
 }
 
 /* Following four classes were adapted from https://www.w3schools.com/css/css_dropdowns.asp */
-
-
 
 .dropdown-content {
   display: none;
