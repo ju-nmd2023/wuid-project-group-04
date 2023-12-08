@@ -5,6 +5,10 @@ body {
   margin: 0;
 }
 
+nav {
+  margin-bottom: 2rem;
+}
+
 /* PRODUCT INFORMATION PAGE */
 
 .productinfo-image {
@@ -216,7 +220,7 @@ body {
 .productinfo-cups {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 5%;
+  gap: 1rem;
   margin: auto;
 }
 
