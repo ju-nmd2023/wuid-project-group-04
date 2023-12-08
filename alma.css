@@ -421,17 +421,9 @@ nav {
 /* MEDIA QUERY 900 PX OR LESS*/
 
 @media only screen and (max-width: 900px) {
-  /* .productview-image {
+  .productview-image {
     width: 40vw;
-  } */
-
-  /* #grid-buttons {
-    margin: auto;
-    margin-top: 5%;
-   
-    font-size: 20px;
-    font-weight: 500;
-  } */
+  }
 }
 
 /* MEDIA QUERY 830 PX */
@@ -455,7 +447,6 @@ nav {
     border-radius: 2px;
     object-fit: contain;
     width: 50vw;
-    /* max-width: 400px; Set a maximum width for the image */
     height: auto;
   }
 
@@ -473,7 +464,7 @@ nav {
   .productimage-row {
     display: flex;
     flex-direction: column; /* Stack items vertically on smaller screens */
-    align-items: center;
+
     text-align: center;
     margin: 0;
   }
@@ -615,14 +606,13 @@ nav {
   }
 
   /* MEDIA QUERY PRODUCT VIEW */
-
-  @media only screen and (max-width: 520px) {
-    .productview-image {
-      border-radius: 2px;
-      object-fit: contain;
-      max-width: 400px; /* Set a maximum width for the image */
-      height: auto;
-    }
+  .productview-image {
+    margin-bottom: 5%;
+    margin-left: 0;
+    border-radius: 2px;
+    object-fit: contain; /* the image will be resized to fit the aspect ratio of its container */
+    max-width: 400px; /* Set a maximum width for the image */
+    height: auto;
   }
 
   /* TEXT ABOUT THE PERNILLA CUP */
@@ -638,6 +628,7 @@ nav {
     .first-row-pernilla,
     .second-row-pernilla {
       margin-left: 0;
+      margin-top: 5%;
     }
 
     .first-row-pernilla,
