@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="dropdown.js" defer></script>
-   
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,12 +19,9 @@
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="menu.css" />
 
-    
     <title>Vett & etikett</title>
   </head>
-
   <body class="header-content">
-
     <header class="main-header">
       <img class="icon-loga" src="/images/Headervett.png" alt="loga" />
       <div class="icons">
@@ -69,121 +66,122 @@
         <a class="link-header" href="#"> Trends </a>
       </ul>
     </header>
-    
+
     <main>
+      <nav>
+        <h1 id="smaller-header" class="productinfo-header">CUPS</h1>
 
-      <h1 id="smaller-header" class="productinfo-header">CUPS</h1>
+        <div class="productimage-outer">
+          <div class="productimage-row">
+            <div class="sub-images-align">
+              <div class="flex-subimages">
+                <img
+                  src="images/pernilla1st.png"
+                  class="sub-image"
+                  alt="Another image Pernilla cup"
+                />
+                <img
+                  src="images/pernilla2nd.png"
+                  class="sub-image"
+                  alt="Another image Pernilla cup"
+                />
+              </div>
 
-    <div class="productimage-outer">
-      <div class="productimage-row">
-        <div class="sub-images-align">
-          <div class="flex-subimages">
-            <img
-              src="images/pernilla1st.png"
-              class="sub-image"
-              alt="Another image Pernilla cup"
-            />
-            <img
-              src="images/pernilla2nd.png"
-              class="sub-image"
-              alt="Another image Pernilla cup"
-            />
+              <img
+                class="productview-image"
+                src="images/Pernilla desktop.png"
+                alt="Pernilla"
+              />
+            </div>
+
+            <div class="grid-info">
+              <p class="first-row-pernilla">PERNILLA CUP</p>
+              <p class="second-row-pernilla">99 SEK</p>
+              <p class="pernilla-cup-paragraph">
+                A beautiful cup with a nice pattern, perfect for the coffee in
+                the morning.
+              </p>
+              <section class="stacking">
+                <div class="descriptionButton" id="grid-buttons">
+                  <div class="dropdown">
+                    <button id="descriptionButton" class="dropdownbutton">
+                      DESCRIPTION<i class="fa fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <p>Article number: 123456789</p>
+                      <p>Color: White, beige, goldcoat</p>
+                      <p>Material: Porcelain</p>
+                      <p>Handle: Yes</p>
+                      <p>Capacity: 240ml</p>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <button id="careInstructionsButton" class="dropdownbutton">
+                      INSTRUCTIONS<i class="fa fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <p>Maintenance: Dishwasher-safe</p>
+                      <p>
+                        Sustainability: Made with sustainable materials and
+                        responsible production
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="add-to-cart-container">
+                  <div class="dropdown">
+                    <a href="shoppingcart.html">
+                      <button id="add-to-cart-button">
+                        ADD TO CART<i class="add-to-cart-button"></i>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </section>
+            </div>
           </div>
-
-          <img
-            class="productview-image"
-            src="images/Pernilla desktop.png"
-            alt="Pernilla"
-          />
         </div>
 
-        <div class="grid-info">
-          <p class="first-row-pernilla">PERNILLA CUP</p>
-          <p class="second-row-pernilla">99 SEK</p>
-          <p class="pernilla-cup-paragraph">
-            A beautiful cup with a nice pattern, perfect for the coffee in the
-            morning.
-          </p>
-          <section class="stacking">
-            <div class="descriptionButton" id="grid-buttons">
-              <div class="dropdown">
-                <button id="descriptionButton" class="dropdownbutton">
-                  DESCRIPTION<i class="fa fa-angle-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <p>Article number: 123456789</p>
-                  <p>Color: White, beige, goldcoat</p>
-                  <p>Material: Porcelain</p>
-                  <p>Handle: Yes</p>
-                  <p>Capacity: 240ml</p>
-                </div>
-              </div>
-              <div class="dropdown">
-                <button id="careInstructionsButton" class="dropdownbutton">
-                  INSTRUCTIONS<i class="fa fa-angle-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <p>Maintenance: Dishwasher-safe</p>
-                  <p>
-                    Sustainability: Made with sustainable materials and
-                    responsible production
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="add-to-cart-container">
-              <div class="dropdown">
-                <a href="shoppingcart.html">
-                  <button id="add-to-cart-button">
-                    ADD TO CART<i class="add-to-cart-button"></i>
-                  </button>
-                </a>
-              </div>
-            </div>
-          </section>
+        <p class="recommended-items">RECOMMENDED</p>
+        <div class="recommended-images">
+          <figure class="recommended-container">
+            <img
+              class="productinfo-image"
+              src="images/lindarecommend.png"
+              alt="Linda recommended"
+            />
+            <figcaption>
+              <p class="first-row-product">Linda</p>
+              <p class="second-row-product">129 SEK</p>
+            </figcaption>
+          </figure>
+          <figure class="productimage-container">
+            <img
+              class="productinfo-image"
+              src="images/borjerecommend.png"
+              alt="Börje recommended"
+            />
+            <figcaption>
+              <p class="first-row-product">Börje</p>
+              <p class="second-row-product">149.90 SEK</p>
+            </figcaption>
+          </figure>
+          <figure class="productimage-container">
+            <img
+              class="productinfo-image"
+              id="mickan-hidden"
+              src="images/mickanrecommend.png"
+              alt="Mickan recommended"
+            />
+            <figcaption>
+              <p class="first-row-product" id="mickan-hidden">Mickan</p>
+              <p class="second-row-product" id="mickan-hidden">99.90 SEK</p>
+            </figcaption>
+          </figure>
         </div>
-      </div>
-    </div>
-
-    <p class="recommended-items">RECOMMENDED</p>
-    <div class="recommended-images">
-      <figure class="recommended-container">
-        <img
-          class="productinfo-image"
-          src="images/lindarecommend.png"
-          alt="Linda recommended"
-        />
-        <figcaption>
-          <p class="first-row-product">Linda</p>
-          <p class="second-row-product">129 SEK</p>
-        </figcaption>
-      </figure>
-      <figure class="productimage-container">
-        <img
-          class="productinfo-image"
-          src="images/borjerecommend.png"
-          alt="Börje recommended"
-        />
-        <figcaption>
-          <p class="first-row-product">Börje</p>
-          <p class="second-row-product">149.90 SEK</p>
-        </figcaption>
-      </figure>
-      <figure class="productimage-container">
-        <img
-          class="productinfo-image"
-          id="mickan-hidden"
-          src="images/mickanrecommend.png"
-          alt="Mickan recommended"
-        />
-        <figcaption>
-          <p class="first-row-product" id="mickan-hidden">Mickan</p>
-          <p class="second-row-product" id="mickan-hidden">99.90 SEK</p>
-        </figcaption>
-      </figure>
-    </div>
-
+      </nav>
+    </main>
     <footer class="footer-background">
       <section class="footer-all">
         <div class="footer-about">
@@ -225,11 +223,7 @@
           </div>
 
           <ul class="contact-loga">
-            <img
-              class="tiktok-loga"
-              src="../img/tiktok.png"
-              alt="tiktok loga"
-            />
+            <img class="tiktok-loga" src="img/tiktok.png" alt="tiktok loga" />
             <img
               class="facebook-loga"
               src="img/facebook.png"
