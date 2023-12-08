@@ -449,6 +449,7 @@ border-color: #000;
 
    #telephonebutton {
     display: none;
+    padding-left: 2rem;
     }
 
     .menu-img {
