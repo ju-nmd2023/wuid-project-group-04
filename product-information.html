@@ -18,355 +18,345 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="alma.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="menu.css" />
 
     <title>Vett & etikett</title>
   </head>
-  <body>
-    <nav>
-      <div class="grid-header">
-        <div></div>
-        <h1 class="productinfo-header">CUPS</h1>
-        <button id="filter-text" class="filter-text">
-          FILTER
+
+  <body class="header-content">
+    <header class="main-header">
+      <img class="icon-loga" src="/images/Headervett.png" alt="loga" />
+      <div class="icons">
+        <input class="searchbar" type="search" placeholder="Search..." />
+
+        <div class="headericons">
           <img
-            class="filter-icon"
-            src="images/Filter icon.svg"
-            alt="Filter icon"
+            class="icon-flag"
+            src="images/united-kingdom.png"
+            alt="icon flag"
           />
-        </button>
-      </div>
-      <!-- When button is hit javascript changes to class to inside-filter -->
-      <div class="filter-hidden">
-        <div>
-          <div id="price-tag" class="filter-type-title">Price</div>
-          <div class="price-options">
-            <!-- <div class="price-slider-container"> -->
-
-          <div class="headericons">
-            <img
-              class="icon-flag"
-              src="img/united-kingdom.png"
-              alt="icon flag"
-            />
-            <img
-              class="icon-bag"
-              src="img/shoppingbag.png"
-              alt="icon shoppingbag"
-            />
-            <img class="icon-pictures" src="img/heart-2.png" alt="icon heart" />
-          </div>
-          <div class="login-butt">
-            <button class="login-button">LOG IN</button>
-          </div>
-
-          <a href="iphonemenu.html">
-            <button id="telephonebutton">
-              <img class="menu-img" src="img/menu.png" alt="" />
-            </button>
-          </a>
+          <img
+            class="icon-bag"
+            src="images/shoppingbag.png"
+            alt="icon shoppingbag"
+          />
+          <img
+            class="icon-pictures"
+            src="images/heart-2.png"
+            alt="icon heart"
+          />
         </div>
-      </header>
+        <div class="login-butt">
+          <button class="login-button">LOG IN</button>
+        </div>
 
-      <header class="header-two">
-        <ul class="list-header">
-          <a class="link-header" href="#"> Home </a>
-          <a class="link-header" href="#"> Campaign </a>
-          <a class="link-header" href="#"> New in </a>
-          <a class="link-header" href="#"> Inspiration </a>
-          <a class="link-header" href="#"> Trends </a>
-        </ul>
-      </header>
-      <main>
-        <nav>
-          <div class="grid-header">
-            <div></div>
-            <h1 class="productinfo-header">CUPS</h1>
+        <a href="iphonemenu.html">
+          <button id="telephonebutton">
+            <img class="menu-img" src="images/menu.png" alt="" />
+          </button>
+        </a>
+      </div>
+    </header>
+    <header class="header-two">
+      <ul class="list-header">
+        <a class="link-header" href="#"> Home </a>
+        <a class="link-header" href="#"> Campaign </a>
+        <a class="link-header" href="#"> New in </a>
+        <a class="link-header" href="#"> Inspiration </a>
+        <a class="link-header" href="#"> Trends </a>
+      </ul>
+    </header>
+    <main>
+      <nav>
+        <div class="grid-header">
+          <div></div>
+          <h1 class="productinfo-header">CUPS</h1>
 
-            <button id="filter-text" class="filter-text">
-              FILTER
-              <img
-                class="filter-icon"
-                src="images/Filter icon.svg"
-                alt="Filter icon"
-              />
-            </button>
-          </div>
-          <div class="filter-hidden">
-            <div>
-              <div id="price-tag" class="filter-type-title">Price</div>
-              <div class="price-options">
-                <!-- <div class="price-slider-container"> -->
+          <button id="filter-text" class="filter-text">
+            FILTER
+            <img
+              class="filter-icon"
+              src="images/Filter icon.svg"
+              alt="Filter icon"
+            />
+          </button>
+        </div>
+        <div class="filter-hidden">
+          <div>
+            <div id="price-tag" class="filter-type-title">Price</div>
+            <div class="price-options">
+              <!-- <div class="price-slider-container"> -->
 
-                <input class="price-slider" type="range" />
-                <!-- Adds a price slider -->
-                <div class="flex-currency">
-                  <div class="fifty-sek">50 SEK</div>
-                  <div class="three-sek">300 SEK</div>
-                  <!-- </div> -->
-                </div>
+              <input class="price-slider" type="range" />
+              <!-- Adds a price slider -->
+              <div class="flex-currency">
+                <div class="fifty-sek">50 SEK</div>
+                <div class="three-sek">300 SEK</div>
+                <!-- </div> -->
               </div>
-            </div>
-
-            <div>
-              <div id="colour-tag" class="filter-type-title">Colour</div>
-              <div class="colour-options">
-                <div class="colour-column">
-                  <div class="colour-container">
-                    <div class="white-filtercolor filtercolor">
-                      <input class="checkbox-flex" type="checkbox" />White
-                    </div>
-                    <div class="red-filtercolor filtercolor">
-                      <input class="checkbox-flex" type="checkbox" />Red
-                    </div>
-                    <div class="blue-filtercolor filtercolor">
-                      <input class="checkbox-flex" type="checkbox" />Blue
-                    </div>
-                  </div>
-                </div>
-                <div class="colour-column">
-                  <div class="colour-container">
-                    <div class="black-filtercolor filtercolor">
-                      <input class="checkbox-flex" type="checkbox" />Black
-                    </div>
-                    <div class="beige-filtercolor filtercolor">
-                      <input class="checkbox-flex" type="checkbox" />Beige
-                    </div>
-                    <div class="multicolour-filtercolor filtercolor">
-                      <input class="checkbox-flex" type="checkbox" />Multi
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <div id="sort-by" class="filter-type-title">Sort by</div>
-              <div id="sort-by-container">
-                <div class="sort-by-item">
-                  <input class="checkbox-sort" type="checkbox" /> Most popular
-                </div>
-                <div class="sort-by-item">
-                  <input class="checkbox-sort" type="checkbox" /> Lowest price
-                </div>
-                <div class="sort-by-item">
-                  <input class="checkbox-sort" type="checkbox" /> Highest price
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="productinfo-cups">
-            <figure class="productimage-container">
-              <img
-                class="productinfo-image"
-                src="images/Leif desktop.png"
-                alt="Leif"
-              />
-              <figcaption>
-                <p class="first-row-product">Leif</p>
-                <p class="second-row-product">129 SEK</p>
-              </figcaption>
-            </figure>
-            <figure class="productimage-container">
-              <img
-                class="productinfo-image"
-                src="images/Carl-gustaf desktop.png"
-                alt="Carl-Gustaf"
-              />
-              <figcaption>
-                <p class="first-row-product">Carl-Gustav</p>
-                <p class="second-row-product">200 SEK</p>
-              </figcaption>
-            </figure>
-            <figure class="productimage-container">
-              <img
-                class="productinfo-image"
-                src="images/Per desktop.png"
-                alt="Per"
-              />
-              <figcaption>
-                <p class="first-row-product">Per</p>
-                <p class="second-row-product">105 SEK</p>
-              </figcaption>
-            </figure>
-            <figure class="productimage-container">
-              <img
-                class="productinfo-image"
-                src="images/Linda desktop.png"
-                alt="Linda"
-              />
-              <figcaption>
-                <p class="first-row-product">Linda</p>
-                <p class="second-row-product">129 SEK</p>
-              </figcaption>
-            </figure>
-            <figure class="productimage-container">
-              <img
-                class="productinfo-image"
-                src="images/Molly desktop.png"
-                alt="Molly"
-              />
-              <figcaption>
-                <p class="first-row-product">Molly</p>
-                <p class="second-row-product">135 SEK</p>
-              </figcaption>
-            </figure>
-            <figure class="productimage-container">
-              <a href="product-view.html">
-                <img
-                  class="productinfo-image"
-                  src="images/Pernilla desktop.png"
-                  alt="Pernilla"
-                />
-              </a>
-              <figcaption>
-                <p class="first-row-product">Pernilla</p>
-                <p class="second-row-product">99 SEK</p>
-              </figcaption>
-            </figure>
-            <figure class="productimage-container">
-              <img
-                class="productinfo-image"
-                src="images/Anders desktop.png"
-                alt="Anders"
-              />
-              <figcaption>
-                <p class="first-row-product">Anders</p>
-                <p class="second-row-product">150 SEK</p>
-              </figcaption>
-            </figure>
-            <figure class="productimage-container">
-              <img
-                class="productinfo-image"
-                src="images/Glenn desktop.png"
-                alt="Glenn"
-              />
-              <figcaption>
-                <p class="first-row-product">Glenn</p>
-                <p class="second-row-product">139.90 SEK</p>
-              </figcaption>
-            </figure>
-            <figure class="productimage-container">
-              <img
-                class="productinfo-image"
-                src="images/Mickan desktop.jpeg"
-                alt="Mickan"
-              />
-              <figcaption>
-                <p class="first-row-product">Mickan</p>
-                <p class="second-row-product">99.90 SEK</p>
-              </figcaption>
-            </figure>
-            <figure class="productimage-container">
-              <img
-                class="productinfo-image"
-                src="images/Miriam desktop.png"
-                alt="Miriam"
-              />
-              <figcaption>
-                <p class="first-row-product">Miriam</p>
-                <p class="second-row-product">129 SEK</p>
-              </figcaption>
-            </figure>
-            <figure class="productimage-container">
-              <img
-                class="productinfo-image"
-                src="images/Börje desktop.png"
-                alt="Börje"
-              />
-              <figcaption>
-                <p class="first-row-product">Börje</p>
-                <p class="second-row-product">149.90 SEK</p>
-              </figcaption>
-            </figure>
-            <figure class="productimage-container">
-              <img
-                class="productinfo-image"
-                src="images/Ernst desktop.png"
-                alt="Ernst"
-              />
-              <figcaption>
-                <p class="first-row-product">Ernst</p>
-                <p class="second-row-product">125 SEK</p>
-              </figcaption>
-            </figure>
-          </div>
-        </nav>
-      </main>
-      <footer class="footer-background">
-        <section class="footer-all">
-          <div class="footer-about">
-            <h1 class="footer-aboutus">About us</h1>
-            <div class="alltext">
-              <p class="footer-textinfo">Sustainability</p>
-              <p>Privacy policy</p>
-              <p>Vett och etikett</p>
-              <p>Affiliate</p>
             </div>
           </div>
 
           <div>
-            <h1 class="footer-bigtext">Help</h1>
-            <div class="alltext">
-              <p class="footer-textinfo1">Order status</p>
-              <p>Shipping and delivery</p>
-              <p>Purchase conditions</p>
-              <p>Common questions</p>
-              <p>Campaign conditions</p>
-              <p>Gift cards</p>
-            </div>
-          </div>
-
-          <div class="footer-leagal">
-            <h1 class="footer-bigtext">Legal information</h1>
-            <div class="alltext">
-              <p class="footer-textinfo">Terms and conditions</p>
-              <p>Backpayment</p>
-            </div>
-          </div>
-
-          <div class="contact-logos">
-            <div class="footer-contact">
-              <h1 class="footer-contactus">Contact us</h1>
-              <div class="alltext">
-                <p class="footer-textinfo">vettochetikett@gmail.com</p>
+            <div id="colour-tag" class="filter-type-title">Colour</div>
+            <div class="colour-options">
+              <div class="colour-column">
+                <div class="colour-container">
+                  <div class="white-filtercolor filtercolor">
+                    <input class="checkbox-flex" type="checkbox" />White
+                  </div>
+                  <div class="red-filtercolor filtercolor">
+                    <input class="checkbox-flex" type="checkbox" />Red
+                  </div>
+                  <div class="blue-filtercolor filtercolor">
+                    <input class="checkbox-flex" type="checkbox" />Blue
+                  </div>
+                </div>
+              </div>
+              <div class="colour-column">
+                <div class="colour-container">
+                  <div class="black-filtercolor filtercolor">
+                    <input class="checkbox-flex" type="checkbox" />Black
+                  </div>
+                  <div class="beige-filtercolor filtercolor">
+                    <input class="checkbox-flex" type="checkbox" />Beige
+                  </div>
+                  <div class="multicolour-filtercolor filtercolor">
+                    <input class="checkbox-flex" type="checkbox" />Multi
+                  </div>
+                </div>
               </div>
             </div>
-
-            <ul class="contact-loga">
-              <img
-                class="tiktok-loga"
-                src="../img/tiktok.png"
-                alt="tiktok loga"
-              />
-              <img
-                class="facebook-loga"
-                src="img/facebook.png"
-                alt="facebook loga"
-              />
-              <img
-                class="instagram-loga"
-                src="img/instagram.png"
-                alt="instagram loga"
-              />
-            </ul>
           </div>
-        </section>
 
-        <section class="footer-container">
-          <div class="footer-box">
-            <h2 class="footer-member">Become a member!</h2>
-            <p class="footer-membertext">
-              Become a member and get 10% off your first order
-            </p>
-            <ul class="footer-mailregister">
-              <p>Email</p>
-              <p>Register</p>
-            </ul>
-            <hr class="footer-line" />
-            <p class="footer-policy">I have read and accepted the policy</p>
+          <div>
+            <div id="sort-by" class="filter-type-title">Sort by</div>
+            <div id="sort-by-container">
+              <div class="sort-by-item">
+                <input class="checkbox-sort" type="checkbox" /> Most popular
+              </div>
+              <div class="sort-by-item">
+                <input class="checkbox-sort" type="checkbox" /> Lowest price
+              </div>
+              <div class="sort-by-item">
+                <input class="checkbox-sort" type="checkbox" /> Highest price
+              </div>
+            </div>
           </div>
-        </section>
-      </footer>
-    </body>
+        </div>
+        <div class="productinfo-cups">
+          <figure class="productimage-container">
+            <img
+              class="productinfo-image"
+              src="images/Leif desktop.png"
+              alt="Leif"
+            />
+            <figcaption>
+              <p class="first-row-product">Leif</p>
+              <p class="second-row-product">129 SEK</p>
+            </figcaption>
+          </figure>
+          <figure class="productimage-container">
+            <img
+              class="productinfo-image"
+              src="images/Carl-gustaf desktop.png"
+              alt="Carl-Gustaf"
+            />
+            <figcaption>
+              <p class="first-row-product">Carl-Gustav</p>
+              <p class="second-row-product">200 SEK</p>
+            </figcaption>
+          </figure>
+          <figure class="productimage-container">
+            <img
+              class="productinfo-image"
+              src="images/Per desktop.png"
+              alt="Per"
+            />
+            <figcaption>
+              <p class="first-row-product">Per</p>
+              <p class="second-row-product">105 SEK</p>
+            </figcaption>
+          </figure>
+          <figure class="productimage-container">
+            <img
+              class="productinfo-image"
+              src="images/Linda desktop.png"
+              alt="Linda"
+            />
+            <figcaption>
+              <p class="first-row-product">Linda</p>
+              <p class="second-row-product">129 SEK</p>
+            </figcaption>
+          </figure>
+          <figure class="productimage-container">
+            <img
+              class="productinfo-image"
+              src="images/Molly desktop.png"
+              alt="Molly"
+            />
+            <figcaption>
+              <p class="first-row-product">Molly</p>
+              <p class="second-row-product">135 SEK</p>
+            </figcaption>
+          </figure>
+          <figure class="productimage-container">
+            <a href="product-view.html">
+              <img
+                class="productinfo-image"
+                src="images/Pernilla desktop.png"
+                alt="Pernilla"
+              />
+            </a>
+            <figcaption>
+              <p class="first-row-product">Pernilla</p>
+              <p class="second-row-product">99 SEK</p>
+            </figcaption>
+          </figure>
+          <figure class="productimage-container">
+            <img
+              class="productinfo-image"
+              src="images/Anders desktop.png"
+              alt="Anders"
+            />
+            <figcaption>
+              <p class="first-row-product">Anders</p>
+              <p class="second-row-product">150 SEK</p>
+            </figcaption>
+          </figure>
+          <figure class="productimage-container">
+            <img
+              class="productinfo-image"
+              src="images/Glenn desktop.png"
+              alt="Glenn"
+            />
+            <figcaption>
+              <p class="first-row-product">Glenn</p>
+              <p class="second-row-product">139.90 SEK</p>
+            </figcaption>
+          </figure>
+          <figure class="productimage-container">
+            <img
+              class="productinfo-image"
+              src="images/Mickan desktop.jpeg"
+              alt="Mickan"
+            />
+            <figcaption>
+              <p class="first-row-product">Mickan</p>
+              <p class="second-row-product">99.90 SEK</p>
+            </figcaption>
+          </figure>
+          <figure class="productimage-container">
+            <img
+              class="productinfo-image"
+              src="images/Miriam desktop.png"
+              alt="Miriam"
+            />
+            <figcaption>
+              <p class="first-row-product">Miriam</p>
+              <p class="second-row-product">129 SEK</p>
+            </figcaption>
+          </figure>
+          <figure class="productimage-container">
+            <img
+              class="productinfo-image"
+              src="images/Börje desktop.png"
+              alt="Börje"
+            />
+            <figcaption>
+              <p class="first-row-product">Börje</p>
+              <p class="second-row-product">149.90 SEK</p>
+            </figcaption>
+          </figure>
+          <figure class="productimage-container">
+            <img
+              class="productinfo-image"
+              src="images/Ernst desktop.png"
+              alt="Ernst"
+            />
+            <figcaption>
+              <p class="first-row-product">Ernst</p>
+              <p class="second-row-product">125 SEK</p>
+            </figcaption>
+          </figure>
+        </div>
+      </nav>
+    </main>
+    <footer class="footer-background">
+      <section class="footer-all">
+        <div class="footer-about">
+          <h1 class="footer-aboutus">About us</h1>
+          <div class="alltext">
+            <p class="footer-textinfo">Sustainability</p>
+            <p>Privacy policy</p>
+            <p>Vett och etikett</p>
+            <p>Affiliate</p>
+          </div>
+        </div>
+
+        <div>
+          <h1 class="footer-bigtext">Help</h1>
+          <div class="alltext">
+            <p class="footer-textinfo1">Order status</p>
+            <p>Shipping and delivery</p>
+            <p>Purchase conditions</p>
+            <p>Common questions</p>
+            <p>Campagine conditions</p>
+            <p>Gift cards</p>
+          </div>
+        </div>
+
+        <div class="footer-leagal">
+          <h1 class="footer-bigtext">Legal information</h1>
+          <div class="alltext">
+            <p class="footer-textinfo">Terms and conditions</p>
+            <p>Backpayment</p>
+          </div>
+        </div>
+
+        <div class="contact-logos">
+          <div class="footer-contact">
+            <h1 class="footer-contactus">Contact us</h1>
+            <div class="alltext">
+              <p class="footer-textinfo">vettochetikett@gmail.com</p>
+            </div>
+          </div>
+
+          <ul class="contact-loga">
+            <img
+              class="tiktok-loga"
+              src="../img/tiktok.png"
+              alt="tiktok loga"
+            />
+            <img
+              class="facebook-loga"
+              src="img/facebook.png"
+              alt="facebook loga"
+            />
+            <img
+              class="instagram-loga"
+              src="img/instagram.png"
+              alt="instagram loga"
+            />
+          </ul>
+        </div>
+      </section>
+
+      <section class="footer-container">
+        <div class="footer-box">
+          <h2 class="footer-member">Become a member!</h2>
+          <p class="footer-membertext">
+            Become a member and get 10% off your first order
+          </p>
+          <ul class="footer-mailregister">
+            <p>Email</p>
+            <p>Register</p>
+          </ul>
+          <hr class="footer-line" />
+          <p class="footer-policy">I have read and accepted the policy</p>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
