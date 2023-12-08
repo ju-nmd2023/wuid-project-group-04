@@ -1,0 +1,36 @@
+/* HELPER */
+.redborder {
+  border: 2px solid red;
+}
+
+.greenborder {
+  border: 2px solid green;
+}
+
+.blueborder {
+  border: 2px solid blue;
+}
+
+/* GENERAL CLASSES */
+
+.flex {
+  display: flex;
+}
+
+.marginzero {
+  margin: 0;
+}
+
+/* FONTS */
+
+.lusitanafont {
+  font-family: "lusitana", serif;
+}
+
+.ralewayfont {
+  font-family: "raleway", sans-serif;
+}
+
+.lorafont {
+  font-family: "lora", serif;
+}

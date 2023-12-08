@@ -1,0 +1,242 @@
+/* PURCHASE PAGE */
+
+.purchase-h1 {
+  font-size: 3rem;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.purchase-h2 {
+  font-size: 2rem;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: rgba(00, 00, 00, 0.6);
+}
+
+.purchase-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.purchase-img-article-container {
+  display: flex;
+  gap: 15px;
+}
+
+.purchase-cup {
+  width: 10rem;
+  height: 100%;
+  border-radius: 2px;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.purchase-alltext {
+  width: 100%;
+}
+
+.purchase-pernilla-h2 {
+  margin-top: 6vh;
+  margin-bottom: 2px;
+  font-size: 1.8rem;
+}
+
+.purchase-price {
+  margin-top: 0;
+  margin-bottom: 7vh;
+  font-size: 1.3rem;
+}
+
+.purchase-amount-container {
+  display: flex;
+  gap: 10px;
+  font-size: 1rem;
+}
+
+.purchase-articlenr-container {
+  display: flex;
+  font-size: 1rem;
+  gap: 10px;
+}
+
+.purchase-article-h4 {
+  font-weight: 400;
+  margin-top: 2%;
+}
+
+.purchase-article-nr {
+  margin-top: 2%;
+}
+
+.purchase-ordering-h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.purchase-line {
+  margin-top: 2%;
+  margin-bottom: 0;
+}
+
+.purchase-h3 {
+  font-family: "raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.purchase-totalamount,
+.purchase-order-number,
+.purchase-delivery {
+  display: flex;
+  gap: 10px;
+}
+
+.purchase-delivery {
+  align-items: center;
+}
+
+.purchase-total-h3,
+.purchase-totalprice,
+.purchase-ordnr-h3,
+.purchase-ordnr {
+  margin-bottom: 1%;
+}
+
+.purchase-delivery-h3,
+.purchase-postagent {
+  margin-bottom: 0;
+}
+
+.purchase-postagent,
+.purchase-ordnr,
+.purchase-totalprice {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: end;
+}
+
+.purchase-icamaxi {
+  margin-top: 0;
+  margin-bottom: 15vh;
+  font-size: 1.2rem;
+}
+
+.purchase-amount-one {
+  border: 1.5px solid black;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+@media screen and (max-width: 800px) {
+  .purchase-h1 {
+    font-size: 2.5rem;
+  }
+  .purchase-h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .purchase-h1 {
+    font-size: 2rem;
+  }
+  .purchase-h2 {
+    font-size: 1rem;
+  }
+  .purchase-ordering-h2 {
+    font-size: 1.2rem;
+  }
+  .purchase-h3 {
+    font-size: 1rem;
+  }
+  .purchase-postagent,
+  .purchase-ordnr,
+  .purchase-totalprice,
+  .purchase-icamaxi {
+    font-size: 1rem;
+  }
+  .purchase-pernilla-h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .purchase-h1 {
+    font-size: 1.8rem;
+  }
+  .purchase-h2 {
+    font-size: 0.8rem;
+  }
+  .purchase-pernilla-h2 {
+    font-size: 1.3rem;
+  }
+  .purchase-price {
+    font-size: 1rem;
+  }
+  .purchase-amount-container {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .purchase-h1 {
+    font-size: 1.5rem;
+  }
+  .purchase-h2 {
+    font-size: 0.8rem;
+  }
+  .purchase-ordering-h2 {
+    font-size: 1rem;
+  }
+  .purchase-h3 {
+    font-size: 0.8rem;
+  }
+  .purchase-postagent,
+  .purchase-ordnr,
+  .purchase-totalprice,
+  .purchase-icamaxi {
+    font-size: 0.8rem;
+  }
+  .purchase-pernilla-h2 {
+    font-size: 1.2rem;
+  }
+  .purchase-price {
+    font-size: 0.9rem;
+  }
+  .purchase-amount-container {
+    font-size: 0.8rem;
+  }
+  .purchase-cup {
+    width: 8rem;
+  }
+  .purchase-articlenr-container {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .purchase-h1 {
+    font-size: 1.2rem;
+  }
+  .purchase-h2 {
+    font-size: 0.7rem;
+  }
+  .purchase-pernilla-h2 {
+    font-size: 1rem;
+  }
+  .purchase-price {
+    font-size: 0.8rem;
+  }
+  .purchase-amount-container {
+    font-size: 0.7rem;
+  }
+  .purchase-cup {
+    width: 7rem;
+  }
+}

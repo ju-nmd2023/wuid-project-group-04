@@ -1,0 +1,181 @@
+/* INFORMATION PAGE */
+
+.information-body {
+  background-image: url(../img/backgrounddinner.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  height: 100%;
+}
+
+.information-main {
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  padding-top: 3%;
+}
+
+.information-h1 {
+  font-family: "raleway", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+}
+
+.information-inputs {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 15px;
+  margin: 0;
+  justify-items: center;
+}
+
+.input {
+  width: 23rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  font-size: 100%;
+  font-family: "raleway", sans-serif;
+  padding-left: 10px;
+}
+
+input:hover {
+  border: 1px solid darkgray;
+}
+
+.info-delivery-h2,
+.info-payment-h2 {
+  font-family: "raleway", sans-serif;
+  font-size: 2.5rem;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+}
+
+.postagent-container {
+  background-color: rgba(164, 150, 142, 0.7);
+  padding: 1%;
+  border-radius: 5px;
+  width: 15rem;
+}
+
+.radio-info {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.selectedradio {
+  background-color: rgb(164, 150, 142);
+}
+
+.postagent-h5 {
+  font-family: "raleway", sans-serif;
+  font-size: 1rem;
+  margin: 2%;
+  width: 20rem;
+}
+
+.postagent-p {
+  font-family: "raleway", sans-serif;
+  font-size: 1rem;
+  margin: 2%;
+  margin-bottom: 4%;
+}
+
+.postagent-options {
+  width: 12rem;
+  background-color: #979191;
+  border-radius: 5px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.homedelivery-container {
+  width: 15rem;
+}
+
+.date-cvc-container {
+  display: flex;
+  gap: 3%;
+  margin-bottom: 2vh;
+}
+
+#information-date {
+  width: 15rem;
+}
+
+#information-cvc {
+  width: 7rem;
+}
+
+.info-paybtn-placement {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.info-pay-button {
+  width: 18rem;
+  height: 4rem;
+  font-size: 2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #a0958f;
+  margin-bottom: 5vh;
+  transition: ease-in-out 0.5ms;
+}
+
+.info-pay-button:hover {
+  background-color: #5b5552;
+  color: white;
+}
+
+/* RESPONSIVE INFORMATION PAGE */
+
+@media screen and (max-width: 620px) {
+  .information-h1 {
+    font-size: 2.5rem;
+  }
+  .input {
+    width: 20rem;
+  }
+  #information-date {
+    width: 12rem;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .information-h1 {
+    font-size: 2rem;
+  }
+  .info-delivery-h2 {
+    font-size: 2rem;
+  }
+  .info-payment-h2 {
+    font-size: 2rem;
+  }
+  .input {
+    width: 18rem;
+  }
+  #information-date {
+    width: 12rem;
+  }
+  #information-cvc {
+    width: 5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .input {
+    width: 16rem;
+  }
+  #information-date {
+    width: 12rem;
+  }
+  #information-cvc {
+    width: 3rem;
+  }
+}

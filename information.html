@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vett & etikett</title>
+
+    <link rel="stylesheet" href="css/information.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/information.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lusitana&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="information-body header-content">
+    <header class="main-header">
+
+      <img class="icon-loga" src="/img/Headervett.png" alt="loga">
+      <div class="icons">
+        <input class="searchbar" type="search" placeholder="Search...">
+       
+      <div class="headericons">
+      <img class="icon-flag" src="img/united-kingdom.png" alt="icon flag">
+      <img class="icon-bag" src="img/shoppingbag.png" alt="icon shoppingbag">
+      <img class="icon-pictures" src="img/heart-2.png" alt="icon heart">
+      </div>
+    <div class="login-butt">
+    <button class="login-button">LOG IN</button>
+    </div>
+
+    <a href="iphonemenu.html">
+
+      <button id="telephonebutton"><img class="menu-img" src="img/menu.png" alt=""></button>
+    </a>
+
+  </div> 
+
+</header>
+<header class="header-two">
+    
+  <ul class="list-header">
+    <a class="link-header" href="#">
+      Home
+    </a>
+    <a class="link-header" href="#">
+      Campaign
+    </a>
+    <a class="link-header" href="#">
+      New in
+    </a>
+    <a class="link-header" href="#">
+      Inspiration
+    </a>
+    <a class="link-header" href="#">
+      Trends
+    </a>
+  </ul>
+  
+</header>
+
+    <main class="information-main">
+      <h1 class="information-h1">YOUR INFORMATION</h1>
+
+      <form name="Paymentform" class="information-inputs" action="purchase.html">
+        <input
+          id="emailInputField"
+          class="input"
+          type="email"
+          placeholder="E-MAIL*"
+          inputmode="email"
+          required
+        />
+        <input class="input" type="text" placeholder="NAME*" required />
+        <input class="input" type="text" placeholder="ADRESS*" required />
+        <input
+          class="input"
+          type="text"
+          placeholder="POSTAL CODE*"
+          inputmode="numeric"
+          required
+        />
+        <input class="input" type="text" placeholder="LOCALITY*" required />
+        <input class="input" type="text" placeholder="CITY*" required />
+        <input class="input" type="text" placeholder="COUNTRY*" required />
+        <input class="input" type="tel" placeholder="TELEPHONE NUMBER" />
+
+        <h2 class="info-delivery-h2">DELIVERY</h2>
+
+        <section class="postagent-container" id="postAgentContainer">
+          <div class="flex">
+            <input
+              type="radio"
+              name="deliverygroup"
+              value="Post agent"
+              class="radio-info"
+              id="postAgentRadio"
+            />
+
+            <div>
+              <h5 class="postagent-h5">POSTAL AGENT</h5>
+              <p class="postagent-p">Free shipping</p>
+              <p class="postagent-p">2-3 working days</p>
+              <select class="postagent-options">
+                <option disabled selected>Select delivery location</option>
+                <option>
+                  <p>
+                    Maxi ICA Stormarknad, Herkulesvägen 7, Jönköping, Free
+                    shipping
+                  </p>
+                </option>
+                <option>
+                  <p>
+                    Coop Östra torget, Rökerigränd 5, Jönköping, Free shipping
+                  </p>
+                </option>
+              </select>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="postagent-container homedelivery-container"
+          id="homeDeliveryContainer"
+        >
+          <div class="flex">
+            <input
+              type="radio"
+              name="deliverygroup"
+              value="Home delivery"
+              class="radio-info"
+              id="homeDeliveryRadio"
+              required
+            />
+            <div>
+              <h5 class="postagent-h5">HOME DELIVERY</h5>
+              <p class="postagent-p">25 SEK</p>
+              <p class="postagent-p">2-3 working days</p>
+            </div>
+          </div>
+        </section>
+
+        <h2 class="info-payment-h2">PAYMENT</h2>
+
+        <section class="information-inputs">
+          <input class="input" type="text" placeholder="NAME*" required />
+          <input class="input" type="text" placeholder="CARD NUMBER*" />
+          <div class="date-cvc-container">
+            <input
+              class="input"
+              id="information-date"
+              type="text"
+              placeholder="MM/YY*"
+              inputmode="numeric"
+              required
+            />
+            <input
+              class="input"
+              id="information-cvc"
+              type="text"
+              placeholder="CVC*"
+              required
+            />
+          </div>
+        </section>
+
+        <div id="paymentButton" class="info-paybtn-placement">
+          <button class="info-pay-button">PAY</button>
+        </div>
+      </form>
+    </main>
+
+    <footer class="footer-background">
+
+      <section class="footer-all">
+           
+           <div class="footer-about">  
+             <h1 class="footer-aboutus" >About us</h1>
+             <div class="alltext">
+             <p class="footer-textinfo">Sustainability</p> 
+             <p>Privacy policy</p> 
+             <p>Vett och etikett</p> 
+             <p>Affiliate</p>
+           </div> 
+         </div>
+           
+           <div>
+             <h1 class="footer-bigtext">Help</h1>
+             <div class="alltext">
+             <p class="footer-textinfo1"> Order status</p> 
+             <p>Shipping and delivery</p> 
+             <p>Purchase conditions</p> 
+             <p>Common questions</p> 
+             <p>Campagine conditions</p> 
+             <p>Gift cards</p>
+           </p>
+         </div>
+       </div>
+         
+         <div class="footer-leagal">
+           <h1 class="footer-bigtext">Legal information</h1>
+           <div class="alltext">
+           <p class="footer-textinfo">Terms and conditions</p> 
+           <p>Backpayment</p>
+       </div>
+     </div>
+       
+       <div class="contact-logos">
+         <div class="footer-contact">
+           <h1 class="footer-contactus">Contact us</h1>
+           <div class="alltext">
+           <p class="footer-textinfo">vettochetikett@gmail.com</p>
+         </div>
+       </div>
+         
+         <ul class="contact-loga">
+           <img class="tiktok-loga" src="../img/tiktok.png" alt="tiktok loga">
+           <img class="facebook-loga" src="img/facebook.png" alt="facebook loga">
+           <img class="instagram-loga" src="img/instagram.png" alt="instagram loga">
+         </ul>
+       </div>
+         
+       
+       </section> 
+       
+     
+   <section class="footer-container">
+   <div class="footer-box">
+   <h2 class="footer-member">Become a member!</h2>
+   <p class="footer-membertext">Become a member and get 10% off your first order</p>
+   <ul class="footer-mailregister">
+     <p>Email</p>
+     <p>Register</p>
+   </ul>
+   <hr class="footer-line">
+   <p class="footer-policy">I have read and accepted the policy</p>
+   </div>
+   </section>
+   
+   </footer>
+  </body>
+</html>
