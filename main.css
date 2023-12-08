@@ -104,7 +104,7 @@ align-items: center;
         height: 20rem;
         margin: auto;
         background-color: rgb(0, 102, 51);
-        position: absolute; /* The solution I found for getting the border box over the images WITHOUT it affecting the background. */
+        position: absolute; The solution I found for getting the border box over the images WITHOUT it affecting the background. */
         /* box-sizing: border-box;
         padding: 0;
         margin: 0;
@@ -115,7 +115,7 @@ align-items: center;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         text-align: center;
-      } */ */
+      }
 
       /* .header-button {
         display: none !important;
@@ -447,7 +447,14 @@ border-color: #000;
     margin-right: 10%;
    }
 
- 
+   #telephonebutton {
+    display: none;
+    }
+
+    .menu-img {
+        width: 2rem;
+        height: 2rem;
+    }
 
  @media screen and (max-width: 1000px) {
     .icon-loga {
@@ -563,15 +570,11 @@ border-color: #000;
     margin-right: 10%;
 }
 
-.menu-img {
-    height: 2rem;
-    overflow: hidden;
-}
 
-.telephonebutton {
+/* .telephonebutton {
     display: block
     
-}
+} */
 
 .main-pictures {
   width: 100%;
@@ -601,13 +604,11 @@ border-color: #000;
        grid-area: footertext;
    }
 
-   #telephonebutton {
-    display: none;
-    }
 
-    .menu-img , .telephonebutton {
-        display: block;
-    }
+
+    /* .menu-img {
+        display: none;
+    } */
 
     .icon-loga {
         width: 12rem;
@@ -654,32 +655,13 @@ border-color: #000;
      }
 
 
+     @media screen and (max-width: 550px) {
 
-
-     .dropdown {
-        display: inline-block;
-      }
-      
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        z-index: 1;
-        background-color: #006633;
-        width: 146px;
-        color: white;
-        font-family: "raleway", sans-serif;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        padding-left: 5px;
-      }
-      
-      #careDropdownContent {
-        width: 199px;
-      }
-      
-      .dropdown-show-content {
-        display: block;
-      }
+#telephonebutton {
+    display: block;
+    /* overflow: hidden; */
+}
+     }
       
 
 

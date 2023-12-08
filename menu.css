@@ -2,13 +2,14 @@
     background-color: rgb(184, 172, 165);
 }
 
+.close-icon {
+    width: 2.5rem;
+}
+
 .etikett-loga {
     height: 6rem;
     display: flex;
     justify-content: center;
-}
-
-.phone-icons {
 }
 
 .phoneicons {
