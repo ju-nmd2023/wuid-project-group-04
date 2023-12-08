@@ -136,7 +136,6 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  /* z-index: 1; */
   background-color: #006633;
   width: 146px;
   color: white;
