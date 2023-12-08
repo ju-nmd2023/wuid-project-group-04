@@ -1,4 +1,3 @@
-
 /*Make sure content fits the whole page*/ /* 0px 0px 0px 0px It reads */
 
 body {
@@ -8,11 +7,10 @@ body {
 
 /* PRODUCT INFORMATION PAGE */
 
-
 .productinfo-image {
   border-radius: 2px; /* adds roundness to images */
   width: 13rem; /* REM unit fits good. Unlike pixels, rem is more consistent between screen-sizes and is independent of pixel resolution. */
-  height: auto; 
+  height: auto;
 }
 
 .productinfo-header {
@@ -27,7 +25,7 @@ body {
 
 @keyframes myanimation {
   0% {
-    text-shadow: 0px -5px rgb(0, 102, 51);  /* 0px horizontal, -5px vertical and color */
+    text-shadow: 0px -5px rgb(0, 102, 51); /* 0px horizontal, -5px vertical and color */
   }
   25% {
     text-shadow: 0px 0px rgb(0, 102, 51);
@@ -51,6 +49,8 @@ body {
   border: none;
   outline: none;
   background-color: #fff;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .filter-icon {
@@ -98,7 +98,7 @@ body {
   margin: 0 auto;
 }
 
-.circle {
+.filtercolor {
   text-align: left;
   margin-bottom: 25%;
   font-size: 20px;
@@ -111,23 +111,23 @@ body {
   height: 15px;
 }
 
-.red-circle {
+.red-filtercolor {
   color: rgb(223, 31, 31);
 }
 
-.blue-circle {
+.blue-filtercolor {
   color: blue;
 }
 
-.black-circle {
+.black-filtercolor {
   color: black;
 }
 
-.beige-circle {
+.beige-filtercolor {
   color: rgb(233, 188, 133);
 }
 
-.multicolour-circle {
+.multicolour-filtercolor {
   color: magenta;
 }
 
@@ -176,11 +176,11 @@ body {
 /* sort by */
 #sort-by-container {
   display: inline-block;
-  margin: 0 auto;
+  margin: 0 auto; /* 0 stands for left and right and auto for top and bottom */
 }
 
 .sort-by-item {
-  margin-top: 15%;
+  margin-top: 10%;
   text-align: left;
 }
 
@@ -325,25 +325,9 @@ body {
 
 /* BUTTONS DELIVERY AND CARE INSTRUCTIONS, PRODUCT VIEW PAGE */
 
-.description-button {
+.dropdownbutton {
   display: flex;
   width: 151px;
-  height: 36px;
-  font-size: 15px;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 5px;
-  background-color: #006633;
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding-left: 5%;
-  margin-right: 10px;
-}
-
-.careinstructions-button {
-  display: flex;
-  width: 204px;
   height: 36px;
   font-size: 15px;
   align-items: center;
@@ -359,18 +343,14 @@ body {
 #grid-buttons {
   display: flex;
   margin-left: 10%;
+  gap: 10px;
 }
 
 /* Following four classes were adapted from https://www.w3schools.com/css/css_dropdowns.asp */
 
-.dropdown {
-  display: inline-block;
-}
-
 .dropdown-content {
   display: none;
   position: absolute;
-  z-index: 1;
   background-color: #006633;
   width: 146px;
   color: white;
@@ -443,14 +423,10 @@ body {
 
   /* #grid-buttons {
     margin: auto;
-    margin-right: 5%;
-  }
-
-  .horizontal-stack {
-    width: min-content;
-    margin-left: 0%;
-    margin: auto;
-    align-items: center;
+    margin-top: 5%;
+   
+    font-size: 20px;
+    font-weight: 500;
   } */
 }
 
@@ -536,7 +512,7 @@ body {
     margin-right: 5%;
   }
 
-  .horizontal-stack {
+  .stacking {
     width: min-content;
     margin-left: 0%;
     margin: auto;
@@ -570,6 +546,14 @@ body {
     width: 100%;
   }
 
+  #filter-text {
+    font-size: 1rem;
+  }
+
+  .filter-icon {
+    display: none;
+  }
+
   /* price slider changing format */
 
   .price-slider {
@@ -587,6 +571,12 @@ body {
 
   /* Changing the color tag and everything under it */
 
+  .inside-filter {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+
   .colour-options {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -595,7 +585,7 @@ body {
     font-size: 12px;
   }
 
-  .circle {
+  .filtercolor {
     text-align: left;
     margin-top: 5%;
     margin-bottom: 25%;
